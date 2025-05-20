@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+</head>
+<body>
+    
+    <div class="info">
+        <div class="info_container">
+            <div class="info_mail">
+                <i class="fa-solid fa-phone"></i>
+                <p>+250 784 688 641</p>
+                <i class="fa-solid fa-envelope"></i>
+                <p>bbonteemma@gmail.com</p>
+            </div>
+            <div class="info_platforms">
+                <a href="#"><img src="./icons/fcb_icon.png" alt="fcb_icon"></a>
+                <a href="#"><img src="./icons/twiter_icon.png" alt="twiter_icon"></a>
+                <a href="#"><img src="./icons/ln_icon.png" alt="ln_icon"></a>
+                <a href="#"><img src="./icons/inst_icon.png" alt="inst_icon"></a>
+            </div>
+        </div>
+        
+    </div>
+
+    <header>
+        <div class="header_container">
+            <div class="header_logo"><a href="./index.html"><img src="./icons/ARMENnia.png" alt="logo"></a></div>
+            <div class="header_menu">
+                <nav class="navbar">
+                    <ul class="menu">
+                        <li class="menu_list"><a href="./index.html" class="menu_link">Գլխավոր</a></li>
+                        <li class="menu_list"><a href="./aboutarm.html" class="menu_link">Հայաստանի մասին</a></li>
+                        <li class="menu_list"><a href="./provinces.html" class="menu_link">Մարզեր</a> </li>
+                        <li class="menu_list"><a href="./gallery.html" class="menu_link">Պատկերասրահ</a> </li>
+                        <li class="menu_list active"><a href="./contact.html" class="menu_link">Կապ</a> </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header_login">
+                <button class="login gray_btn">Մուտք</button>
+                <button class="signin white_btn">Գրանցում</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact_bg html_pages_main_bgs">
+            <div class="bg_opasity"></div>
+            <div class="contact_container html_pages_display">
+                <div class="contact_content">
+                    <h1 class="all_main_title">Կապ</h1> 
+                    <h4 class="all_main_tit">Ունե՞ք հարցեր կամ առաջարկներ։ Կապ հաստատեք մեզ հետ՝ հեշտ և արագ։</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact_us_page">
+            <div class="contact_us_page_container">
+                <div class="contact_us_page_content">
+                     <div class="contact_social_platforms">
+                        <h4>Սոց․ Հարթակներ</h4>
+                        <p><span>Ձեր կարծիքը կարևոր է մեզ համար։</span><br> Կիսվեք ձեր հարցերով կամ գաղափարներով՝ և միասին կկատարելագործենք ձեր ճանապարհորդությունը։</p>
+                        <a href="#"><img src="./icons/fcb_icon.png" alt="fcb_icon">explore_armenia</a>
+                        <a href="#"><img src="./icons/twiter_icon.png" alt="twiter_icon">explore_armenia</a>
+                        <a href="#"><img src="./icons/ln_icon.png" alt="ln_icon">explore_armenia</a>
+                        <a href="#"><img src="./icons/inst_icon.png" alt="inst_icon">explore_armenia</a>
+                        <div class="info_mail">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+250 784 688 641</p>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>explore_armenia@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact_connect_us">
+                        <h2>Կապվեք մեզ հետ</h2>
+                        <hr>
+                        <input type="hidden" name="access_key" value="56fcd2e8-9b9d-4aef-9b29-6c4b9701a969">
+                        <input type="text" placeholder="Անուն Ազգանուն" name="Անուն Ազգանուն" class="contact_inputs" required>
+                        <input type="email" placeholder="Էլ․ հասցե" name="Էլ․ հասցե"class="contact_inputs" required id="">
+                        <select name="Հաղորդագրության տեսակը" class="contact_inputs" >
+                            <option value="Առաջարկ">Առաջարկ</option>
+                            <option value="Հարցում">Հարցում</option>
+                            <option value="Գոհունակություն">Գոհունակություն</option>
+                            <option value="Դիտողություն">Դիտողություն</option>
+                        </select>
+                        <textarea placeholder="Հաղորդագրություն" name="Հաղորդագրություն" required class="contact_message" id="" ></textarea>
+                        <button type="submit">Ուղարկել</button>
+                    </form>
+                   
+                </div>
+                
+                
+
+                </div>
+            </div>
+
+        </section>
+
+        <div id="messagePopup" class="contact_popup">
+            <div class="popup-content">
+                <p>Շնորհակալություն մեզ հետ կապ հաստատելու համար։ <br> Ձեր հաղորդագրությունը հաջողությամբ ուղարկվել է։</p>
+                <button onclick="closePopup()">Լավ</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_green_bg">
+                <div class="footer_left">
+                    <h4>Օգնությու՞ն է պետք։ <br> Պարզապես դիմեք մեզ։</h4>
+                    <p class="contacts">
+                        Հեռախոս՝ +374 788 123 456 <br>
+                        Էլ․ հասցե՝ explore_armenia@gmail.com<br>
+                        Հասցե՝ Արմավիր, Հայաստան
+                    </p>
+                    <p class="connect">Միացե՛ք մեր արկածային ընտանիքին։ Ստացե՛ք ոգեշնչող վայրեր, ուղեցույցներ և հատուկ առաջարկներ՝ ուղղակի Ձեր էլ․ փոստում։</p>
+                    <form>
+                        <input class="footer_enter_mail" type="search" placeholder="Մուտքագրեք Ձեր էլ․ հասցեն այստեղ" id="">
+                        <button class="footer_send" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="footer_right">
+                    <div class="info_platforms">
+                        <a href="#"><img src="./icons/fcb_icon.png" alt="fcb_icon"></a>
+                        <a href="#"><img src="./icons/twiter_icon.png" alt="twiter_icon"></a>
+                        <a href="#"><img src="./icons/ln_icon.png" alt="ln_icon"></a>
+                        <a href="#"><img src="/icons/inst_icon.png" alt="inst_icon"></a>
+                    </div>
+                    <p class="txt">
+                       Այս կայքը նախատեսված է բոլոր նրանց համար, ովքեր ցանկանում են ճամփորդել Հայաստանում։ Այստեղ կարող եք գտնել տեղեկատվություն տեսարժան վայրերի, մարզերի, ազգային ուտեստների, մշակույթի և ճանապարհորդության համար անհրաժեշտ ամեն ինչի մասին։
+                    </p>
+                    <div class="navigation">
+                        <div class="nav_bar">
+                            <a href="./index.html" >Գլխավոր</a>
+                            <a href="./aboutarm.html">Հայաստանի Մասին</a>
+                            <a href="./provinces.html">Մարզեր</a>
+                            <a href="./gallery.html">Պատկերասրահ</a>
+                            <a href="./contact.html">Կապ</a>
+                        </div>
+
+                        <div class="nav_arm_map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1486059.484357943!2d43.72154363089676!3d40.06321172226789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40155684e773bac7%3A0xd0b4757aeb822d23!2sArmenia!5e1!3m2!1sen!2sam!4v1747591415941!5m2!1sen!2sam" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+
+</body>
+</html>
