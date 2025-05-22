@@ -171,78 +171,8 @@
             <div class="provinces_sights_container">
                 <h1 class="all_section_title">Տեսարժան վայրեր</h1>
                 <h4 class="all_section_tit">Լոռու մարզն առաջարկում է մի շարք տպավորիչ վայրեր․</h4>
-                <div class="provinces_sights_cards">
-                    <div class="provinces_sights_card">
-                        <img src="./imges/Lori/provinces_sanahin.jpg" alt="">
-                        <div class="provinces_sights_cards_opacity">
-                            <a class="add_to_basket" href="#">+</a>
-                            <div class="provinces_sights_card_content">
-                                <h4>Սանահին վանք</h4>
-                                <p>ՅՈՒՆԵՍԿՕ-ի համաշխարհային ժառանգության ցանկում ընդգրկված վանական համալիր։</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="provinces_sights_card">
-                        <img src="./imges/Lori/provinces_sanahin.jpg" alt="">
-                        <div class="provinces_sights_cards_opacity">
-                            <a class="add_to_basket" href="#">+</a>
-                            <div class="provinces_sights_card_content">
-                                <h4>Սանահին վանք</h4>
-                                <p>ՅՈՒՆԵՍԿՕ-ի համաշխարհային ժառանգության ցանկում ընդգրկված վանական համալիր։</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="provinces_sights_card">
-                        <img src="./imges/Lori/provinces_sanahin.jpg" alt="">
-                        <div class="provinces_sights_cards_opacity">
-                            <a class="add_to_basket" href="#">+</a>
-                            <div class="provinces_sights_card_content">
-                                <h4>Սանահին վանք</h4>
-                                <p>ՅՈՒՆԵՍԿՕ-ի համաշխարհային ժառանգության ցանկում ընդգրկված վանական համալիր։</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="provinces_sights_card">
-                        <img src="./imges/Lori/provinces_sanahin.jpg" alt="">
-                        <div class="provinces_sights_cards_opacity">
-                            <a class="add_to_basket" href="#">+</a>
-                            <div class="provinces_sights_card_content">
-                                <h4>Սանահին վանք</h4>
-                                <p>ՅՈՒՆԵՍԿՕ-ի համաշխարհային ժառանգության ցանկում ընդգրկված վանական համալիր։</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="provinces_sights_card">
-                        <img src="./imges/Lori/provinces_sanahin.jpg" alt="">
-                        <div class="provinces_sights_cards_opacity">
-                            <a class="add_to_basket" href="#">+</a>
-                            <div class="provinces_sights_card_content">
-                                <h4>Սանահին վանք</h4>
-                                <p>ՅՈՒՆԵՍԿՕ-ի համաշխարհային ժառանգության ցանկում ընդգրկված վանական համալիր։</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="provinces_sights_card">
-                        <img src="./imges/Lori/provinces_sanahin.jpg" alt="">
-                        <div class="provinces_sights_cards_opacity">
-                            <a class="add_to_basket" href="#">+</a>
-                            <div class="provinces_sights_card_content">
-                                <h4>Սանահին վանք</h4>
-                                <p>ՅՈՒՆԵՍԿՕ-ի համաշխարհային ժառանգության ցանկում ընդգրկված վանական համալիր։</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="provinces_sights_card">
-                        <img src="./imges/Lori/provinces_sanahin.jpg" alt="">
-                        <div class="provinces_sights_cards_opacity">
-                            <a class="add_to_basket" href="#">+</a>
-                            <div class="provinces_sights_card_content">
-                                <h4>Սանահին վանք</h4>
-                                <p>ՅՈՒՆԵՍԿՕ-ի համաշխարհային ժառանգության ցանկում ընդգրկված վանական համալիր։</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="provinces_sights_cards" id="provSightsCards">
+                   
                 </div>
             </div>
         </section>
@@ -252,7 +182,7 @@
               <h1 class="all_section_title">Ուտելիք և տեղական համտես</h1>
               <h4 class="all_section_tit">Լոռու խոհանոցը հարուստ է տեղական ուտեստներով, որոնցից արժե առանձնացնել՝</h4>
           
-              <div class="carousel">
+              <!-- <div class="carousel">
                 <input type="radio" name="slides" id="slide1" checked>
                 <input type="radio" name="slides" id="slide2">
                 <input type="radio" name="slides" id="slide3">
@@ -294,7 +224,18 @@
                   <label for="slide2"><img src="./imges/Lori/food_2_boraki.jpg" alt=""></label>
                   <label for="slide3"><img src="./imges/Lori/food_3_tanrapur.jpg" alt=""></label>
                 </div>
-              </div>
+              </div> -->
+
+               <div class="carousel">
+                    <div class="carousel__viewport">
+                        <div class="carousel__slides" id="slidesContainer">
+                        <!-- Slides will be injected by JS -->
+                        </div>
+                    </div>
+                    <div class="carousel__thumbnails" id="thumbnailsContainer">
+                        <!-- Thumbnails will be injected by JS -->
+                    </div>
+                </div>
             </div>
           </section>
           
@@ -358,6 +299,8 @@
     <script type="module">
         import swiper from 'https://cdn.jsdelivr.net/npm/swiper@11.2.6/+esm'
         </script>   
+    
+    <script src="./provinces.js"></script>
 
 </body>
 </html>

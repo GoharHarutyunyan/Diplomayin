@@ -4,25 +4,31 @@
       {
           title: "Գառնիի տաճար",
           description:"Հայկական միակ հունա-հռոմեական աստվածաբառական տաճարը։ Այն տեղակայված է Գառնիի կիրճի մոտ։",
-          imgUrl: "./imges/garni_sights.jpg"
+          imgUrl: "./imges/home_popular_sights/garni_sights.jpg"
       },
 
       {
           title: "Գեղարդի վանք",
           description:"ՅՈւՆԵՍԿՕ-ի Համաշխարհային ժառանգության ցուցակի առարկա։ Գեղարդ նշանակում է «լծակի» անունը՝ կապված Քրիստոսի խաչը հարվածելու հետ։",
-          imgUrl: "./imges/geghard_sights.jpg"
+          imgUrl: "./imges/home_popular_sights/geghard_sights.jpg"
       },
 
       {
           title: "Ծիծեռնակաբերդ",
           description:"Այս հուշարձանը հարգում է Հայոց ցեղասպանության զոհերին և գտնվում է բլուրի վրա՝ Երևանից լավ տեսարաններով։ ",
-          imgUrl: "./imges/tsitsernakaberd_sights.jpg"
+          imgUrl: "./imges/home_popular_sights/tsitsernakaberd_sights.jpg"
       },
       {
           title: "Դիլիջանի ազգային պարկ",
           description:"Հաճախ անվանում են «Շվեյցարիա Հայաստանում»՝ այն իր կանաչ անտառներով ու բնության գեղեցկությամբ։Դիլիջան քաղաքը հայտնի է իր խաղաղ մթնոլորտով և փայլուն վայրերի հայտնաբերմամբ։",
-          imgUrl: "./imges/dilijan_sights.jpg"
+          imgUrl: "./imges/home_popular_sights/dilijan_sights.jpg"
       },
+      {
+          title: "Տաթևի վանք",
+          description:"Միջնադարյան վանական համալիր Կապան գետի կիրճում, հայտնի աշխարհի ամենաերկար «Տաթևի թևեր» ճոպանուղով։",
+          imgUrl: "./imges/home_popular_sights/tatev_sights.jpg"
+      },
+      
 
   ];
 
@@ -261,137 +267,104 @@
 
 // reviews/////////////////////////////////////////////////////
 
-// function addComment(name, comentText, imagePaths = []){
-//   const reviewsContent = document.querySelector('.reviews_content');
-
-//   const personDiv = document.createElement('div');
-//   personDiv.classList.add('person_1');
-
-//   const comentsDiv = document.createElement('div');
-//   comentsDiv.classList.add('coments');
-//   comentsDiv.innerHTML = ` <h4>${name }</h4>
-//                            <p>${comentText}</p>`;
-//   personDiv.appendChild(comentsDiv);
-
-//   if(imagePaths.length > 0){
-//     const photosDiv = document.createElement('div');
-//     photosDiv.classList.add('photos');
-
-//     imagePaths.forEach((path, i) => {
-//       const imageDiv = document.createElement('div');
-//       imageDiv.innerHTML = `<img src="${path}" alt="">`;
-      
-//       photosDiv.appendChild(imageDiv);
-//     });
-
-//     personDiv.appendChild(photosDiv);
-//   }
-
-//   reviewsContent.appendChild(personDiv);
-// }
-
-// addComment(
-//   "Աննա",
-//     "Սիրեցի այս ճամփորդությունը",
-//     ["./imges/Gallery/img_1.jpg", "./imges/Gallery/img_14.jpg", "./imges/Gallery/img_11.jpg"]
-// );
-
-//function addComment(name, commentText, imagePaths = []) {
-  //   const reviewsContainer = document.querySelector('.reviews_content');
-
-  //   // Ստեղծում ենք comment-ի HTML-ը
-  //   const personDiv = document.createElement('div');
-  //   personDiv.classList.add('person_1');
-
-  //   const commentDiv = document.createElement('div');
-  //   commentDiv.classList.add('coments');
-  //   commentDiv.innerHTML = `<h4 class="name">${name}</h4><p>${commentText}</p>`;
-  //   personDiv.appendChild(commentDiv);
-
-  //   // Եթե կան նկարներ
-  //   if (imagePaths.length > 0) {
-  //     const photosDiv = document.createElement('div');
-  //     photosDiv.classList.add('photos');
-
-  //     imagePaths.forEach((path, i) => {
-  //       const imgDiv = document.createElement('div');
-  //       imgDiv.classList.add(`img${i + 1}`);
-  //       imgDiv.innerHTML = `<img src="${path}" alt="">`;
-  //       photosDiv.appendChild(imgDiv);
-  //     });
-
-  //     personDiv.appendChild(photosDiv);
-  //   }
-
-  //   // Ավելացնում ենք դեպի վերևում (եթե ուզում ես նորերը վերևում երևան՝ օգտագործի insertBefore)
-  //   reviewsContainer.insertBefore(personDiv, reviewsContainer.firstChild);
-
-  // }
-
-  // // Օրինակ՝ մեկ մեկնաբանություն ավելացնելիս
-  // addComment(
-  //   "Աննա",
-  //   "Սիրեցի այս ճամփորդությունը",
-  //   ["./imges/Gallery/img_1.jpg", "./imges/Gallery/img_14.jpg", "./imges/Gallery/img_11.jpg"]
-  // );
-
   const reviewsContent = [
     {
+    name: "Գոհար",
+    commentText: "Բարի գալուստ իմ ստեղծած տուրիզմի կայք։ Ես՝ Գոհարս, մեծ սիրով եմ այս նախագիծը իրականացրել՝ նպատակ ունենալով բացահայտել Հայաստանի հրաշալի վայրերը, ազգային արժեքները և առաջարկել օգտակար տեղեկատվություն բոլոր նրանց, ովքեր ցանկանում են ճանաչել մեր երկիրը։ Շնորհակալություն, որ այցելել եք։ Հուսով եմ՝ այստեղ կգտնեք այն ամենը, ինչ փնտրում եք։",
+    },
+    {
       name: "Աննա",
-      comentText: "Հրաշալի է, հիասքանչ է",
-      img1: "./imges/Gallery/img_1.jpg",
-      img2: "./imges/Gallery/img_1.jpg",
-      img3: "./imges/Gallery/img_1.jpg"
+      commentText: "Շատ տեղեկատվական կայք է։ Արձակուրդից առաջ կարողացա հեշտությամբ գտնել տեղեկություն Հայաստանի մարզերի, տեսարժան վայրերի և ազգային ուտեստների մասին։",
+      img1: "./imges/comments/anna_img.jpg",
+      img2: "./imges/comments/anna_img2.jpg",
+    
     },
       {
-    name: "Գոհար",
-    comentText: "Լավ էլ երկար գործ էր, լրիվ 300,000 դրամանոց",
-    img1: "./imges/Gallery/img_2.jpg",
-    img2: "./imges/Gallery/img_3.jpg",
-    img3: "./imges/Gallery/img_4.jpg"
-  },
+    name: "Արայիկ",
+    commentText: "Ինտերակտիվ քարտեզը շատ լավն էր։",
+
+    },
    {
-    name: "Գոհար",
-    comentText: "Լավ էլ երկար գործ էր, լրիվ 300,000 դրամանոց",
-    img1: "./imges/Gallery/img_2.jpg",
-    img2: "./imges/Gallery/img_3.jpg",
-    img3: "./imges/Gallery/img_4.jpg"
-  },
-   {
-    name: "Գոհար",
-    comentText: "Լավ էլ երկար գործ էր, լրիվ 300,000 դրամանոց",
-   
-  },
-   {
-    name: "Գոհար",
-    comentText: "Լավ էլ երկար գործ էր, լրիվ 300,000 դրամանոց",
-   
-  },
-   {
-    name: "Գոհար",
-    comentText: "Լավ էլ երկար գործ էր, լրիվ 300,000 դրամանոց",
-    img1: "./imges/Gallery/img_2.jpg",
-    img2: "./imges/Gallery/img_3.jpg",
-    img3: "./imges/Gallery/img_4.jpg"
-  },
+    name: "Լիլիա",
+    commentText: "Երբեք չէի լսել Տաթևի մասին մինչև այս կայքը։ Հիմա ուզում եմ անպայման այցելել։ Ուրախ եմ, որ կան նման հարթակներ։",
+    img1: "./imges/comments/lilia_img.jpg",
+    img2: "./imges/comments/lilia_img2.jpg",
+    img3: "./imges/comments/lilia_img3.jpg"
+  }
   ]
 
- const reviewsContainer = document.querySelector('.reviews_content');
-reviewsContainer.innerHTML = ''; 
+//  const reviewsContainer = document.querySelector('.reviews_content');
+// reviewsContainer.innerHTML = ''; 
+
+// reviewsContent.forEach(el => {
+//   const personDiv = document.createElement('div');
+//   personDiv.classList.add('person_1');
+//   personDiv.innerHTML = `
+//     <div class="coments">
+//       <h4 class="name">${el.name}</h4>
+//       <p>${el.comentText}</p>
+//     </div>
+//     <div class="photos">
+//       <div class="img1"><img src="${el.img1}" alt="${el.name} photo 1"></div>
+//       <div class="img2"><img src="${el.img2}" alt="${el.name} photo 2"></div>
+//       <div class="img3"><img src="${el.img3}" alt="${el.name} photo 3"></div>
+//     </div>
+//   `;
+//   reviewsContainer.appendChild(personDiv);
+// });
+
+const reviewsContainer = document.querySelector('.reviews_content');
+reviewsContainer.innerHTML = '';
 
 reviewsContent.forEach(el => {
   const personDiv = document.createElement('div');
   personDiv.classList.add('person_1');
-  personDiv.innerHTML = `
-    <div class="coments">
-      <h4 class="name">${el.name}</h4>
-      <p>${el.comentText}</p>
-    </div>
-    <div class="photos">
-      <div class="img1"><img src="${el.img1}" alt="${el.name} photo 1"></div>
-      <div class="img2"><img src="${el.img2}" alt="${el.name} photo 2"></div>
-      <div class="img3"><img src="${el.img3}" alt="${el.name} photo 3"></div>
-    </div>
+
+  // Հաշվել նկարների քանակը
+  let imageCount = 0;
+  if (el.img1) imageCount++;
+  if (el.img2) imageCount++;
+  if (el.img3) imageCount++;
+
+  // Ստեղծել քոմենտի դիվը
+  const commentDiv = document.createElement('div');
+  commentDiv.classList.add('comments');
+
+  // Լայնության class ավելացնել՝ ըստ նկարների քանակի
+  if (imageCount === 0) {
+    commentDiv.classList.add('none');
+  } else if (imageCount === 1) {
+    commentDiv.classList.add('one');
+  } else if (imageCount === 2) {
+    commentDiv.classList.add('two');
+  } else {
+    commentDiv.classList.add('three');
+  }
+
+  commentDiv.innerHTML = `
+    <h4 class="name">${el.name}</h4>
+    <p>${el.commentText}</p>
   `;
+
+  personDiv.appendChild(commentDiv);
+
+  // Ստեղծել նկարների դիվը, եթե առնվազն մեկը կա
+  if (imageCount > 0) {
+    const photosDiv = document.createElement('div');
+    photosDiv.classList.add('photos');
+
+    if (el.img1) {
+      photosDiv.innerHTML += `<div class="img1"><img src="${el.img1}" alt="${el.name} photo 1"></div>`;
+    }
+    if (el.img2) {
+      photosDiv.innerHTML += `<div class="img2"><img src="${el.img2}" alt="${el.name} photo 2"></div>`;
+    }
+    if (el.img3) {
+      photosDiv.innerHTML += `<div class="img3"><img src="${el.img3}" alt="${el.name} photo 3"></div>`;
+    }
+
+    personDiv.appendChild(photosDiv);
+  }
+
   reviewsContainer.appendChild(personDiv);
 });
