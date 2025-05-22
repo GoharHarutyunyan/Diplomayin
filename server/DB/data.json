@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "email": "aa@mail.ru",
+      "name": "aa",
+      "lastname": "bb",
+      "registrationDate": "22.05.2025",
+      "password": "11"
+    }
+  ],
+  "currentUser": {
+    "email": "aa@mail.ru",
+    "name": "aa",
+    "lastname": "bb",
+    "registrationDate": "22.05.2025",
+    "password": "11"
+  }
+}
