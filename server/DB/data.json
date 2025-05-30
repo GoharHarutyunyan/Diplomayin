@@ -6,13 +6,20 @@
       "lastname": "bb",
       "registrationDate": "22.05.2025",
       "password": "11"
+    },
+    {
+      "email": "gohar.harutyunyannn@gmail.com",
+      "name": "Gohar",
+      "lastname": "Harutyunyan",
+      "registrationDate": "5/22/2025",
+      "password": "dg5sg200a5"
     }
   ],
   "currentUser": {
-    "email": "aa@mail.ru",
-    "name": "aa",
-    "lastname": "bb",
-    "registrationDate": "22.05.2025",
-    "password": "11"
+    "email": "gohar.harutyunyannn@gmail.com",
+    "name": "Gohar",
+    "lastname": "Harutyunyan",
+    "registrationDate": "5/22/2025",
+    "password": "dg5sg200a5"
   }
 }

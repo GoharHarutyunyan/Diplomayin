@@ -19,6 +19,7 @@
 
 a{
     text-decoration: none;
+    color: var(--black);
 }
 
 html,
@@ -47,6 +48,8 @@ body{
     border: 2px solid var(--white);
     border-radius: 20px;
     cursor: pointer;
+    font-family: Usual;
+    font-size: 16px;
 }
 .gray_btn:hover{
     background-color: var(--white);
@@ -60,6 +63,8 @@ body{
     border: 2px solid var(--white);
     border-radius: 20px;
     cursor: pointer;
+    font-family: Usual;
+    font-size: 16px;
 }
 .white_btn:hover{
     background-color: #ffffff00;
@@ -67,17 +72,22 @@ body{
     transition: .2s;
 }
 .orange_btn{
-    background-color: var(--orange);
+    width: 120px;
+    height: 40px;
+    border: none;
     color: var(--white);
-    padding: 20px 45px;
-    border: 2px solid var(--orange);
-    border-radius: 8px;
+    background-color: var(--orange);
+    border-radius: 10px;
+    font-family: Usual;
     font-size: 16px;
     cursor: pointer;
+    
 }
 .orange_btn:hover{
-    background-color: #00000000;
+        /* background: linear-gradient(270deg,#5f8f83f7,#c7923edd); */
+    background-color: var(--white);
     color: var(--orange);
+    border: 2px solid var(--orange);
     transition: .2s;
 }
 .all_main_title{
@@ -211,6 +221,7 @@ header{
  }
 
 
+
  /* ..............................footer............................ */
 
 
@@ -218,11 +229,11 @@ header{
     background-color: var(--green);
     color: var(--white);
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     gap: 40px;
-    padding: 76px 104px 40px 104px;
-    margin: 100px 0 0 0;
+    padding: 50px 104px 40px 104px;
+    margin-top: 50px;
   }
   .footer_left{
     width: 50%;
@@ -233,12 +244,12 @@ header{
     font-weight: 100;
     margin: 0 0 50px 0;
   }
+   .footer_left .contacts{
+    margin: 0 0 20px;
+   }
 
-  .footer_left>.connect{
-    margin: 20px 0;
-  }
 
-  .footer_enter_mail{
+  /* .footer_enter_mail{
     line-height: 40px;
     width: 300px;
     padding: 0 10px;
@@ -268,7 +279,7 @@ header{
   .footer_send:hover{
     background-color: var(--white);
     color: var(--orange);
-  }
+  } */
 
   .footer_right{
     width: 50%;
@@ -304,6 +315,104 @@ header{
     transition: .2s;
   }
 
+  /* ///////////////////REGISTRATION///////////////////////////////////////// */
+  
+  .register_page{
+    /* background: linear-gradient(180deg,#14463a,#18362fb6); */
+        background-image: url(./imges/login_bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+  }
+   .register_page>.blur{
+    background-color: #101715c1;
+    width: 100%;
+    height: 100%;
+   }
+  .register_container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+  }
+  .register_content{
+    background-color: #ffffff67;
+    border: 5px solid var(--white);
+    /* border-radius: 25px; */
+    padding: 100px ;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 10px var(--white);
+  }
+  .register_content .circle{
+    position: absolute;
+    background-color: var(--green);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self:center;
+    box-shadow: 0 0 10px var(--black);
+  }
+  .register_content .circle>.fa-user{
+    font-size: 80px;
+    color: var(--white);
+    
+  }
+  .register_content input{
+    width: 300px;
+    /* border-radius: 8px; */
+    padding: 0 0 0 10px;
+    line-height: 50px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+  }
+  .register_content input::placeholder{
+    font-family: Usual;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .register_content .radio_box{
+    color: var(--black);
+    background-color: #fff;
+    color: #555;
+    /* border-radius: 8px; */
+    border: none;
+    outline: none;
+    text-align: start;
+    padding: 10px;
+    line-height: 25px;
+    font-size: 14px;
+  }
+
+   .register_content .custom-radio>input{
+    width: auto;
+  }
+
+  .register_content button{
+    width: 300px;
+    /* border-radius: 5px; */
+    padding: 0 0 0 10px;
+    line-height: 40px;
+    border: none;
+    margin: 30px 0 0 0;
+    color: var(--white);
+    background-color: var(--green);
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: Usual;
+  }
 
 
 
@@ -355,11 +464,11 @@ header{
 
  /* .............. conditions.......................... */
 
- .conditions{
+ .conditions_container{
     height: 114px;
-    width: 1377px;
+    width: 100%;
     background-color: var(--green);
-    margin: 30px auto ;
+    margin: 30px  auto;
     border-radius: 8px;
     
  }
@@ -367,14 +476,14 @@ header{
  .cond_body{
     display: flex;
     align-items: center;
-    padding: 21px 144px;
+    padding: 21px 50px;
+    justify-content: center;
     
  }
 
 .cond_body>.search{
     background-color: #fff;
-    height: 68px;
-    width: 436px;
+    padding: 10px 20px;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -404,6 +513,10 @@ header{
     color: var(--white);
     margin: 9px 0 0 0 ;
  }
+  .cond_body>button{
+    width: 150px;
+    height: 50px;
+  }
 
 /* ............about................................................................. */
 
@@ -730,6 +843,20 @@ header{
     background-size: cover;
 }
 
+.map_sights_map_txt>button {
+    width: 180px;
+    margin: 20px 0 0 0;
+    float: right;
+    border-radius: 0;
+}
+.map_sights_map_txt>button .province-link{
+    color: var(--white);
+}
+.map_sights_map_txt>button:hover .province-link{
+    color: var(--orange);
+}
+
+
 /* .......................review........................................................... */
 
 .reviews_content{
@@ -742,6 +869,7 @@ header{
     overflow-y: auto;
     gap: 30px;
     scroll-behavior: smooth;
+    margin: 0 0 50px 0;
 }
 
 .reviews_content::-webkit-scrollbar {
@@ -1044,6 +1172,15 @@ header{
         font-weight: 100;
         margin: 0 0 10px 0;
     }
+
+    .timeline .content .nax_link{
+        color: var(--black);
+    }
+
+    .timeline .content:hover .nax_link{
+        color:  var(--white);
+    }
+
     @media screen and (max-width: 768px) {
       .timeline::after {
         left: 31px;
@@ -1139,36 +1276,29 @@ header{
 
 .about_provinces_container{
     display: flex;
-    align-items: self-start;
+    align-items: center;
     justify-content: center;
 }
 
-.about_provinces_content{
-    max-width: 600px;
+.about_provinces_content{   
+    padding: 0 200px;
+    text-align: center;
 }
 
 .about_provinces_content>h2{
     font-size: 40px;
     color: var(--orange);
-    margin: 0 0 30px 0;
+
     font-family: Handwriting;
     font-weight: 100;
+    margin: 0 0 20px 0;
 }
 
-.about_provinces_img .map_area{
-    transform: scale(3.5); 
-    transform-origin: top left;
-} 
-
-.about_provinces_img .interactive-map{
-    width: 500px;
-    height: auto;
-}
 .about_provinces_content_info{
     margin: 50px 0 0 0;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     gap: 50px;
     text-align: center;
 }
@@ -1304,17 +1434,29 @@ header{
     padding: 10px;
 }
 
-.provinces_sights_cards_opacity>a{
+.add_to_basket{
     padding: 4px 12px;
     border-radius: 50%;
     background-color: var(--white);
     font-size: 24px;
     float: right;
 }
-.provinces_sights_cards_opacity>a:hover{
+.add_to_basket:hover{
     background-color: var(--orange);
     color: var(--white);
     transition: .2s;
+}
+.add_to_basket:hover::after{
+    content: 'Ավելացնել իմ էջ';
+    height: auto;
+    width: auto;
+    padding: 10px 30px;
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    background-color: #333333a1;
+    font-size: 16px;
+    border-radius: 10px 0 10px 10px ;
 }
 
 .provinces_sights_card_content{
@@ -1339,112 +1481,318 @@ header{
     text-align: center;
   }
   
-  .provinces_food_container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 0 20px;
-  }
-  
-  /* Carousel container */
-  .carousel {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  /* Hide radio inputs */
-  .carousel input[type="radio"] {
-    display: none;
-  }
-  
-  /* Slide track viewport */
-  .carousel__viewport {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  /* Slide track */
-  .carousel__slides {
+  .provinces_food_content{
     display: flex;
-    transition: transform 0.5s ease;
-    width: 300%; /* 3 slides */
-  }
-  
-  /* Each slide */
-  .carousel__slide {
-    flex: 0 0 100%;
-    max-width: 100%;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    overflow: hidden;
-  }
-  
-  /* Image wrapper */
-  .img-wrapper {
-    max-width: 1000px;
-    height: 400px;
-    overflow: hidden;
-    background-color: #eee;
-  }
-  
-  .img-wrapper>img {
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    overflow-x: auto;
+    flex-wrap: nowrap; 
+  }
 
+   .provinces_food_content::-webkit-scrollbar{
+        height: 10px;
+   }
+   .provinces_food_content::-webkit-scrollbar-thumb {
+        background-color: #304F47;
+        border-radius: 10px;
+    }
+   .provinces_food_content::-webkit-scrollbar-track{
+        background-color: #ffffff;
+        border-radius: 10px;
+   }
+  .provinces_food_content .food-card{
+    text-align: start;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 0 30px 0;
+    max-width: 300px;
+    flex: 0 0 auto;
   }
-  
-  /* Caption */
-  .caption {
-    padding: 15px;
-    text-align: left;
+  .provinces_food_content .food-card>.food_img>img{
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
   }
-  
-  .caption h3 {
-    font-size: 1.4em;
-    margin: 0 0 8px;
-    color: #333;
+  .provinces_food_content .food-card>h1{
+   color: var(--orange);
+   text-transform: capitalize;
+   padding: 10px 0;
   }
-  
-  .caption p {
-    font-size: 1em;
-    color: #666;
-    margin: 0;
-  }
-  
-  /* Thumbnails */
-  .carousel__thumbnails {
+.provinces_food_content .food-card>button{
+    font-size: 14px;
+    width: 150px;
+    padding: 10px ;
+    border-radius: 0;
+    margin: 20px 0;
+}
+
+/* .................hotels..................................... */
+.hotels-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 40px 20px;
+  scroll-snap-type: x mandatory;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hotels-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.hotels-slide {
+  flex: 0 0 80px;
+  height: 400px;
+  border-radius: 40px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  scroll-snap-align: start;
+  position: relative;
+  cursor: pointer;
+}
+
+.hotels-slide  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.hotels-slide_info{
+   position: absolute;
+  bottom: 0px;
+  left: 00px;
+  gap: 20px;
+  z-index: 2;
+  height: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px 20px;
+  background-color: #232323a4;
+}
+.hotels-slide_info>a{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.hotels-slide_info>a:hover::after{
+    content: '';
+    display: none;
+}
+.hotels-slide_info_content{
+    flex-direction: column;
+    display: none;
+}
+.hotels-slide_info_content>a{
+  color:#fff ;
+  font-size: 18px;
+
+}
+.hotels-slide_info_content>a:hover{
+    font-weight: 600;
+    color: var(--orange);
+
+}
+.hotels-slide_info_content>h2{
+  color:#fff ;
+  font-size: 18px;
+  margin: 0 0 8px 0 ;
+}
+
+.hotels-slide.active {
+  flex: 0 0 350px;
+}
+.hotels-slide.active .hotels-slide_info_content {
+  display: flex;
+ 
+}
+
+/* ..............transportation.................................. */
+    .provinces_transport_content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .provinces_transport_content .map>iframe{
+        width: 400px;;
+        height:400px; 
+        border: none; 
+       
+    }
+    .provinces_transport_content .pt_text{
+        width: 600px;    
+        height: auto;
+        padding: 30px 50px;
+        font-size: 20px;
+    }
+    .provinces_transport_content .pt_text>h4{
+        color: var(--orange);
+        font-family: Handwriting;
+        font-size: 28px;
+        margin: 20px 0;
+        font-weight: 100;
+    }
+    .provinces_transport_content .pt_text>.route{
+        padding: 30px 20px;
+        background-color: var(--green);
+        color: var(--white);
+
+    }
+
+    /* ...........................culture................................ */
+    /* CARUSEL */
+
+    .swiper-wrapper{
+        padding: 50px 0 100px 0;
+    }
+  .swiper-slide {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
-    gap: 10px;
+    padding: 0 0 0 50px ;
   }
-  
-  .carousel__thumbnails img {
-    width: 60px;
-    height: 60px;
+
+  .event-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.445);
+    overflow: hidden;
+    width: 320px;
+  }
+
+  .event-card img {
+    width: 100%;
+    height: 200px;
     object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+  }
+
+  .event-details {
+    padding: 1rem;
+    font-family: Usual;
+  }
+
+  .event-card .tag {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 15px;
+    top: 180px;
+    
+  }
+  .event-card .tag>span{
+    background-color: var(--orange);
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: 100;
+    text-transform: capitalize;
     border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s;
+    margin:  0 20px 0 0 ;
+
   }
-  
-  .carousel__thumbnails img:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Slide control logic */
-  #slide1:checked ~ .carousel__viewport .carousel__slides {
-    transform: translateX(0%);
-  }
-  #slide2:checked ~ .carousel__viewport .carousel__slides {
-    transform: translateX(-100%);
-  }
-  #slide3:checked ~ .carousel__viewport .carousel__slides {
-    transform: translateX(-200%);
-  }
-  
+ .event-card .tag>a:hover::after{
+    content: 'Ավելացնել իմ էջ';
+    height: auto;
+    width: auto;
+    padding: 10px 30px;
+    position: absolute;
+    top: 25px;
+    right: -170px;
+    border-radius: 0 10px 10px 10px ;
+}
+
+
+.mySwiper .swiper-pagination-bullet {
+  width: 18px !important;
+  height: 18px !important;
+  background-color: #ccc !important;
+  opacity: 1 !important;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: var(--orange) !important;
+  transform: scale(1.2) !important;
+}
+/* ..................facts......................................... */
+
+.provinces_facts_content {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0 0 50px 0;
+}
+.facts-img{
+     width: 300px;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 0 0 15px var(--black);
+    border-radius: 5px;
+    cursor: crosshair;
+}
+.facts-img>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.facts-img:hover img{
+    transform: scale(1.15);
+    transition: .5s;
+} 
+.image-grid .tall {
+  grid-column: span 2;
+  height: 310px;
+  width: 310px;
+  object-fit: cover;
+}
+
+.image-grid img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
+  max-width: 600px;
+}
+
+.fact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.fact-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #35594d;
+  flex-shrink: 0;
+}
+
+.fact-text {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
 
   /* ///////////////////////////////GALERY//////////////////////////////////////////////////////////////////// */
 
@@ -1613,25 +1961,6 @@ header{
 .contact_connect_us .contact_inputs:focus,
 .contact_message:focus{
      border-bottom: 2px solid var(--orange);
-}
-.contact_connect_us>button{
-    width: 120px;
-    height: 40px;
-    border: none;
-    color: var(--white);
-    background-color: var(--orange);
-    border-radius: 10px;
-    font-family: Usual;
-    font-size: 16px;
-    cursor: pointer;
-
-}
-.contact_connect_us>button:hover{
-    /* background: linear-gradient(270deg,#5f8f83f7,#c7923edd); */
-    background-color: var(--white);
-    color: var(--orange);
-    border: 2px solid var(--orange);
-    transition: .2s;
 }
 
 /* ․․․․․․․․․․․․․․․․․․popup․․․․․․․․․․․․․․․․․ */

@@ -20,5 +20,4 @@ registerForm.addEventListener("submit", async (e) => {
   
   alert(result.message)
 
- 
 });

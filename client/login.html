@@ -6,26 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 </head>
 <body>
-    
-    <h1>Մուտք</h1>
-    <form action="/register" method="post" id="loginForm">
+    <section class="register_page">
+        <div class="blur">
+            <div class="register_container">
+            <div class="register_content">
+                <div class="circle"><i class="fa-regular fa-user"></i></div>
+                <form action="/register" method="post" id="loginForm">   
+                    <p>
+                        <input type="email" name="email" placeholder="Էլ․ հասցե՝" required>
+                    </p>
+                <br>
+                    <p>
+                        <input type="password" name="password" placeholder="Գաղտնաբառ" required>
+                    </p>
 
-    
-        <p>
-
-            <input type="email" name="email" placeholder="email" required>
-        </p>
-    <br>
-        <p>
-
-            <input type="password" name="password" placeholder="password" required>
-        </p>
-
-        <button>մուտք</button>
-    </form>
-
+                    <button>մուտք</button>
+                </form>
+            </div>
+            </div>
+        </div>
+        
+    </section>    
 
     <script src="/login.js"></script>
 </body>

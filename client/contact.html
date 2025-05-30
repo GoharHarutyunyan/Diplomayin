@@ -43,9 +43,9 @@
                     </ul>
                 </nav>
             </div>
-            <div class="header_login">
-                <button class="login gray_btn">Մուտք</button>
-                <button class="signin white_btn">Գրանցում</button>
+             <div class="header_login">
+                <a class="login_link" href="./login.html"><button class="login gray_btn">Մուտք</button></a>
+                <a class="signin_link" href="./register.html"><button class="signin white_btn">Գրանցում</button></a>
             </div>
         </div>
     </header>
@@ -92,16 +92,10 @@
                             <option value="Դիտողություն">Դիտողություն</option>
                         </select>
                         <textarea placeholder="Հաղորդագրություն" name="Հաղորդագրություն" required class="contact_message" id="" ></textarea>
-                        <button type="submit">Ուղարկել</button>
-                    </form>
-                   
-                </div>
-                
-                
-
+                        <button type="submit" class="orange_btn">Ուղարկել</button>
+                    </form> 
                 </div>
             </div>
-
         </section>
 
         <div id="messagePopup" class="contact_popup">
@@ -120,14 +114,14 @@
                     <h4>Օգնությու՞ն է պետք։ <br> Պարզապես դիմեք մեզ։</h4>
                     <p class="contacts">
                         Հեռախոս՝ +374 788 123 456 <br>
-                        Էլ․ հասցե՝ explore_armenia@gmail.com<br>
+                        Էլ․ հասցե՝ explore_armenia@gmail.com <br>
                         Հասցե՝ Արմավիր, Հայաստան
                     </p>
-                    <p class="connect">Միացե՛ք մեր արկածային ընտանիքին։ Ստացե՛ք ոգեշնչող վայրեր, ուղեցույցներ և հատուկ առաջարկներ՝ ուղղակի Ձեր էլ․ փոստում։</p>
-                    <form>
+                    <p class="connect">Միացի՛ր մեր արկածային ընտանիքին։ Բացահայտի՛ր նոր վայրեր, խորհուրդներ ու բացառիկ ուղղություններ՝ ուղղակի այս կայքում։</p>
+                    <!-- <form>
                         <input class="footer_enter_mail" type="search" placeholder="Մուտքագրեք Ձեր էլ․ հասցեն այստեղ" id="">
                         <button class="footer_send" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
-                    </form>
+                    </form> -->
                 </div>
                 <div class="footer_right">
                     <div class="info_platforms">
@@ -141,11 +135,11 @@
                     </p>
                     <div class="navigation">
                         <div class="nav_bar">
-                            <a href="./index.html" >Գլխավոր</a>
-                            <a href="./aboutarm.html">Հայաստանի Մասին</a>
-                            <a href="./provinces.html">Մարզեր</a>
-                            <a href="./gallery.html">Պատկերասրահ</a>
-                            <a href="./contact.html">Կապ</a>
+                            <a href="/" class="menu_link">Գլխավոր</a>
+                            <a href="/hayastan" class="menu_link">Հայաստանի մասին</a>
+                            <a href="/marzer" class="menu_link">Մարզեր</a> 
+                            <a href="/patkerasrah" class="menu_link">Պատկերասրահ</a> 
+                            <a href="/contact" class="menu_link">Կապ</a> 
                         </div>
 
                         <div class="nav_arm_map">
