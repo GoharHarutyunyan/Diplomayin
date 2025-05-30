@@ -114,6 +114,7 @@ app.post("/register", async (req, res) => {
         lastname,
         registrationDate,
         password,
+        favorite: []
       });
       await fs.writeFile(dbPath, JSON.stringify(db, null, 2));
       res.json({ success: true, message: "Գրանցումը հաջողությամբ կատարվեց" });
@@ -181,7 +182,6 @@ app.get("/currentuser", async (req, res) => {
     const db = JSON.parse(fileData);
 
     const currentUser = db.currentUser;
-    console.log("currentUserId:", currentUser);
 
     if (!currentUser) {
       return res.status(404).json({ message: "Մուտք գործած օգտատեր չկա" });
