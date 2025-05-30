@@ -1563,7 +1563,7 @@ syunik: {
     "description": "Բնության պահպանվող տարածք՝ հարուստ կենսաբազմազանությամբ և եզակի բուսական ու կենդանական աշխարհով։"
   },
   {
-    "imgUrl": "./images/Syunik/attractions/bgheno_noravank.jpg",
+    "imgUrl": "./imges/Syunik/attractions/bgheno_noravank.jpg",
     "title": "Բղենո Նորավանք",
     "description": "10-11-րդ դարերի վանական համալիր՝ տեղակայված անտառապատ կիրճում։"
   },
@@ -2047,7 +2047,18 @@ marzData.facts.forEach(fact => {
   document.body.innerHTML = "<p>Նշված մարզը չի գտնվել։</p>";
 }
 
+//navigation...................................
 
+  const urlParams = new URLSearchParams(window.location.search);
+  const selectedMarz = urlParams.get('marz');
 
+  const provItems = document.querySelectorAll('.prov_list');
 
-
+  provItems.forEach(item => {
+    const link = item.querySelector('a');
+    if (link.href.includes(`marz=${selectedMarz}`)) {
+      item.classList.add('active');
+    } else {
+      item.classList.remove('active'); 
+    }
+  });

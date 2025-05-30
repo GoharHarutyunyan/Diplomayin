@@ -13,13 +13,18 @@
       "lastname": "Harutyunyan",
       "registrationDate": "5/22/2025",
       "password": "dg5sg200a5"
+    },
+    {
+      "email": "gohar6f54@gmail.com",
+      "name": "Gohar ",
+      "registrationDate": "5/30/2025",
+      "password": "hey123"
     }
   ],
   "currentUser": {
-    "email": "gohar.harutyunyannn@gmail.com",
-    "name": "Gohar",
-    "lastname": "Harutyunyan",
-    "registrationDate": "5/22/2025",
-    "password": "dg5sg200a5"
+    "email": "gohar6f54@gmail.com",
+    "name": "Gohar ",
+    "registrationDate": "5/30/2025",
+    "password": "hey123"
   }
 }

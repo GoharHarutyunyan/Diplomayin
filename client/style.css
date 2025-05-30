@@ -414,7 +414,21 @@ header{
     font-family: Usual;
   }
 
+  .link_to_register{
+    margin: 20px 0 0 0;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+  }
+   .link_to_register>a{
+    color: var(--white);
+   }
+   .link_to_register>a:hover{
+    color: #a7551e;
+
+   }
 
  /* //////////////////////HOME////////////////////////////////////////////////////   */
 
@@ -1208,6 +1222,7 @@ header{
 
 /* .................provinces intro......................................... */
 
+
 .provinces_intro{
     text-align: center;
     margin: 50px 0 100px 0;
@@ -1233,7 +1248,8 @@ header{
 .prov_navbar{
     position: sticky;
     top: 0;
-    left: 0;
+    z-index: 1000;
+    background-color: white;
 }
 
 .prov_menu{
@@ -1257,6 +1273,13 @@ header{
 .prov_menu .prov_list:hover{
     background-color: var(--green);
     transition: .5s;
+}
+
+.prov_menu .active{
+    background-color: var(--green);
+}
+.prov_menu .active .prov_link{
+    color: var(--white);
 }
 
 .prov_menu .prov_link{
@@ -1366,6 +1389,18 @@ header{
 
 .services_cards .services_card>p{
     font-size: 14px;
+}
+
+.sticky_services{
+
+    position: sticky;
+    top: 50px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px   ;
 }
 
 /* ...............provinces sights.................................... */
