@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const currentPath = window.location.pathname; // օրինակ՝ /hayastan
+    const currentPath = window.location.pathname; // օրինակ՝ /armenia
     const menuLinks = document.querySelectorAll(".menu_link");
 
     menuLinks.forEach(link => {

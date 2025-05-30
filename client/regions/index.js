@@ -17,52 +17,52 @@ const data = {
     ],
     sightsCardData: [
        {
-    "imgUrl": "./imges/yerevan/atractions/republic_square.jpg",
+    "imgUrl": "/assets/images/yerevan/atractions/republic_square.jpg",
     "title": "Հանրապետության հրապարակ",
     "description": "Երևանի կենտրոնական հրապարակը՝ շրջապատված կառավարության, նախարարությունների շենքերով և Ազգային Պատկերասրահով։ Երեկոյան ժամերին այստեղ գործում են երգող շատրվաններ։"
   },
   {
-    "imgUrl": "./imges/yerevan/atractions/cascade.jpg",
+    "imgUrl": "/assets/images/yerevan/atractions/cascade.jpg",
     "title": "Կասկադ համալիր",
     "description": "Հսկայական սանդղավանդակ՝ զարդարված ժամանակակից քանդակներով և արվեստի գործերով, որը կապում է քաղաքի կենտրոնը վերին թաղամասերի հետ։"
   },
   {
-    "imgUrl": "./imges/yerevan/atractions/matenadaran.jpg",
+    "imgUrl": "/assets/images/yerevan/atractions/matenadaran.jpg",
     "title": "Մատենադարան",
     "description": "Մեսրոպ Մաշտոցի անվան հին ձեռագրերի ինստիտուտ և թանգարան, որտեղ պահվում են հազարավոր միջնադարյան ձեռագրեր։"
   },
   {
-    "imgUrl": "./imges/yerevan/atractions/opera.jpg",
+    "imgUrl": "/assets/images/yerevan/atractions/opera.jpg",
     "title": "Օպերայի և բալետի թատրոն",
     "description": "Ալեքսանդր Սպենդիարյանի անվան ազգային ակադեմիական թատրոն՝ հայկական մշակույթի կենտրոններից մեկը։"
   },
   {
-    "imgUrl": "./imges/yerevan/atractions/genocide_memorial.jpg",
+    "imgUrl": "/assets/images/yerevan/atractions/genocide_memorial.jpg",
     "title": "Ծիծեռնակաբերդ",
     "description": "Հայոց ցեղասպանության զոհերի հիշատակին նվիրված հուշահամալիր և թանգարան։"
   },
   {
-    "imgUrl": "./imges/yerevan/atractions/northern_avenue.jpg",
+    "imgUrl": "/assets/images/yerevan/atractions/northern_avenue.jpg",
     "title": "Հյուսիսային պողոտա",
     "description": "Ժամանակակից պողոտա՝ լի առևտրային կենտրոններով, սրճարաններով և ռեստորաններով։"
   },
   {
-    "imgUrl": "./imges/yerevan/atractions/vernissage.jpg",
+    "imgUrl": "/assets/images/yerevan/atractions/vernissage.jpg",
     "title": "Վերնիսաժ",
     "description": "Բացօթյա շուկա, որտեղ կարելի է գտնել հայկական հուշանվերներ, արվեստի գործեր և ձեռագործ իրեր։"
   },
   {
-    "imgUrl": "./imges/yerevan/atractions/skyball.jpg",
+    "imgUrl": "/assets/images/yerevan/atractions/skyball.jpg",
     "title": "SkyBall",
     "description": "Աերոստատով թռիչքներ՝ առաջարկող յուրահատուկ փորձառություն քաղաքի վերևից։"
   },
     {
-    "imgUrl": "./imges/yerevan/atractions/cafe_central.jpg",
+    "imgUrl": "/assets/images/yerevan/atractions/cafe_central.jpg",
     "title": "Café Central",
     "description": "Երևանի կենտրոնում գտնվող սրճարան՝ առաջարկող եվրոպական և հայկական խոհանոց։"
   },
   {
-    "imgUrl": "./imges/yerevan/atractions/green_bean.jpg",
+    "imgUrl": "/assets/images/yerevan/atractions/green_bean.jpg",
     "title": "The Green Bean",
     "description": "Էկոլոգիապես մաքուր սրճարան՝ առաջարկող օրգանական սուրճ և բուսական ուտեստներ։"
   },
@@ -70,59 +70,59 @@ const data = {
     ],
     foodData: [
       {
-    "img": "./imges/yerevan/food/khorovats.jpg",
+    "img": "/assets/images/yerevan/food/khorovats.jpg",
     "name": "Խորոված",
     "ingredients": "Խոզի կամ գառան միս, սոխ, աղ, պղպեղ, փայտածուխով գրիլ"
   },
   {
-    "img": "./imges/yerevan/food/tolma.jpg",
+    "img": "/assets/images/yerevan/food/tolma.jpg",
     "name": "Տոլմա",
     "ingredients": "Խորհուրդ է տրվում խաղողի տերևով կամ կաղամբով, լցոնված աղացած մսով, բրնձով, սոխով և համեմունքներով"
   },
   {
-    "img": "./imges/yerevan/food/harissa.jpg",
+    "img": "/assets/images/yerevan/food/harissa.jpg",
     "name": "Հարիսա",
     "ingredients": "Ձավար, հավի կամ գառան միս, կարագ, աղ"
   },
   {
-    "img": "./imges/yerevan/food/khash.jpg",
+    "img": "/assets/images/yerevan/food/khash.jpg",
     "name": "Խաշ",
     "ingredients": "տավարի ոսկորներ (հատկապես ոտքի մաս), ջուր, աղ, սխտոր, լավաշ"
   },
   {
-    "img": "./imges/yerevan/food/zhingyalov_hac.jpg",
+    "img": "/assets/images/yerevan/food/zhingyalov_hac.jpg",
     "name": "Ժինգյալով հաց",
     "ingredients": "Բարակ հաց՝ լցոնված ատամելի վայրի կանաչիներով (մոտ 10-20 տեսակ)"
   },
   {
-    "img": "./imges/yerevan/food/basturma.jpg",
+    "img": "/assets/images/yerevan/food/basturma.jpg",
     "name": "Բաստուրմա",
     "ingredients": "Չորացրած տավարի միս, չաման, պղպեղ, սխտոր, աղ"
   }
     ],
     hotelsData: [
       {
-    img: "./imges/yerevan/hotels/aram.jpg",
+    img: "/assets/images/yerevan/hotels/aram.jpg",
     title: "Aram Street Apartment",
     link: "https://www.booking.com/hotel/am/aram-street-apartment-yerevan.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747953439&srpvid=15859f04f5f90062&type=total&ucfs=1&"
   },
    {
-    img: "./imges/yerevan/hotels/sphera.jpg",
+    img: "/assets/images/yerevan/hotels/sphera.jpg",
     title: "Sphera by Stellar Hotels",
     link: "https://www.booking.com/hotel/am/sphera-by-stellar-hotels-yerevan.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325645&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=12&hpos=12&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747953557&srpvid=ce399f4253de006d&type=total&ucfs=1&"
   },
    {
-    img: "./imges/yerevan/hotels/boulevard.jpg",
+    img: "/assets/images/yerevan/hotels/boulevard.jpg",
     title: "Boulevard Hotel",
     link: "https://www.booking.com/hotel/am/boulevard.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dist=0&group_adults=2&group_children=0&hapos=11&hpos=11&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747953632&srpvid=15859f04f5f90062&type=total&ucfs=1&"
   },
    {
-    img: "./imges/yerevan/hotels/avenu.jpg",
+    img: "/assets/images/yerevan/hotels/avenu.jpg",
     title: "Avenue ApartHotel",
     link: "https://www.booking.com/hotel/am/avenue-10.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dist=0&group_adults=2&group_children=0&hapos=14&hpos=14&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747953701&srpvid=15859f04f5f90062&type=total&ucfs=1&"
   },
    {
-    img: "./imges/yerevan/hotels/comfort.jpg",
+    img: "/assets/images/yerevan/hotels/comfort.jpg",
     title: "Comfort Hotel",
     link: "https://www.booking.com/hotel/am/comfort.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dist=0&group_adults=2&group_children=0&hapos=20&hpos=20&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747953755&srpvid=15859f04f5f90062&type=total&ucfs=1&"
   },
@@ -141,35 +141,35 @@ const data = {
   description: "Ամենամյա փառատոն, որը ներկայացնում է ժամանակակից արվեստը, երաժշտությունը, թատրոնը և մշակութային միջոցառումները՝ անցկացվում է ամռան վերջին ամիսներին։",
   location: "Երևան, քաղաքային հրապարակներ և թատրոններ",
   time: "Հուլիս-Օգոստոս",
-  imgSrc: "./imges/yerevan/culture/yerevan_city_festival.jpg"
+  imgSrc: "/assets/images/yerevan/culture/yerevan_city_festival.jpg"
 },
 {
   title: "Երևանյան գինու փառատոն",
   description: "Տարածաշրջանի գինեգործության խոշորագույն փառատոն, որտեղ ներկայացվում են հայկական գինիներ, մասնավորապես ավանդական և նորարարական տեսականի։",
   location: "Երևան, Հանրապետության հրապարակ",
   time: "Հոկտեմբեր",
-  imgSrc: "./imges/yerevan/culture/yerevan_wine_festival.jpg"
+  imgSrc: "/assets/images/yerevan/culture/yerevan_wine_festival.jpg"
 },
 {
   title: "Երևանյան գրքի տոն",
   description: "Ամենամյա գրական տոն, որի ընթացքում անցկացվում են գրողների հանդիպումներ, գրքերի շնորհանդեսներ և գրական քննարկումներ։ Հիմնական նպատակն է խրախուսել ընթերցանությունը և աջակցել հայ հեղինակներին։",
   location: "Երևան, Հայաստանի ազգային գրադարան և գրախանութներ",
   time: "Սեպտեմբեր",
-  imgSrc: "./imges/yerevan/culture/yerevan_book_fair.jpeg"
+  imgSrc: "/assets/images/yerevan/culture/yerevan_book_fair.jpeg"
 },
 {
   title: "Երևանյան կինոփառատոն",
   description: "Հայաստանում անցկացվող ամենախոշոր կինոփառատոնը, որը ներկայացնում է հայկական և միջազգային կինոյի լավագույն նմուշները։ Միջոցառումները ներառում են ֆիլմերի ցուցադրում, հանդիպումներ ռեժիսորների հետ և վարպետության դասընթացներ։",
   location: "Երևան, կինոթատրոններ",
   time: "Դեկտեմբեր",
-  imgSrc: "./imges/yerevan/culture/yerevan_film_festival.jpg"
+  imgSrc: "/assets/images/yerevan/culture/yerevan_film_festival.jpg"
 },
 {
   title: "Անկախության օր",
   description: "Հայաստանի Հանրապետության անկախության օրը նշվում է շքերթներով, համերգներով և պաշտոնական միջոցառումներով՝ Հանրապետության հրապարակում։ Մեծածավալ տոնակատարություն է, որին մասնակցում են հազարավոր երևանցիներ։",
   location: "Երևան, Հանրապետության հրապարակ",
   time: "Սեպտեմբեր 21",
-  imgSrc: "./imges/yerevan/culture/independence_day.jpg"
+  imgSrc: "/assets/images/yerevan/culture/independence_day.jpg"
 }
   
     ],
@@ -196,72 +196,72 @@ aragatsotn: {
     ],
     sightsCardData: [
        {
-    "imgUrl": "./imges/Aragatsotn/atractions/amberd.jpg",
+    "imgUrl": "/assets/images/Aragatsotn/atractions/amberd.jpg",
     "title": "Ամբերդ ամրոց",
     "description": "7-րդ դարի ամրոց՝ տեղակայված Արագած լեռան լանջերին՝ 2300 մ բարձրության վրա։ Ներառում է Վահրամաշեն եկեղեցին և միջնադարյան բաղնիք։"
   },
   {
-    "imgUrl": "./imges/Aragatsotn/atractions/saghmosavank.jpg",
+    "imgUrl": "/assets/images/Aragatsotn/atractions/saghmosavank.jpg",
     "title": "Սաղմոսավանք վանք",
     "description": "13-րդ դարի վանական համալիր՝ կառուցված Կասաղ գետի կիրճի եզրին։ Հայտնի է իր ճարտարապետությամբ և պատմական նշանակությամբ։"
   },
   {
-    "imgUrl": "./imges/Aragatsotn/atractions/hovhannavank.png",
+    "imgUrl": "/assets/images/Aragatsotn/atractions/hovhannavank.png",
     "title": "Հովհաննավանք վանք",
     "description": "4-րդ դարի վանական համալիր՝ վերակառուցված 13-րդ դարում։ Տեղակայված է Կասաղ գետի կիրճի եզրին՝ հայտնի իր խաչքարերով։"
   },
   {
-    "imgUrl": "./imges/Aragatsotn/atractions/byurakan_observatory.jpg",
+    "imgUrl": "/assets/images/Aragatsotn/atractions/byurakan_observatory.jpg",
     "title": "Բյուրականի աստղադիտարան",
     "description": "Հիմնադրվել է 1946 թվականին՝ ակադեմիկոս Վիկտոր Համբարձումյանի կողմից։ Առաջատար աստղագիտական կենտրոն՝ առաջարկում է հանրային դիտումներ։"
   },
   {
-    "imgUrl": "./imges/Aragatsotn/atractions/armenian_alphabet_monument.jpg",
+    "imgUrl": "/assets/images/Aragatsotn/atractions/armenian_alphabet_monument.jpg",
     "title": "Հայոց այբուբենի հուշարձան",
     "description": "Հուշարձան՝ բաղկացած 39 մեծ տառերից, տեղադրված Արտաշավան գյուղի մոտ՝ ի պատիվ Մեսրոպ Մաշտոցի։"
   },
   {
-    "imgUrl": "./imges/Aragatsotn/atractions/mount_aragats.jpg",
+    "imgUrl": "/assets/images/Aragatsotn/atractions/mount_aragats.jpg",
     "title": "Արագած լեռ",
     "description": "Հայաստանի ամենաբարձր լեռը՝ 4090 մ բարձրությամբ։ Սիրված է լեռնագնացների և բնության սիրահարների կողմից։"
   },
   {
-    "imgUrl": "./imges/Aragatsotn/atractions/astvatsankal.jpg",
+    "imgUrl": "/assets/images/Aragatsotn/atractions/astvatsankal.jpg",
     "title": "Աստվածանքալ վանք",
     "description": "4-13-րդ դարերի վանական համալիր՝ հայտնի իր միջնադարյան ճարտարապետությամբ և մուքարնաս դիզայնով։"
   },
   {
-    "imgUrl": "./imges/Aragatsotn/atractions/tegher.jpg",
+    "imgUrl": "/assets/images/Aragatsotn/atractions/tegher.jpg",
     "title": "Տեղերի վանք",
     "description": "13-րդ դարի վանական համալիր՝ կառուցված արքայադուստր Խաթունի համար։ Գտնվում է Արագած լեռան հարավ-արևելյան լանջերին։"
   },
   {
-    "imgUrl": "./imges/Aragatsotn/atractions/aruchavank.jpg",
+    "imgUrl": "/assets/images/Aragatsotn/atractions/aruchavank.jpg",
     "title": "Արուճավանք",
     "description": "7-րդ դարի եկեղեցի՝ կառուցված Արուճ գյուղում։ Միջնադարյան հայկական ճարտարապետության կարևոր օրինակ։"
   },
   {
-    "imgUrl": "./imges/Aragatsotn/atractions/vahramashen.jpg",
+    "imgUrl": "/assets/images/Aragatsotn/atractions/vahramashen.jpg",
     "title": "Վահրամաշեն եկեղեցի",
     "description": "1026 թվականին կառուցված եկեղեցի՝ տեղակայված Ամբերդ ամրոցի մոտ։ Հայտնի է իր խաչաձև կառուցվածքով։"
   },
   {
-    "imgUrl": "./imges/Aragatsotn/atractions/aregimuseum.jpg",
+    "imgUrl": "/assets/images/Aragatsotn/atractions/aregimuseum.jpg",
     "title": "Արեգի թանգարան",
     "description": "Թանգարան՝ նվիրված հայկական սննդի պահպանման ավանդույթներին՝ առաջարկող էքսկուրսիաներ։"
   },
   {
-    "imgUrl": "./imges/Aragatsotn/atractions/kari_lake.jpg",
+    "imgUrl": "/assets/images/Aragatsotn/atractions/kari_lake.jpg",
     "title": "Կարի լիճ",
     "description": "Բարձրադիր լիճ՝ տեղակայված Արագած լեռան վրա՝ սիրված էքսկուրսիաների և պիկնիկների համար։"
   },
   {
-    "imgUrl": "./imges/Aragatsotn/atractions/dashtadem.jpg",
+    "imgUrl": "/assets/images/Aragatsotn/atractions/dashtadem.jpg",
     "title": "Դաշտադեմ ամրոց",
     "description": "10-րդ դարի ամրոց՝ հայտնի իր պատմական նշանակությամբ և ճարտարապետությամբ։"
   },
   {
-    "imgUrl": "./imges/Aragatsotn/atractions/gegharot_waterfall.jpg",
+    "imgUrl": "/assets/images/Aragatsotn/atractions/gegharot_waterfall.jpg",
     "title": "Գեղարոտ ջրվեժ",
     "description": "17 մ բարձրությամբ ջրվեժ՝ տեղակայված 3000 մ բարձրության վրա՝ սիրված էքսկուրսիաների համար։"
   }
@@ -269,17 +269,17 @@ aragatsotn: {
     ],
     foodData: [
       {
-    img: "./imges/Aragatsotn/food/harisa.jpg",
+    img: "/assets/images/Aragatsotn/food/harisa.jpg",
     name: "Հարիսա",
     ingredients: "Ցորենի կուտ, տավարի կամ հավի միս, կարագ, աղ"
   },
   {
-    img: "./imges/Aragatsotn/food/tarhana.jpg",
+    img: "/assets/images/Aragatsotn/food/tarhana.jpg",
     name: "Թարխանա",
     ingredients: "Աղացած ցորեն, մածուն, սոխ, համեմունքներ"
   },
   {
-    img: "./imges/Aragatsotn/food/zhingyalov-hats.jpg",
+    img: "/assets/images/Aragatsotn/food/zhingyalov-hats.jpg",
     name: "Ժինգյալով հաց",
     ingredients: "Տեսակավոր վայրի կանաչիներ, ալյուր, ջուր, աղ"
   }
@@ -287,32 +287,32 @@ aragatsotn: {
     ],
     hotelsData: [
       {
-      img: "./imges/Aragatsotn/hotels/Family.jpg",
+      img: "/assets/images/Aragatsotn/hotels/Family.jpg",
       title: "Family House",
       link: "https://www.booking.com/hotel/am/family-house-aghdzk.en-gb.html?aid=1610684&label=yerevan-6gF7mAQa04qmgSNJF8gpWAS541143137437%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-325528430770%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt10AsofPfvtt0&sid=39ea0ee228b891a8f3e7a8b3b7555028&dest_id=174963&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=4&hpos=4&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748019286&srpvid=450476dedd870360&type=total&ucfs=1&"
     },
       {
-      img: "./imges/Aragatsotn/hotels/old byurakan.jpg",
+      img: "/assets/images/Aragatsotn/hotels/old byurakan.jpg",
       title: "Old Byurakan Gouest House",
       link: "https://www.booking.com/hotel/am/old-byurakan-gouest-house.en-gb.html?aid=1610684&label=yerevan-6gF7mAQa04qmgSNJF8gpWAS541143137437%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-325528430770%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt10AsofPfvtt0&sid=39ea0ee228b891a8f3e7a8b3b7555028&dest_id=174963&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=11&hpos=11&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748019394&srpvid=450476dedd870360&type=total&ucfs=1&"
     },
       {
-      img: "./imges/Aragatsotn/hotels/amberd.jpg",
+      img: "/assets/images/Aragatsotn/hotels/amberd.jpg",
       title: "Amberd Hotel",
       link: "https://www.booking.com/hotel/am/amberd.en-gb.html?aid=1610684&label=yerevan-6gF7mAQa04qmgSNJF8gpWAS541143137437%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-325528430770%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt10AsofPfvtt0&sid=39ea0ee228b891a8f3e7a8b3b7555028&dest_id=174963&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=13&hpos=13&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748019579&srpvid=450476dedd870360&type=total&ucfs=1&"
     },
       {
-      img: "./imges/Aragatsotn/hotels/qotej.jpg",
+      img: "/assets/images/Aragatsotn/hotels/qotej.jpg",
       title: "Byurakan Guesthouse & Cottage",
       link: "https://www.booking.com/hotel/am/byurakan-guesthouse.en-gb.html?aid=1610684&label=yerevan-6gF7mAQa04qmgSNJF8gpWAS541143137437%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-325528430770%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt10AsofPfvtt0&sid=39ea0ee228b891a8f3e7a8b3b7555028&dest_id=174963&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=21&hpos=21&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748019745&srpvid=2c4577c3747a0079&type=total&ucfs=1&"
     },
       {
-      img: "./imges/Aragatsotn/hotels/byur.jpg",
+      img: "/assets/images/Aragatsotn/hotels/byur.jpg",
       title: "ByurHouse",
       link: "https://www.booking.com/hotel/am/byurhouse.en-gb.html?aid=1610684&label=yerevan-6gF7mAQa04qmgSNJF8gpWAS541143137437%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-325528430770%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt10AsofPfvtt0&sid=39ea0ee228b891a8f3e7a8b3b7555028&dest_id=-2324645&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748020124&srpvid=5aba788996880803&type=total&ucfs=1&"
     },
       {
-      img: "./imges/Aragatsotn/hotels/pandok.jpg",
+      img: "/assets/images/Aragatsotn/hotels/pandok.jpg",
       title: "Pandok Guesthouse",
       link: "https://www.booking.com/hotel/am/pandok-guesthouse.en-gb.html?aid=1610684&label=yerevan-6gF7mAQa04qmgSNJF8gpWAS541143137437%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-325528430770%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt10AsofPfvtt0&sid=39ea0ee228b891a8f3e7a8b3b7555028&dest_id=174963&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=33&hpos=8&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748019742&srpvid=2c4577c3747a0079&type=total&ucfs=1&"
     },
@@ -332,21 +332,21 @@ aragatsotn: {
         description: "Մշակութային և էկոտուրիզմային փառատոն՝ անցկացվող Արագած լեռան ստորոտում, ներառում է հեծանվավազք, երաժշտական ելույթներ և ավանդական արհեստների ցուցադրություն։",
         location: "Արագածի լանջեր",
         time: "Հուլիս",
-        imgSrc: "./imges/Aragatsotn/culture/aragats_festival.png"
+        imgSrc: "/assets/images/Aragatsotn/culture/aragats_festival.png"
       },
       {
         title: "Սաղմոսավանքի մշակութային օրեր",
         description: "Սուրբ Սաղմոսավանքում անցկացվող մշակութային օրեր՝ համերգներով, արվեստի ցուցահանդեսներով և հոգևոր երաժշտությամբ։",
         location: "Սաղմոսավանք",
         time: "Օգոստոս",
-        imgSrc: "./imges/Aragatsotn/culture/saghmosavank_days.jpg"
+        imgSrc: "/assets/images/Aragatsotn/culture/saghmosavank_days.jpg"
       },
       {
         title: "Տեղական խոհանոցի և արհեստների փառատոն",
         description: "Տարբեր համայնքներում կազմակերպվող փառատոն՝ նպատակով խթանել տեղական խոհանոցը և գյուղական ձեռագործ աշխատանքները։",
         location: "Արագածոտնի տարբեր համայնքներ",
         time: "Մայիս - Սեպտեմբեր",
-        imgSrc: "./imges/Aragatsotn/culture/local_cuisine_crafts.jpg"
+        imgSrc: "/assets/images/Aragatsotn/culture/local_cuisine_crafts.jpg"
       }    
   
     ],
@@ -373,52 +373,52 @@ shirak: {
     ],
     sightsCardData: [
       {
-    "imgUrl": "./imges/Shirak/attractions/marmashen.jpg",
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
     "title": "Մարմաշենի վանք",
     "description": "10-րդ դարի վանական համալիր՝ բաղկացած հինգ եկեղեցիներից, կառուցված Վահրամ Պահլավունու կողմից։ Գտնվում է Մարմաշեն գյուղի մոտ։"
   },
   {
-    "imgUrl": "./imges/Shirak/attractions/marmashen.jpg",
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
     "title": "Հոգեվանք վանք",
     "description": "Միջնադարյան վանական համալիր՝ տեղակայված Սառնաղբյուր գյուղի մոտ։ Գլխավոր եկեղեցին՝ Սուրբ Կարապետը, կառուցվել է 1205 թվականին։"
   },
   {
-    "imgUrl": "./imges/Shirak/attractions/marmashen.jpg",
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
     "title": "Տրչկան ջրվեժ",
     "description": "Հայաստանի ամենաբարձր ջրվեժը՝ 22.5 մետր բարձրությամբ, տեղակայված Շիրակի և Լոռու մարզերի սահմանին։"
   },
   {
-    "imgUrl": "./imges/Shirak/attractions/marmashen.jpg",
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
     "title": "Գյումրի քաղաք",
     "description": "Շիրակի մարզկենտրոնը՝ հայտնի իր պատմական կենտրոնով, մշակութային վայրերով և արվեստի կենտրոններով։"
   },
   {
-    "imgUrl": "./imges/Shirak/attractions/marmashen.jpg",
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
     "title": "Սև բերդ",
     "description": "Ռուսական կայսրության ժամանակաշրջանի ամրոց՝ կառուցված 19-րդ դարում Գյումրիում։"
   },
   {
-    "imgUrl": "./imges/Shirak/attractions/marmashen.jpg",
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
     "title": "Գյումրիի պատմության թանգարան",
     "description": "Թանգարան՝ ներկայացնող քաղաքի պատմությունը, մշակույթը և արվեստը։"
   },
   {
-    "imgUrl": "./imges/Shirak/attractions/marmashen.jpg",
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
     "title": "Ավետիք Իսահակյանի տուն-թանգարան",
     "description": "Թանգարան՝ նվիրված հայ գրող Ավետիք Իսահակյանին, ներկայացնող նրա կյանքը և ստեղծագործությունները։"
   },
   {
-    "imgUrl": "./imges/Shirak/attractions/marmashen.jpg",
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
     "title": "Սուրբ Ամենափրկիչ եկեղեցի",
     "description": "Գյումրիի կենտրոնում գտնվող եկեղեցի՝ կառուցված 19-րդ դարում, հայտնի իր ճարտարապետությամբ։"
   },
   {
-    "imgUrl": "./imges/Shirak/attractions/marmashen.jpg",
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
     "title": "Գյումրիի կերպարվեստի պատկերասրահ",
     "description": "Պատկերասրահ՝ ներկայացնող հայ արվեստագետների գործեր և ժամանակակից արվեստ։"
   },
   {
-    "imgUrl": "./imges/Shirak/attractions/marmashen.jpg",
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
     "title": "Գյումրիի դրամատիկական թատրոն",
     "description": "Թատրոն՝ ներկայացնող հայ դասական և ժամանակակից դրամատուրգիա։"
   }
@@ -426,22 +426,22 @@ shirak: {
     ],
     foodData: [
      {
-    img: "./imges/Shirak/food/kyalla.jpg",
+    img: "/assets/images/Shirak/food/kyalla.jpg",
     name: "Քյաղլա",
     ingredients: "Տավարի գլուխ, պոչ, ոսկորներով միս, սոխ, համեմունքներ"
   },
   {
-    img: "./imges/Shirak/food/khash.jpg",
+    img: "/assets/images/Shirak/food/khash.jpg",
     name: "Խաշ",
     ingredients: "Տավարի ոտք, աղ, սխտոր, լավաշ"
   },
   {
-    img: "./imges/Shirak/food/matsnaprtosh.jpg",
+    img: "/assets/images/Shirak/food/matsnaprtosh.jpg",
     name: "Մածնափրթոշ",
     ingredients: "Մածուն, հաց, սոխ, կարագ, համեմունքներ"
   },
   {
-    img: "./imges/Shirak/food/korkot.jpg",
+    img: "/assets/images/Shirak/food/korkot.jpg",
     name: "Կորկոտ",
     ingredients: "Ցորենի կուտ, տավարի միս կամ կարագ, աղ"
   }
@@ -449,37 +449,37 @@ shirak: {
     ],
     hotelsData: [
       {
-    img: "./imges/Shirak/hotels/igit.jpg",
+    img: "/assets/images/Shirak/hotels/igit.jpg",
     title: "Igit Plaza Hotel",
     link: "https://www.booking.com/hotel/am/igit-plaza.html?aid=318615&label=English_Armenia_EN_AM_29510061745-86u4JRJr6_13IDVO0wSKoAS640938665492%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55397054508%3Atidsa-386017564237%3Alp9070052%3Ali%3Adec%3Adm%3Aag29510061745%3Acmp638401877&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=1199&dest_type=airport&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748069623&srpvid=94d230712a42020a&type=total&ucfs=1&"
   },
        {
-    img: "./imges/Shirak/hotels/igit.jpg",
+    img: "/assets/images/Shirak/hotels/igit.jpg",
     title: "Igit Plaza Hotel",
     link: "https://www.booking.com/hotel/am/igit-plaza.html?aid=318615&label=English_Armenia_EN_AM_29510061745-86u4JRJr6_13IDVO0wSKoAS640938665492%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55397054508%3Atidsa-386017564237%3Alp9070052%3Ali%3Adec%3Adm%3Aag29510061745%3Acmp638401877&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=1199&dest_type=airport&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748069623&srpvid=94d230712a42020a&type=total&ucfs=1&"
   },
        {
-    img: "./imges/Shirak/hotels/igit.jpg",
+    img: "/assets/images/Shirak/hotels/igit.jpg",
     title: "Igit Plaza Hotel",
     link: "https://www.booking.com/hotel/am/igit-plaza.html?aid=318615&label=English_Armenia_EN_AM_29510061745-86u4JRJr6_13IDVO0wSKoAS640938665492%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55397054508%3Atidsa-386017564237%3Alp9070052%3Ali%3Adec%3Adm%3Aag29510061745%3Acmp638401877&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=1199&dest_type=airport&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748069623&srpvid=94d230712a42020a&type=total&ucfs=1&"
   },
        {
-    img: "./imges/Shirak/hotels/igit.jpg",
+    img: "/assets/images/Shirak/hotels/igit.jpg",
     title: "Igit Plaza Hotel",
     link: "https://www.booking.com/hotel/am/igit-plaza.html?aid=318615&label=English_Armenia_EN_AM_29510061745-86u4JRJr6_13IDVO0wSKoAS640938665492%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55397054508%3Atidsa-386017564237%3Alp9070052%3Ali%3Adec%3Adm%3Aag29510061745%3Acmp638401877&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=1199&dest_type=airport&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748069623&srpvid=94d230712a42020a&type=total&ucfs=1&"
   },
        {
-    img: "./imges/Shirak/hotels/igit.jpg",
+    img: "/assets/images/Shirak/hotels/igit.jpg",
     title: "Igit Plaza Hotel",
     link: "https://www.booking.com/hotel/am/igit-plaza.html?aid=318615&label=English_Armenia_EN_AM_29510061745-86u4JRJr6_13IDVO0wSKoAS640938665492%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55397054508%3Atidsa-386017564237%3Alp9070052%3Ali%3Adec%3Adm%3Aag29510061745%3Acmp638401877&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=1199&dest_type=airport&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748069623&srpvid=94d230712a42020a&type=total&ucfs=1&"
   },
        {
-    img: "./imges/Shirak/hotels/igit.jpg",
+    img: "/assets/images/Shirak/hotels/igit.jpg",
     title: "Igit Plaza Hotel",
     link: "https://www.booking.com/hotel/am/igit-plaza.html?aid=318615&label=English_Armenia_EN_AM_29510061745-86u4JRJr6_13IDVO0wSKoAS640938665492%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55397054508%3Atidsa-386017564237%3Alp9070052%3Ali%3Adec%3Adm%3Aag29510061745%3Acmp638401877&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=1199&dest_type=airport&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748069623&srpvid=94d230712a42020a&type=total&ucfs=1&"
   },
        {
-    img: "./imges/Shirak/hotels/igit.jpg",
+    img: "/assets/images/Shirak/hotels/igit.jpg",
     title: "Igit Plaza Hotel",
     link: "https://www.booking.com/hotel/am/igit-plaza.html?aid=318615&label=English_Armenia_EN_AM_29510061745-86u4JRJr6_13IDVO0wSKoAS640938665492%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55397054508%3Atidsa-386017564237%3Alp9070052%3Ali%3Adec%3Adm%3Aag29510061745%3Acmp638401877&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=1199&dest_type=airport&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748069623&srpvid=94d230712a42020a&type=total&ucfs=1&"
   },
@@ -498,28 +498,28 @@ shirak: {
   description: "Գյումրիի ավանդական քաղաքային տոն, որը ներառում է տեղական երաժշտություն, պարեր, և ձեռագործի ցուցադրություն։",
   location: "Գյումրի",
   time: "Հունիս",
-  imgSrc: "./imges/Shirak/culture/gyumri_city_festival.jpg"
+  imgSrc: "/assets/images/Shirak/culture/gyumri_city_festival.jpg"
 },
 {
   title: "Շիրակի բարբառային փառատոն",
   description: "Տեղական բարբառների և բանաստեղծական արվեստի խթանումը, հայացք դեպի ավանդական բանահյուսություն։",
   location: "Շիրակ գյուղեր",
   time: "Սեպտեմբեր",
-  imgSrc: "./imges/Shirak/culture/barbarian_festival.jpg"
+  imgSrc: "/assets/images/Shirak/culture/barbarian_festival.jpg"
 },
 {
   title: "Շիրակի բարբառային փառատոն",
   description: "Տեղական բարբառների և բանաստեղծական արվեստի խթանումը, հայացք դեպի ավանդական բանահյուսություն։",
   location: "Շիրակ գյուղեր",
   time: "Սեպտեմբեր",
-  imgSrc: "./imges/Shirak/culture/barbarian_festival.jpg"
+  imgSrc: "/assets/images/Shirak/culture/barbarian_festival.jpg"
 },
 {
   title: "Շիրակի բարբառային փառատոն",
   description: "Տեղական բարբառների և բանաստեղծական արվեստի խթանումը, հայացք դեպի ավանդական բանահյուսություն։",
   location: "Շիրակ գյուղեր",
   time: "Սեպտեմբեր",
-  imgSrc: "./imges/Shirak/culture/barbarian_festival.jpg"
+  imgSrc: "/assets/images/Shirak/culture/barbarian_festival.jpg"
 },
 
 
@@ -549,121 +549,121 @@ shirak: {
     ],
     sightsCardData: [
       {
-        imgUrl: './imges/Lori/atractions/sanahin.jpg',
+        imgUrl: '/assets/images/Lori/atractions/sanahin.jpg',
         title: 'Սանահին վանք',
         description: 'ՅՈՒՆԵՍԿՕ-ի համաշխարհային ժառանգության ցանկում ընդգրկված վանական համալիր։',
     },
     {
-        imgUrl: './imges/Lori/atractions/haxpat.jpg', 
+        imgUrl: '/assets/images/Lori/atractions/haxpat.jpg', 
         title: 'Հաղպատավանք',
         description: 'Սանահինի հետ միասին ՅՈՒՆԵՍԿՕ-ի ցանկում ընդգրկված միջնադարյան վանական համալիր՝ հայտնի իր ճարտարապետությամբ։'
     },
     {
-        imgUrl: './imges/Lori/atractions/dsegh.jpg',
+        imgUrl: '/assets/images/Lori/atractions/dsegh.jpg',
         title: 'Դսեղ',
         description: 'Գեղեցիկ բնությամբ գյուղ՝ համարվող Հովհաննես Թումանյանի ծննդավայրն ու թանգարանի տեղակայումը։'
     },
     {
-        imgUrl: './imges/Lori/atractions/odzun.jpg',
+        imgUrl: '/assets/images/Lori/atractions/odzun.jpg',
         title: 'Օձունի եկեղեցի',
         description: '6-7-րդ դարերի բազիլիկ եկեղեցի՝ հայտնի իր բացառիկ խաչքարերով և ճարտարապետական առանձնահատկություններով։'
     },
     {
-        imgUrl: './imges/Lori/atractions/qobayr.jpg',
+        imgUrl: '/assets/images/Lori/atractions/qobayr.jpg',
         title: 'Քոբայրի վանք',
         description: '12-րդ դարի վանական համալիր՝ դիրքավորված ժայռապատ վայրում՝ գեղեցիկ մ freskներով և գրություններով։'
     },
     {
-        imgUrl: './imges/Lori/atractions/alaverdi.jpg',
+        imgUrl: '/assets/images/Lori/atractions/alaverdi.jpg',
         title: 'Ալավերդի քաղաք',
         description: 'Լոռվա արդյունաբերական կենտրոնը՝ շրջապատված վանական համալիրներով և լեռնաշղթաներով։'
     },
     {
-        imgUrl: './imges/Lori/atractions/aqori.jpg',
+        imgUrl: '/assets/images/Lori/atractions/aqori.jpg',
         title: 'Աքորի գյուղ',
         description: 'Նրբագեղ բնությամբ և պատմական անցյալով գյուղ՝ տեսարանով դեպի Դեբեդի կիրճը։'
     },
     {
-        imgUrl: './imges/Lori/atractions/lori berd.jpg',
+        imgUrl: '/assets/images/Lori/atractions/lori berd.jpg',
         title: 'Լոռի բերդ',
         description: 'Միջնադարյան բերդ՝ կառուցված Ստեփան Տարոնեցու կողմից՝ ռազմավարական կարևոր դիրքով։'
     },
     {
-        imgUrl: './imges/Lori/atractions/dendropark.png',
+        imgUrl: '/assets/images/Lori/atractions/dendropark.png',
         title: 'Ստեփանավանի Դենդրոպարկ (Սոճուտ)',
         description: 'Բնության գողտրիկ անկյուն՝ հարուստ սոճիներով և մաքուր օդով։ Հիանալի վայր է առողջարար զբոսանքների և լուսանկարչության համար։'
     },
     {
-        imgUrl: './imges/Lori/atractions/tumanyani tun tangaran.jpg',
+        imgUrl: '/assets/images/Lori/atractions/tumanyani tun tangaran.jpg',
         title: 'Թումանյանի թանգարան',
         description: 'Հայ մեծ գրողի՝ Հովհաննես Թումանյանի կյանքին ու ստեղծագործությանը նվիրված թանգարան։'
     },
     {
-        imgUrl: './imges/Lori/atractions/trchkan.jpg',
+        imgUrl: '/assets/images/Lori/atractions/trchkan.jpg',
         title: 'Թռչկանի ջրվեժ',
         description: 'Թռչկանի ջրվեժը գտնվում է Շիրակի և Լոռու մարզերի սահմանին։ Այն հատկապես գեղեցիկ է ձմռանը, երբ ամբողջովին սառչում է։'
     },
     {
-        imgUrl: './imges/Lori/atractions/gevorg ekexeci.jpg',
+        imgUrl: '/assets/images/Lori/atractions/gevorg ekexeci.jpg',
         title: 'Սուրբ Գևորգ եկեղեցի (Բազում)',
         description: 'Փոքր, լեռների մեջ թաքնված եկեղեցի՝ հին պատմությամբ ու հոգևոր հանգստությամբ։'
     }
     ],
     foodData: [
       {
-    img: "./imges/Lori/food/paxlava.webp",
+    img: "/assets/images/Lori/food/paxlava.webp",
     name: "Փախլավա",
     ingredients: "Փխրուն խմոր, ընկույզ, շաքար, կարագ, մեղր կամ օշարակ"
   },
   {
-    img: "./imges/Lori/food/ghapama.jpg",
+    img: "/assets/images/Lori/food/ghapama.jpg",
     name: "Ղափամա",
     ingredients: "Դդում, բրինձ, չամիչ, ընկույզ, մեղր, դարչին"
   },
   {
-    img: "./imges/Lori/food/tanapur.jpg",
+    img: "/assets/images/Lori/food/tanapur.jpg",
     name: "Թանապուր (Սպաս)",
     ingredients: "Թան, ձավար, սխտոր, աղ, կանաչի"
   },
   {
-    img: "./imges/Lori/food/khashil.jpg",
+    img: "/assets/images/Lori/food/khashil.jpg",
     name: "Խաշիլ",
     ingredients: "Ցորենի ձավար, ջուր, կարագ, աղ"
   },
   {
-    img: "./imges/Lori/food/muraba.jpg",
+    img: "/assets/images/Lori/food/muraba.jpg",
     name: "Ձմերուկով մուրաբա",
     ingredients: "Ձմերուկի կեղև, շաքար, կիտրոնի աղ կամ կիտրոն"
   }
     ],
     hotelsData: [
       {
-    img: "./imges/Lori/hotels/hyuratun.jpg",
+    img: "/assets/images/Lori/hotels/hyuratun.jpg",
     title: "Լոռի Հյուրատուն",
     link: "https://www.booking.com/hotel/am/lori-vanadzor.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=distance_from_search&srepoch=1747923317&srpvid=682f316e01990208df7f399bddd1b167&type=total&ucfs=1&"
   },
   {
-    img: "./imges/Lori/hotels/arevaham.png",
+    img: "/assets/images/Lori/hotels/arevaham.png",
     title: "Արևահամ Բուտիկ Հյուրանոց ",
     link: "https://www.booking.com/hotel/am/arevaham.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747922741&srpvid=682f2f34012b011029d07d8a235ee59f&type=total&ucfs=1&"
   },
   {
-    img: "./imges/Lori/hotels/lux.jpg",
+    img: "/assets/images/Lori/hotels/lux.jpg",
     title: "Lux Home",
     link: "https://www.booking.com/hotel/am/lux-home-vanadzor.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325015&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747923531&srpvid=682f323f002c0133ebc3d1da315160aa&type=total&ucfs=1&"
   },
   {
-    img: "./imges/Lori/hotels/laguna.jpg",
+    img: "/assets/images/Lori/hotels/laguna.jpg",
     title: "Laguna Hotel",
     link: "https://www.booking.com/hotel/am/laguna.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325015&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=9&hpos=9&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747923670&srpvid=682f323f002c0133ebc3d1da315160aa&type=total&ucfs=1&activeTab=main"
   },
   {
-    img: "./imges/Lori/hotels/palermo.jpg",
+    img: "/assets/images/Lori/hotels/palermo.jpg",
     title: "Palermo Hotel",
     link: "https://www.booking.com/hotel/am/palermo.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325015&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=10&hpos=10&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747923794&srpvid=682f323f002c0133ebc3d1da315160aa&type=total&ucfs=1&"
   },
   {
-    img: "./imges/Lori/hotels/auroom.jpg",
+    img: "/assets/images/Lori/hotels/auroom.jpg",
     title: "AuRoom",
     link: "https://www.booking.com/hotel/am/otel-auroom-vanadzor.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325015&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=20&hpos=20&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747923918&srpvid=682f323f002c0133ebc3d1da315160aa&type=total&ucfs=1&"
   }
@@ -681,28 +681,28 @@ shirak: {
     description: "Ամենամյա գրական փառատոն։ Միջոցառումն ունի ավանդական բնույթ և անց է կացվում ամեն տարի աշնանը՝ Հովհաննես Թումանյանի ծննդավայրում:",
     location: "Դսեղ գյուղ, Թումանյանի տուն-թանգարան",
     time: "ամեն ամառ, հիմնականում հուլիս ամսին",
-    imgSrc: "./imges/Lori/culture/tumanyanakan orer.png"
+    imgSrc: "/assets/images/Lori/culture/tumanyanakan orer.png"
   },
     {
       title: "Խորովածի փառատոն",
       description: "Թարմ մսից և բանջարեղենից պատրաստված խորովածը մատուցվում է տաք ածուխների վրա՝ խոզի, տավարի, ոչխարի, ձկան և բանջարեղենի տեսականիով։",
       location: "Ախթալա",
       time: "Օգոստոսի 21 ",
-      imgSrc: "./imges/Lori/culture/xorovac.jpg"
+      imgSrc: "/assets/images/Lori/culture/xorovac.jpg"
     },
     {
       title: "Հապալասի փառատոն",
       description: "Փառատոնի նպատակն է գյուղում խթանել հապալասի մշակումը և էկոտուրիզմի զարգացումը։ Բացի հապալասը համտեսելուց այցելուները կվայելեն արևոտ գյուղական օրը, կենդանի երաժշտությունը, կմասնակցեն խաղերի և վարպետաց դասերի։",
       location: "Մարգահովիտ",
       time: "Հուլիսի 31",
-      imgSrc: "./imges/Lori/culture/hapalas.jpg"
+      imgSrc: "/assets/images/Lori/culture/hapalas.jpg"
     },
     {
     title: "Ուտելի բույսերի փառատոն",
     description: "Փառատոնը լի է ցուցահանդեսներով, տարածաշրջանի ուտելի բույսերով պատրաստված ավանդական ճաշատեսակների համտեսներով, ներկայացումներով, երաժշտական և պարային ծրագրերով և ավանդական հայկական խաղերով:",
     location: "Դսեղ",
     time: "10 Հուլիս, 2021",
-    imgSrc: "./imges/Lori/culture/buyseri.jpeg"
+    imgSrc: "/assets/images/Lori/culture/buyseri.jpeg"
   },
   
     ],
@@ -727,37 +727,37 @@ tavush: {
     ],
     sightsCardData: [
       {
-    "imgUrl": "./imges/Tavush/attractions/haghartsin.jpg",
+    "imgUrl": "/assets/images/Tavush/attractions/haghartsin.jpg",
     "title": "Հաղարծինի վանք",
     "description": "10-13-րդ դարերի վանական համալիր՝ բաղկացած երեք եկեղեցիներից, երկու գավիթից, սեղանատնից և խաչքարերից։ Գտնվում է Դիլիջանից 18 կմ հեռավորության վրա։"
   },
   {
-    "imgUrl": "./imges/Tavush/attractions/goshavank.jpg",
+    "imgUrl": "/assets/images/Tavush/attractions/goshavank.jpg",
     "title": "Գոշավանք",
     "description": "Միջնադարյան վանական համալիր՝ հիմնադրված 12-13-րդ դարերում Մխիթար Գոշի կողմից։ Գտնվում է Գոշ գյուղում՝ Գետիկ գետի աջ ափին։"
   },
   {
-    "imgUrl": "./imges/Tavush/attractions/makaravank.jpg",
+    "imgUrl": "/assets/images/Tavush/attractions/makaravank.jpg",
     "title": "Մակարավանք",
     "description": "13-րդ դարի հայկական վանական համալիր՝ տեղակայված Աչաջուր գյուղից 3 կմ հարավ-արևմուտք՝ Պայտաթափ լեռան լանջին։"
   },
   {
-    "imgUrl": "./imges/Tavush/attractions/matosavank.jpg",
+    "imgUrl": "/assets/images/Tavush/attractions/matosavank.jpg",
     "title": "Մաթոսավանք",
     "description": "13-րդ դարի վանական համալիր՝ բաղկացած փոքր եկեղեցիներից, գավթից և գրատնից։ Գտնվում է Դիլիջանից 4 կմ արևմուտք։"
   },
   {
-    "imgUrl": "./imges/Tavush/attractions/parz_lake.jpg",
+    "imgUrl": "/assets/images/Tavush/attractions/parz_lake.jpg",
     "title": "Պարզ լիճ",
     "description": "Լիճ՝ տեղակայված Դիլիջանից 9 կմ հյուսիս-արևելք՝ 1350 մ բարձրության վրա։ Շրջապատված է անտառներով և հայտնի է իր գեղեցիկ բնությամբ։"
   },
   {
-    "imgUrl": "./imges/Tavush/attractions/berdavan_fortress.jpg",
+    "imgUrl": "/assets/images/Tavush/attractions/berdavan_fortress.jpg",
     "title": "Բերդավան ամրոց",
     "description": "10-11-րդ դարերի ամրոց՝ վերականգնված 17-րդ դարում։ Գտնվում է Տավուշի մարզում՝ հայ-ադրբեջանական սահմանից մոտ։"
   },
   {
-    "imgUrl": "./imges/Tavush/attractions/lastiver.jpg",
+    "imgUrl": "/assets/images/Tavush/attractions/lastiver.jpg",
     "title": "Լաստիվեր",
     "description": "Բնության գեղատեսիլ վայր՝ հայտնի իր անտառներով, քարանձավներով և արկածային տուրիզմի հնարավորություններով։"
   }
@@ -765,22 +765,22 @@ tavush: {
     ],
     foodData: [
        {
-    img: "./imges/Tavush/food/uduli.jpg",
+    img: "/assets/images/Tavush/food/uduli.jpg",
     name: "Ուդուլի",
     ingredients: "Ձավար, սոխ, տոմատ, բուսայուղ, համեմունքներ"
   },
   {
-    img: "./imges/Tavush/food/hapama.jpg",
+    img: "/assets/images/Tavush/food/hapama.jpg",
     name: "Հափամա",
     ingredients: "Դդում, բրինձ, չրեր, ընկույզ, մեղր"
   },
   {
-    img: "./imges/Tavush/food/tanapur.jpg",
+    img: "/assets/images/Tavush/food/tanapur.jpg",
     name: "Թանապուր",
     ingredients: "Թան, բրինձ կամ ցորեն, ձու, մածուն, համեմունքներ"
   },
   {
-    img: "./imges/Tavush/food/pasuts-dolma.jpg",
+    img: "/assets/images/Tavush/food/pasuts-dolma.jpg",
     name: "Բուսական տոլմա",
     ingredients: "Բրինձ, սոխ, կանաչի, ձեթ, խաղողի տերև"
   }
@@ -788,32 +788,32 @@ tavush: {
     ],
     hotelsData: [
       {
-    img: "./imges/Tavush/hotels/apaga.jpg",
+    img: "/assets/images/Tavush/hotels/apaga.jpg",
     title: "Apaga Resort",
     link: "https://www.booking.com/hotel/am/apaga-resort.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55593404791%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2324870&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748070593&srpvid=e26e325ce32e020e&type=total&ucfs=1&"
   },
    {
-    img: "./imges/Tavush/hotels/apaga.jpg",
+    img: "/assets/images/Tavush/hotels/apaga.jpg",
     title: "Apaga Resort",
     link: "https://www.booking.com/hotel/am/apaga-resort.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55593404791%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2324870&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748070593&srpvid=e26e325ce32e020e&type=total&ucfs=1&"
   },
    {
-    img: "./imges/Tavush/hotels/apaga.jpg",
+    img: "/assets/images/Tavush/hotels/apaga.jpg",
     title: "Apaga Resort",
     link: "https://www.booking.com/hotel/am/apaga-resort.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55593404791%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2324870&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748070593&srpvid=e26e325ce32e020e&type=total&ucfs=1&"
   },
    {
-    img: "./imges/Tavush/hotels/apaga.jpg",
+    img: "/assets/images/Tavush/hotels/apaga.jpg",
     title: "Apaga Resort",
     link: "https://www.booking.com/hotel/am/apaga-resort.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55593404791%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2324870&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748070593&srpvid=e26e325ce32e020e&type=total&ucfs=1&"
   },
    {
-    img: "./imges/Tavush/hotels/apaga.jpg",
+    img: "/assets/images/Tavush/hotels/apaga.jpg",
     title: "Apaga Resort",
     link: "https://www.booking.com/hotel/am/apaga-resort.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55593404791%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2324870&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748070593&srpvid=e26e325ce32e020e&type=total&ucfs=1&"
   },
    {
-    img: "./imges/Tavush/hotels/apaga.jpg",
+    img: "/assets/images/Tavush/hotels/apaga.jpg",
     title: "Apaga Resort",
     link: "https://www.booking.com/hotel/am/apaga-resort.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55593404791%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2324870&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748070593&srpvid=e26e325ce32e020e&type=total&ucfs=1&"
   },
@@ -832,29 +832,21 @@ tavush: {
   description: "Արվեստների և նկարիչների փառատոն, որը անցկացվում է Տավուշի մարզի Դիլիջան քաղաքում։",
   location: "Դիլիջան",
   time: "Օգոստոս",
-  imgSrc: "./imges/Tavush/culture/dilijan_art_festival.jpg"
+  imgSrc: "/assets/images/Tavush/culture/dilijan_art_festival.jpg"
 },
 {
   title: "Բերդի հին ավանդույթների տոն",
   description: "Տեղական ավանդույթների վերականգնման և մշակութային ժառանգության պահպանման տոն։",
   location: "Բերդ",
   time: "Հունիս",
-  imgSrc: "./imges/Tavush/culture/berd_festival.jpg"
+  imgSrc: "/assets/images/Tavush/culture/berd_festival.jpg"
 },
 {
   title: "Բերդի հին ավանդույթների տոն",
   description: "Տեղական ավանդույթների վերականգնման և մշակութային ժառանգության պահպանման տոն։",
   location: "Բերդ",
   time: "Հունիս",
-  imgSrc: "./imges/Tavush/culture/berd_festival.jpg"
-},
-
-{
-  title: "Բերդի հին ավանդույթների տոն",
-  description: "Տեղական ավանդույթների վերականգնման և մշակութային ժառանգության պահպանման տոն։",
-  location: "Բերդ",
-  time: "Հունիս",
-  imgSrc: "./imges/Tavush/culture/berd_festival.jpg"
+  imgSrc: "/assets/images/Tavush/culture/berd_festival.jpg"
 },
 
 {
@@ -862,7 +854,15 @@ tavush: {
   description: "Տեղական ավանդույթների վերականգնման և մշակութային ժառանգության պահպանման տոն։",
   location: "Բերդ",
   time: "Հունիս",
-  imgSrc: "./imges/Tavush/culture/berd_festival.jpg"
+  imgSrc: "/assets/images/Tavush/culture/berd_festival.jpg"
+},
+
+{
+  title: "Բերդի հին ավանդույթների տոն",
+  description: "Տեղական ավանդույթների վերականգնման և մշակութային ժառանգության պահպանման տոն։",
+  location: "Բերդ",
+  time: "Հունիս",
+  imgSrc: "/assets/images/Tavush/culture/berd_festival.jpg"
 },
 
 
@@ -893,47 +893,47 @@ gegharkunik: {
     ],
     sightsCardData: [
      {
-    "imgUrl": "./imges/Gegharkunik/attractions/sevan_lake.png",
+    "imgUrl": "/assets/images/Gegharkunik/attractions/sevan_lake.png",
     "title": "Սևանա լիճ",
     "description": "Հայաստանի ամենամեծ քաղցրահամ լիճը՝ տեղակայված ծովի մակարդակից 1916 մ բարձրության վրա։"
   },
   {
-    "imgUrl": "./imges/Gegharkunik/attractions/sevanavank.jpg",
+    "imgUrl": "/assets/images/Gegharkunik/attractions/sevanavank.jpg",
     "title": "Սևանավանք",
     "description": "874 թվականին հիմնադրված վանական համալիր՝ Սևանա լճի թերակղզու վրա։"
   },
   {
-    "imgUrl": "./imges/Gegharkunik/attractions/hayravank.jpg",
+    "imgUrl": "/assets/images/Gegharkunik/attractions/hayravank.jpg",
     "title": "Հայրավանք",
     "description": "9-12-րդ դարերի վանական համալիր՝ Սևանա լճի ափին՝ Հայրավանք գյուղում։"
   },
   {
-    "imgUrl": "./imges/Gegharkunik/attractions/noratous.jpg",
+    "imgUrl": "/assets/images/Gegharkunik/attractions/noratous.jpg",
     "title": "Նորատուսի գերեզմանատուն",
     "description": "Միջնադարյան խաչքարերի ամենամեծ համալիրը՝ թվագրվող 9-17-րդ դարերով։"
   },
   {
-    "imgUrl": "./imges/Gegharkunik/attractions/ajdahak.jpg",
+    "imgUrl": "/assets/images/Gegharkunik/attractions/ajdahak.jpg",
     "title": "Աժդահակ լեռ",
     "description": "Գեղամա լեռնաշղթայի ամենաբարձր գագաթը՝ 3597 մ բարձրությամբ, գագաթին՝ լճակով։"
   },
   {
-    "imgUrl": "./imges/Gegharkunik/attractions/armaghan.jpg",
+    "imgUrl": "/assets/images/Gegharkunik/attractions/armaghan.jpg",
     "title": "Արմաղան լեռ",
     "description": "2829 մ բարձրությամբ լեռ՝ գագաթին փոքր լճակով, հարմար արշավների համար։"
   },
   {
-    "imgUrl": "./imges/Gegharkunik/attractions/makenyats_vank.jpg",
+    "imgUrl": "/assets/images/Gegharkunik/attractions/makenyats_vank.jpg",
     "title": "Մաքենյաց վանք",
     "description": "9-13-րդ դարերի վանական համալիր՝ Մաքենիս գյուղում, մշակութային և կրթական կենտրոն։"
   },
   {
-    "imgUrl": "./imges/Gegharkunik/attractions/vanevan.jpg",
+    "imgUrl": "/assets/images/Gegharkunik/attractions/vanevan.jpg",
     "title": "Վանեվան վանք",
     "description": "903 թվականին կառուցված վանական համալիր՝ Արծվանիստ գյուղի մոտ։"
   },
   {
-    "imgUrl": "./imges/Gegharkunik/attractions/kotavank.jpg",
+    "imgUrl": "/assets/images/Gegharkunik/attractions/kotavank.jpg",
     "title": "Կոթավանք",
     "description": "851-901 թթ. կառուցված վանական համալիր՝ Ներքին Գետաշեն գյուղում։"
   }
@@ -941,22 +941,22 @@ gegharkunik: {
     ],
     foodData: [
        {
-    img: "./imges/Gegharkunik/food/kchuch.jpg",
+    img: "/assets/images/Gegharkunik/food/kchuch.jpg",
     name: "Կճուճ",
     ingredients: "Կարագ, բրինձ, սխտոր, մածուն"
   },
   {
-    img: "./imges/Gegharkunik/food/qyufta.jpg",
+    img: "/assets/images/Gegharkunik/food/qyufta.jpg",
     name: "քյուֆթա",
     ingredients: "Սոխ, մսամթերք, համեմունքներ"
   },
   {
-    img: "./imges/Gegharkunik/food/ghapama.jpg",
+    img: "/assets/images/Gegharkunik/food/ghapama.jpg",
     name: "Ղափամա",
     ingredients: "Դդում, բրինձ, չրեր, ընկույզ, մեղր"
   },
   {
-    img: "./imges/Gegharkunik/food/matsun.jpg",
+    img: "/assets/images/Gegharkunik/food/matsun.jpg",
     name: "Մածուն",
     ingredients: "Կաթ"
   }
@@ -964,63 +964,63 @@ gegharkunik: {
     ],
     hotelsData: [
       {
-    img: "./imges/Gegharkunik/hotels/sevan.jpg",
+    img: "/assets/images/Gegharkunik/hotels/sevan.jpg",
     title: "Comuna Sevan",
     link: "https://www.booking.com/hotel/am/comuna-sevan.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55605428861%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325360&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748071909&srpvid=7b4f34efefd20498&type=total&ucfs=1&"
   },
     {
-    img: "./imges/Gegharkunik/hotels/sevan.jpg",
+    img: "/assets/images/Gegharkunik/hotels/sevan.jpg",
     title: "Comuna Sevan",
     link: "https://www.booking.com/hotel/am/comuna-sevan.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55605428861%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325360&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748071909&srpvid=7b4f34efefd20498&type=total&ucfs=1&"
   },
     {
-    img: "./imges/Gegharkunik/hotels/sevan.jpg",
+    img: "/assets/images/Gegharkunik/hotels/sevan.jpg",
     title: "Comuna Sevan",
     link: "https://www.booking.com/hotel/am/comuna-sevan.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55605428861%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325360&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748071909&srpvid=7b4f34efefd20498&type=total&ucfs=1&"
   },
     {
-    img: "./imges/Gegharkunik/hotels/sevan.jpg",
+    img: "/assets/images/Gegharkunik/hotels/sevan.jpg",
     title: "Comuna Sevan",
     link: "https://www.booking.com/hotel/am/comuna-sevan.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55605428861%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325360&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748071909&srpvid=7b4f34efefd20498&type=total&ucfs=1&"
   },
     {
-    img: "./imges/Gegharkunik/hotels/sevan.jpg",
+    img: "/assets/images/Gegharkunik/hotels/sevan.jpg",
     title: "Comuna Sevan",
     link: "https://www.booking.com/hotel/am/comuna-sevan.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55605428861%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325360&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748071909&srpvid=7b4f34efefd20498&type=total&ucfs=1&"
   },
     {
-    img: "./imges/Gegharkunik/hotels/sevan.jpg",
+    img: "/assets/images/Gegharkunik/hotels/sevan.jpg",
     title: "Comuna Sevan",
     link: "https://www.booking.com/hotel/am/comuna-sevan.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55605428861%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325360&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748071909&srpvid=7b4f34efefd20498&type=total&ucfs=1&"
   },
     {
-    img: "./imges/Gegharkunik/hotels/sevan.jpg",
+    img: "/assets/images/Gegharkunik/hotels/sevan.jpg",
     title: "Comuna Sevan",
     link: "https://www.booking.com/hotel/am/comuna-sevan.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55605428861%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325360&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748071909&srpvid=7b4f34efefd20498&type=total&ucfs=1&"
   },
     {
-    img: "./imges/Gegharkunik/hotels/sevan.jpg",
+    img: "/assets/images/Gegharkunik/hotels/sevan.jpg",
     title: "Comuna Sevan",
     link: "https://www.booking.com/hotel/am/comuna-sevan.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55605428861%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325360&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748071909&srpvid=7b4f34efefd20498&type=total&ucfs=1&"
   },
     {
-    img: "./imges/Gegharkunik/hotels/sevan.jpg",
+    img: "/assets/images/Gegharkunik/hotels/sevan.jpg",
     title: "Comuna Sevan",
     link: "https://www.booking.com/hotel/am/comuna-sevan.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55605428861%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325360&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748071909&srpvid=7b4f34efefd20498&type=total&ucfs=1&"
   },
     {
-    img: "./imges/Gegharkunik/hotels/sevan.jpg",
+    img: "/assets/images/Gegharkunik/hotels/sevan.jpg",
     title: "Comuna Sevan",
     link: "https://www.booking.com/hotel/am/comuna-sevan.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55605428861%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325360&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748071909&srpvid=7b4f34efefd20498&type=total&ucfs=1&"
   },
     {
-    img: "./imges/Gegharkunik/hotels/sevan.jpg",
+    img: "/assets/images/Gegharkunik/hotels/sevan.jpg",
     title: "Comuna Sevan",
     link: "https://www.booking.com/hotel/am/comuna-sevan.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55605428861%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325360&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748071909&srpvid=7b4f34efefd20498&type=total&ucfs=1&"
   },
 
     {
-    img: "./imges/Gegharkunik/hotels/sevan.jpg",
+    img: "/assets/images/Gegharkunik/hotels/sevan.jpg",
     title: "Comuna Sevan",
     link: "https://www.booking.com/hotel/am/comuna-sevan.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55605428861%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325360&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748071909&srpvid=7b4f34efefd20498&type=total&ucfs=1&"
   },
@@ -1039,42 +1039,42 @@ gegharkunik: {
   description: "Համառոտ, բայց վառ փառատոն, նվիրված Սևան լճին և նրա բնությանը։",
   location: "Սևան",
   time: "Հուլիս",
-  imgSrc: "./imges/Gegharkunik/culture/sevan_fest.jpg"
+  imgSrc: "/assets/images/Gegharkunik/culture/sevan_fest.jpg"
 },
    {
   title: "Սևանի լճի փառատոն",
   description: "Համառոտ, բայց վառ փառատոն, նվիրված Սևան լճին և նրա բնությանը։",
   location: "Սևան",
   time: "Հուլիս",
-  imgSrc: "./imges/Gegharkunik/culture/sevan_fest.jpg"
+  imgSrc: "/assets/images/Gegharkunik/culture/sevan_fest.jpg"
 },
    {
   title: "Սևանի լճի փառատոն",
   description: "Համառոտ, բայց վառ փառատոն, նվիրված Սևան լճին և նրա բնությանը։",
   location: "Սևան",
   time: "Հուլիս",
-  imgSrc: "./imges/Gegharkunik/culture/sevan_fest.jpg"
+  imgSrc: "/assets/images/Gegharkunik/culture/sevan_fest.jpg"
 },
    {
   title: "Սևանի լճի փառատոն",
   description: "Համառոտ, բայց վառ փառատոն, նվիրված Սևան լճին և նրա բնությանը։",
   location: "Սևան",
   time: "Հուլիս",
-  imgSrc: "./imges/Gegharkunik/culture/sevan_fest.jpg"
+  imgSrc: "/assets/images/Gegharkunik/culture/sevan_fest.jpg"
 },
    {
   title: "Սևանի լճի փառատոն",
   description: "Համառոտ, բայց վառ փառատոն, նվիրված Սևան լճին և նրա բնությանը։",
   location: "Սևան",
   time: "Հուլիս",
-  imgSrc: "./imges/Gegharkunik/culture/sevan_fest.jpg"
+  imgSrc: "/assets/images/Gegharkunik/culture/sevan_fest.jpg"
 },
 {
   title: "Գեղարքունիքի գյուղական տոն",
   description: "Տեղական գյուղական մշակույթի և ավանդույթների պահպանման միջոցառում։",
   location: "Գեղարքունիք մարզ",
   time: "Սեպտեմբեր",
-  imgSrc: "./imges/Gegharkunik/culture/gegharkunik_festival.jpg"
+  imgSrc: "/assets/images/Gegharkunik/culture/gegharkunik_festival.jpg"
 }
 
   
@@ -1103,27 +1103,27 @@ kotayq: {
     ],
     sightsCardData: [
        {
-    "imgUrl": "./imges/Kotayk/attractions/garni.jpg",
+    "imgUrl": "/assets/images/Kotayk/attractions/garni.jpg",
     "title": "Գառնու հեթանոսական տաճար",
     "description": "Հայաստանի միակ պահպանված հեթանոսական տաճարը՝ նվիրված Միհր աստծուն։ Տեղակայված է Գառնի գյուղում՝ գեղատեսիլ ժայռապատկերով շրջապատված։"
   },
   {
-    "imgUrl": "./imges/Kotayk/attractions/geghard.jpg",
+    "imgUrl": "/assets/images/Kotayk/attractions/geghard.jpg",
     "title": "Գեղարդի վանք",
     "description": "ՅՈՒՆԵՍԿՕ-ի համաշխարհային ժառանգության ցանկում ընդգրկված վանական համալիր՝ մասամբ փորված քարանձավներում։ Գտնվում է Գեղարդավանք գյուղում՝ Գեղարքունիքի լեռներում։"
   },
   {
-    "imgUrl": "./imges/Kotayk/attractions/tsaghkadzor.jpg",
+    "imgUrl": "/assets/images/Kotayk/attractions/tsaghkadzor.jpg",
     "title": "Ծաղկաձորի հանգստավայր",
     "description": "Լեռնային հանգստավայր՝ հայտնի իր սահադաշտերով, լեռնային զբոսանքներով և առողջարանային ծառայություններով։"
   },
   {
-    "imgUrl": "./imges/Kotayk/attractions/teghenis.webp",
+    "imgUrl": "/assets/images/Kotayk/attractions/teghenis.webp",
     "title": "Տեղենիսի լեռնագնացության կենտրոն",
     "description": "Լեռնագնացության և արշավների համար հարմար վայր՝ գեղեցիկ բնությամբ և տարբեր դժվարության մակարդակներով երթուղիներով։"
   },
   {
-    "imgUrl": "./imges/Kotayk/attractions/aknak.jpg",
+    "imgUrl": "/assets/images/Kotayk/attractions/aknak.jpg",
     "title": "Ակնաքար լեռ",
     "description": "Լեռ՝ հայտնի իր քարանձավներով և բնության գեղատեսիլ տեսարաններով։ Հարմար է արշավների և բնության սիրահարների համար։"
   },
@@ -1136,12 +1136,12 @@ kotayq: {
     ],
     foodData: [
   {
-    img: "./imges/Kotayk/food/kchuch.jpg",
+    img: "/assets/images/Kotayk/food/kchuch.jpg",
     name: "Կճուճ",
     ingredients: "Կարագ, բրինձ, սխտոր, մածուն"
   },
   {
-    img: "./imges/Kotayk/food/churek.jpg",
+    img: "/assets/images/Kotayk/food/churek.jpg",
     name: "Չուրեկ",
     ingredients: "Կարագ, ալյուր, շաքար, ձու"
   }
@@ -1149,27 +1149,27 @@ kotayq: {
     ],
     hotelsData: [
       {
-    img: "./imges/Kotayk/hotels/garni.jpg",
+    img: "/assets/images/Kotayk/hotels/garni.jpg",
     title: "Hidden Garden Resort",
     link: "https://www.booking.com/hotel/am/hidden-garden-resort.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55655603777%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2324772&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=3&hpos=3&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748072871&srpvid=577f36d18f4e02a6&type=total&ucfs=1&"
   },
   {
-    img: "./imges/Kotayk/hotels/garni.jpg",
+    img: "/assets/images/Kotayk/hotels/garni.jpg",
     title: "Hidden Garden Resort",
     link: "https://www.booking.com/hotel/am/hidden-garden-resort.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55655603777%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2324772&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=3&hpos=3&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748072871&srpvid=577f36d18f4e02a6&type=total&ucfs=1&"
   },
   {
-    img: "./imges/Kotayk/hotels/garni.jpg",
+    img: "/assets/images/Kotayk/hotels/garni.jpg",
     title: "Hidden Garden Resort",
     link: "https://www.booking.com/hotel/am/hidden-garden-resort.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55655603777%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2324772&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=3&hpos=3&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748072871&srpvid=577f36d18f4e02a6&type=total&ucfs=1&"
   },
   {
-    img: "./imges/Kotayk/hotels/garni.jpg",
+    img: "/assets/images/Kotayk/hotels/garni.jpg",
     title: "Hidden Garden Resort",
     link: "https://www.booking.com/hotel/am/hidden-garden-resort.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55655603777%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2324772&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=3&hpos=3&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748072871&srpvid=577f36d18f4e02a6&type=total&ucfs=1&"
   },
   {
-    img: "./imges/Kotayk/hotels/garni.jpg",
+    img: "/assets/images/Kotayk/hotels/garni.jpg",
     title: "Hidden Garden Resort",
     link: "https://www.booking.com/hotel/am/hidden-garden-resort.html?aid=318615&label=English_Armenia_EN_AM_29508965905-pEVFI7BeOUu1zVT2VtE9%2AQS217289555440%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55655603777%3Atidsa-386017564517%3Alp9070052%3Ali%3Adec%3Adm&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2324772&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=3&hpos=3&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748072871&srpvid=577f36d18f4e02a6&type=total&ucfs=1&"
   },
@@ -1188,7 +1188,7 @@ kotayq: {
     description: "Գյուղական կյանքի և ավանդույթների ամենամյա փառատոն, որտեղ ներկայացվում են օրգանական գյուղմթերք, արհեստներ և ազգային մշակույթ։",
     location: "Ձորաղբյուր",
     time: "Սեպտեմբեր",
-    imgSrc: "./imges/Kotayk/culture/berqi_ton.jpg"
+    imgSrc: "/assets/images/Kotayk/culture/berqi_ton.jpg"
   },
 
   {
@@ -1196,7 +1196,7 @@ kotayq: {
     description: "Մնջախաղի թատրոնների միջազգային փառատոն, որը նպաստում է մշակութային կյանքի և զբոսաշրջության զարգացմանը։",
     location: "Ծաղկաձոր",
     time: "Հունիս",
-    imgSrc: "./imges/Kotayk/culture/mnjaxax_festival.jpg"
+    imgSrc: "/assets/images/Kotayk/culture/mnjaxax_festival.jpg"
   },
     
   {
@@ -1204,7 +1204,7 @@ kotayq: {
     description: "Գյուղական կյանքի և ավանդույթների ամենամյա փառատոն, որտեղ ներկայացվում են օրգանական գյուղմթերք, արհեստներ և ազգային մշակույթ։",
     location: "Ձորաղբյուր",
     time: "Սեպտեմբեր",
-    imgSrc: "./imges/Kotayk/culture/berqi_ton.jpg"
+    imgSrc: "/assets/images/Kotayk/culture/berqi_ton.jpg"
   },
 
   {
@@ -1212,7 +1212,7 @@ kotayq: {
     description: "Մնջախաղի թատրոնների միջազգային փառատոն, որը նպաստում է մշակութային կյանքի և զբոսաշրջության զարգացմանը։",
     location: "Ծաղկաձոր",
     time: "Հունիս",
-    imgSrc: "./imges/Kotayk/culture/mnjaxax_festival.jpg"
+    imgSrc: "/assets/images/Kotayk/culture/mnjaxax_festival.jpg"
   }
   
     ],
@@ -1239,27 +1239,27 @@ ararat: {
     ],
     sightsCardData: [
       {
-    "imgUrl": "./imges/Ararat/attractions/khor_virap.jpg",
+    "imgUrl": "/assets/images/Ararat/attractions/khor_virap.jpg",
     "title": "Խոր Վիրապ",
     "description": "Պատմական վանք-ամրոց՝ կապված Գրիգոր Լուսավորչի հետ, որտեղից բացվում է հիասքանչ տեսարան Արարատ լեռան վրա։"
   },
   {
-    "imgUrl": "./imges/Ararat/attractions/kakavaberd.jpg",
+    "imgUrl": "/assets/images/Ararat/attractions/kakavaberd.jpg",
     "title": "Կաքավաբերդ",
     "description": "Բարձր լեռան գագաթին կառուցված միջնադարյան ամրոց՝ երեք կողմից անմատչելի, պատմական նշանակության։"
   },
   {
-    "imgUrl": "./imges/Ararat/attractions/khosrov_forest.jpg",
+    "imgUrl": "/assets/images/Ararat/attractions/khosrov_forest.jpg",
     "title": "Խոսրովի անտառ",
     "description": "Պետական արգելոց՝ հիմնադրված 4-րդ դարում, հարուստ կենսաբազմազանությամբ և պատմական հուշարձաններով։"
   },
   {
-    "imgUrl": "./imges/Ararat/attractions/tapi_berd.jpg",
+    "imgUrl": "/assets/images/Ararat/attractions/tapi_berd.jpg",
     "title": "Տափի բերդ",
     "description": "10-րդ դարի ամրոց՝ Գևորգ Մարզպետունու կողմից կառուցված, տեղակայված Ուրցաձոր գյուղի մոտ։"
   },
   {
-    "imgUrl": "./imges/Ararat/entertainment/hrashq_aygi.jpg",
+    "imgUrl": "/assets/images/Ararat/entertainment/hrashq_aygi.jpg",
     "title": "Հրաշք Այգի",
     "description": "Մխչյան գյուղում գտնվող այգի՝ առաջարկող հանգիստ միջավայր և զվարճանքներ ամբողջ ընտանիքի համար։"
   }
@@ -1267,17 +1267,17 @@ ararat: {
     ],
     foodData: [
      {
-    img: "./imges/Ararat/food/manti.jpg",
+    img: "/assets/images/Ararat/food/manti.jpg",
     name: "Մանթի",
     ingredients: "Հացաբլիթ, աղացած միս, լոլիկի սոուս"
   },
   {
-    img: "./imges/Ararat/food/harisa.jpg",
+    img: "/assets/images/Ararat/food/harisa.jpg",
     name: "Հարիսա",
     ingredients: "Գարի, խոզի կամ ոչխարի միս"
   },
   {
-    img: "./imges/Ararat/food/ghapama.jpg",
+    img: "/assets/images/Ararat/food/ghapama.jpg",
     name: "Ղափամա",
     ingredients: "Դդում, բրինձ, չրեր, ընկույզ, մեղր"
   }
@@ -1285,27 +1285,27 @@ ararat: {
     ],
     hotelsData: [
       {
-    img: "./imges/Ararat/hotels/ralina.jpg",
+    img: "/assets/images/Ararat/hotels/ralina.jpg",
     title: "Ralina Restaurant and Hotel",
     link: "https://h.priceline.com/hotel/am/ralina-restaurant.en-gb.html?aid=826590&label=ararat-b4hToczQ2wINZLai%2Ag5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&sid=c495d2ea5036e0d784c7860e4e8a85fe&dest_id=-2324444&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748075068&srpvid=5d153b1dbbb00254&type=total&ucfs=1&#hotelTmpl"
   },
    {
-    img: "./imges/Ararat/hotels/ralina.jpg",
+    img: "/assets/images/Ararat/hotels/ralina.jpg",
     title: "Ralina Restaurant and Hotel",
     link: "https://h.priceline.com/hotel/am/ralina-restaurant.en-gb.html?aid=826590&label=ararat-b4hToczQ2wINZLai%2Ag5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&sid=c495d2ea5036e0d784c7860e4e8a85fe&dest_id=-2324444&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748075068&srpvid=5d153b1dbbb00254&type=total&ucfs=1&#hotelTmpl"
   },
    {
-    img: "./imges/Ararat/hotels/ralina.jpg",
+    img: "/assets/images/Ararat/hotels/ralina.jpg",
     title: "Ralina Restaurant and Hotel",
     link: "https://h.priceline.com/hotel/am/ralina-restaurant.en-gb.html?aid=826590&label=ararat-b4hToczQ2wINZLai%2Ag5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&sid=c495d2ea5036e0d784c7860e4e8a85fe&dest_id=-2324444&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748075068&srpvid=5d153b1dbbb00254&type=total&ucfs=1&#hotelTmpl"
   },
    {
-    img: "./imges/Ararat/hotels/ralina.jpg",
+    img: "/assets/images/Ararat/hotels/ralina.jpg",
     title: "Ralina Restaurant and Hotel",
     link: "https://h.priceline.com/hotel/am/ralina-restaurant.en-gb.html?aid=826590&label=ararat-b4hToczQ2wINZLai%2Ag5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&sid=c495d2ea5036e0d784c7860e4e8a85fe&dest_id=-2324444&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748075068&srpvid=5d153b1dbbb00254&type=total&ucfs=1&#hotelTmpl"
   },
    {
-    img: "./imges/Ararat/hotels/ralina.jpg",
+    img: "/assets/images/Ararat/hotels/ralina.jpg",
     title: "Ralina Restaurant and Hotel",
     link: "https://h.priceline.com/hotel/am/ralina-restaurant.en-gb.html?aid=826590&label=ararat-b4hToczQ2wINZLai%2Ag5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&sid=c495d2ea5036e0d784c7860e4e8a85fe&dest_id=-2324444&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748075068&srpvid=5d153b1dbbb00254&type=total&ucfs=1&#hotelTmpl"
   },
@@ -1324,14 +1324,14 @@ ararat: {
   description: "Գինու մշակույթի խթանման փառատոն՝ նվիրված Արարատյան դաշտի գինիներին։",
   location: "Արտաշատ",
   time: "Հուլիս",
-  imgSrc: "./imges/Ararat/culture/wine_festival.jpg"
+  imgSrc: "/assets/images/Ararat/culture/wine_festival.jpg"
 },
 {
   title: "Վեդու ժողովրդական տոն",
   description: "Համայնքային տոն Վեդիում, ներառում է ավանդական պարեր ու երգեր։",
   location: "Վեդի",
   time: "Օգոստոս",
-  imgSrc: "./imges/Ararat/culture/vedi_festival.jpg"
+  imgSrc: "/assets/images/Ararat/culture/vedi_festival.jpg"
 },
 
     
@@ -1360,47 +1360,47 @@ vayotsDzor: {
     ],
     sightsCardData: [
         {
-    "imgUrl": "./imges/VayotsDzor/attractions/noravank.jpg",
+    "imgUrl": "/assets/images/VayotsDzor/attractions/noravank.jpg",
     "title": "Նորավանք",
     "description": "10-13-րդ դարերի վանական համալիր՝ հայտնի իր ճարտարապետ Մոմիկի խաչքարերով և գեղատեսիլ կիրճով։"
   },
   {
-    "imgUrl": "./imges/VayotsDzor/attractions/gndevank.jpg",
+    "imgUrl": "/assets/images/VayotsDzor/attractions/gndevank.jpg",
     "title": "Գնդեվանք",
     "description": "10-րդ դարի վանք՝ կառուցված Գնդեվազ գյուղի մոտ՝ Արփա գետի կիրճում։"
   },
   {
-    "imgUrl": "./imges/VayotsDzor/attractions/spitakavor.jpg",
+    "imgUrl": "/assets/images/VayotsDzor/attractions/spitakavor.jpg",
     "title": "Սպիտակավոր վանք",
     "description": "14-րդ դարի վանական համալիր՝ տեղակայված Վերնաշեն գյուղի մոտ՝ Տեքսար լեռան լանջին։"
   },
   {
-    "imgUrl": "./imges/VayotsDzor/attractions/smbataberd.jpg",
+    "imgUrl": "/assets/images/VayotsDzor/attractions/smbataberd.jpg",
     "title": "Սմբատաբերդ",
     "description": "10-րդ դարի ամրոց՝ կառուցված բարձրադիր լեռան վրա՝ պաշտպանական նշանակությամբ։"
   },
   {
-    "imgUrl": "./imges/VayotsDzor/attractions/proshaberd.jpg",
+    "imgUrl": "/assets/images/VayotsDzor/attractions/proshaberd.jpg",
     "title": "Պռոշաբերդ",
     "description": "13-րդ դարի ամրոց՝ տեղակայված Վայոց Ձորի լեռնային տարածքում։"
   },
   {
-    "imgUrl": "./imges/VayotsDzor/attractions/areni_cave.jpg",
+    "imgUrl": "/assets/images/VayotsDzor/attractions/areni_cave.jpg",
     "title": "Արենի քարանձավ",
     "description": "Հնագիտական վայր՝ որտեղ հայտնաբերվել է աշխարհի ամենահին գինեգործարանը։"
   },
   {
-    "imgUrl": "./imges/VayotsDzor/attractions/jermuk_waterfall.jpg",
+    "imgUrl": "/assets/images/VayotsDzor/attractions/jermuk_waterfall.jpg",
     "title": "Ջերմուկի ջրվեժ",
     "description": "Հայտնի է որպես «Ջրահարսի վարսեր»՝ 72 մ բարձրությամբ ջրվեժ՝ կապված ժողովրդական առասպելի հետ։"
   },
   {
-    "imgUrl": "./imges/VayotsDzor/attractions/tsakhats_kar.jpg",
+    "imgUrl": "/assets/images/VayotsDzor/attractions/tsakhats_kar.jpg",
     "title": "Ցաղաց Քար վանք",
     "description": "10-11-րդ դարերի վանական համալիր՝ տեղակայված Վայոց Ձորի լեռնային տարածքում։"
   },
   {
-    "imgUrl": "./imges/VayotsDzor/attractions/orbelian_caravanserai.jpg",
+    "imgUrl": "/assets/images/VayotsDzor/attractions/orbelian_caravanserai.jpg",
     "title": "Օրբելյանների քարավանատուն",
     "description": "14-րդ դարի քարավանատուն՝ կառուցված 1332 թվականին՝ Սելիմի լեռնանցքի մոտ։"
   }
@@ -1409,32 +1409,32 @@ vayotsDzor: {
     foodData: [
   
   {
-    img: "./imges/VayotsDzor/food/tahini.jpg",
+    img: "/assets/images/VayotsDzor/food/tahini.jpg",
     name: "Թահինի",
     ingredients: "Թարմ կաթ, խտացրած կաթ, սերուցք"
   },
   {
-    img: "./imges/VayotsDzor/food/tahini.jpg",
+    img: "/assets/images/VayotsDzor/food/tahini.jpg",
     name: "Թահինի",
     ingredients: "Թարմ կաթ, խտացրած կաթ, սերուցք"
   },
   {
-    img: "./imges/VayotsDzor/food/tahini.jpg",
+    img: "/assets/images/VayotsDzor/food/tahini.jpg",
     name: "Թահինի",
     ingredients: "Թարմ կաթ, խտացրած կաթ, սերուցք"
   },
   {
-    img: "./imges/VayotsDzor/food/tahini.jpg",
+    img: "/assets/images/VayotsDzor/food/tahini.jpg",
     name: "Թահինի",
     ingredients: "Թարմ կաթ, խտացրած կաթ, սերուցք"
   },
  {
-    img: "./imges/VayotsDzor/food/tahini.jpg",
+    img: "/assets/images/VayotsDzor/food/tahini.jpg",
     name: "Թահինի",
     ingredients: "Թարմ կաթ, խտացրած կաթ, սերուցք"
   },
   {
-    img: "./imges/VayotsDzor/food/tahini.jpg",
+    img: "/assets/images/VayotsDzor/food/tahini.jpg",
     name: "Թահինի",
     ingredients: "Թարմ կաթ, խտացրած կաթ, սերուցք"
   },
@@ -1442,31 +1442,31 @@ vayotsDzor: {
     ],
     hotelsData: [
       {
-    img: "./imges/VayotsDzor/hotels/montis.jpg",
+    img: "/assets/images/VayotsDzor/hotels/montis.jpg",
     title: "Montis Resort",
     link: "https://h.priceline.com/hotel/am/montis-resort.en-gb.html?label=ararat-b4hToczQ2wINZLai*g5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&aid=826590&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=distance_from_search&srpvid=a7953d897366034f&srepoch=1748076308&from=searchresults#hotelTmpl"
   },
   
      {
-    img: "./imges/VayotsDzor/hotels/montis.jpg",
+    img: "/assets/images/VayotsDzor/hotels/montis.jpg",
     title: "Montis Resort",
     link: "https://h.priceline.com/hotel/am/montis-resort.en-gb.html?label=ararat-b4hToczQ2wINZLai*g5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&aid=826590&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=distance_from_search&srpvid=a7953d897366034f&srepoch=1748076308&from=searchresults#hotelTmpl"
   },
   
      {
-    img: "./imges/VayotsDzor/hotels/montis.jpg",
+    img: "/assets/images/VayotsDzor/hotels/montis.jpg",
     title: "Montis Resort",
     link: "https://h.priceline.com/hotel/am/montis-resort.en-gb.html?label=ararat-b4hToczQ2wINZLai*g5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&aid=826590&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=distance_from_search&srpvid=a7953d897366034f&srepoch=1748076308&from=searchresults#hotelTmpl"
   },
   
      {
-    img: "./imges/VayotsDzor/hotels/montis.jpg",
+    img: "/assets/images/VayotsDzor/hotels/montis.jpg",
     title: "Montis Resort",
     link: "https://h.priceline.com/hotel/am/montis-resort.en-gb.html?label=ararat-b4hToczQ2wINZLai*g5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&aid=826590&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=distance_from_search&srpvid=a7953d897366034f&srepoch=1748076308&from=searchresults#hotelTmpl"
   },
   
      {
-    img: "./imges/VayotsDzor/hotels/montis.jpg",
+    img: "/assets/images/VayotsDzor/hotels/montis.jpg",
     title: "Montis Resort",
     link: "https://h.priceline.com/hotel/am/montis-resort.en-gb.html?label=ararat-b4hToczQ2wINZLai*g5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&aid=826590&ucfs=1&arphpl=1&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=distance_from_search&srpvid=a7953d897366034f&srepoch=1748076308&from=searchresults#hotelTmpl"
   },
@@ -1486,28 +1486,28 @@ vayotsDzor: {
       description: "Արենի գյուղում անցկացվող գինու փառատոնը համախմբում է տեղական գինեգործներին, մշակութային ներկայացումներով և համտեսներով։", 
       location: "Արենի", 
       time: "Հոկտեմբեր", 
-      imgSrc: "./imges/VayotsDzor/culture/areni_wine_festival.jpg" 
+      imgSrc: "/assets/images/VayotsDzor/culture/areni_wine_festival.jpg" 
     },
     { 
       title: "Խաղողօրհնեք և Գինու փառատոն", 
       description: "Արենի գյուղում անցկացվող գինու փառատոնը համախմբում է տեղական գինեգործներին, մշակութային ներկայացումներով և համտեսներով։", 
       location: "Արենի", 
       time: "Հոկտեմբեր", 
-      imgSrc: "./imges/VayotsDzor/culture/areni_wine_festival.jpg" 
+      imgSrc: "/assets/images/VayotsDzor/culture/areni_wine_festival.jpg" 
     },
     { 
       title: "Խաղողօրհնեք և Գինու փառատոն", 
       description: "Արենի գյուղում անցկացվող գինու փառատոնը համախմբում է տեղական գինեգործներին, մշակութային ներկայացումներով և համտեսներով։", 
       location: "Արենի", 
       time: "Հոկտեմբեր", 
-      imgSrc: "./imges/VayotsDzor/culture/areni_wine_festival.jpg" 
+      imgSrc: "/assets/images/VayotsDzor/culture/areni_wine_festival.jpg" 
     },
     { 
       title: "Խաղողօրհնեք և Գինու փառատոն", 
       description: "Արենի գյուղում անցկացվող գինու փառատոնը համախմբում է տեղական գինեգործներին, մշակութային ներկայացումներով և համտեսներով։", 
       location: "Արենի", 
       time: "Հոկտեմբեր", 
-      imgSrc: "./imges/VayotsDzor/culture/areni_wine_festival.jpg" 
+      imgSrc: "/assets/images/VayotsDzor/culture/areni_wine_festival.jpg" 
     },
   
     ],
@@ -1533,32 +1533,32 @@ syunik: {
     ],
     sightsCardData: [
        {
-    "imgUrl": "./imges/Syunik/attractions/tatev_monastery.jpg",
+    "imgUrl": "/assets/images/Syunik/attractions/tatev_monastery.jpg",
     "title": "Տաթևի վանք",
     "description": "9-րդ դարի վանական համալիր՝ տեղակայված Որոտան գետի կիրճի եզրին, հայտնի իր պատմական և ճարտարապետական արժեքներով։"
   },
   {
-    "imgUrl": "./imges/Syunik/attractions/wings_of_tatev.jpg",
+    "imgUrl": "/assets/images/Syunik/attractions/wings_of_tatev.jpg",
     "title": "Տաթևեր ճոպանուղի",
     "description": "Աշխարհի ամենաերկար հակադարձվող ճոպանուղին՝ կապող Հալիձոր գյուղը Տաթևի վանքին։"
   },
   {
-    "imgUrl": "./imges/Syunik/attractions/karahunj.jpg",
+    "imgUrl": "/assets/images/Syunik/attractions/karahunj.jpg",
     "title": "Քարահունջ (Զորաց Քարեր)",
     "description": "Մեգալիթյան հուշարձան՝ բաղկացած ուղղահայաց կանգնեցված քարերից, համարվում է հնագույն աստղադիտարան։"
   },
   {
-    "imgUrl": "./imges/Syunik/attractions/shaki_waterfall.jpg",
+    "imgUrl": "/assets/images/Syunik/attractions/shaki_waterfall.jpg",
     "title": "Շաքիի ջրվեժ",
     "description": "Գեղատեսիլ ջրվեժ՝ 18 մետր բարձրությամբ, տեղակայված Սիսիան քաղաքի մոտ։"
   },
   {
-    "imgUrl": "./imges/Syunik/attractions/halidzor_fortress.jpg",
+    "imgUrl": "/assets/images/Syunik/attractions/halidzor_fortress.jpg",
     "title": "Հալիձորի բերդ",
     "description": "17-րդ դարի ամրոց՝ ծառայել է որպես պաշտպանական կառույց Դավիթ Բեկի ազատագրական պայքարի ժամանակ։"
   },
   {
-    "imgUrl": "./imges/Syunik/attractions/arevik_national_park.jpg",
+    "imgUrl": "/assets/images/Syunik/attractions/arevik_national_park.jpg",
     "title": "Արևիք ազգային պարկ",
     "description": "Բնության պահպանվող տարածք՝ հարուստ կենսաբազմազանությամբ և եզակի բուսական ու կենդանական աշխարհով։"
   },
@@ -1568,17 +1568,17 @@ syunik: {
     "description": "10-11-րդ դարերի վանական համալիր՝ տեղակայված անտառապատ կիրճում։"
   },
   {
-    "imgUrl": "./imges/Syunik/attractions/baghaberd.jpg",
+    "imgUrl": "/assets/images/Syunik/attractions/baghaberd.jpg",
     "title": "Բաղաբերդ",
     "description": "4-րդ դարի ամրոց՝ ծառայել է որպես Սյունիքի թագավորության մայրաքաղաք։"
   },
   {
-    "imgUrl": "./imges/Syunik/attractions/kndzoresk.jpg",
+    "imgUrl": "/assets/images/Syunik/attractions/kndzoresk.jpg",
     "title": "Խնձորեսկ",
     "description": "Հին գյուղ՝ հայտնի իր քարանձավային բնակավայրերով և ճոճվող կամրջով։"
   },
   {
-    "imgUrl": "./imges/Syunik/attractions/devils_bridge.jpg",
+    "imgUrl": "/assets/images/Syunik/attractions/devils_bridge.jpg",
     "title": "Սատանի կամուրջ",
     "description": "Բնական քարե կամուրջ՝ ձևավորված Որոտան գետի հոսքի արդյունքում։"
   }
@@ -1586,23 +1586,23 @@ syunik: {
     ],
     foodData: [
      {
-    img: "./imges/Syunik/food/khorovats.jpg",
+    img: "/assets/images/Syunik/food/khorovats.jpg",
     name: "Խորոված",
     ingredients: "Տավարի կամ խոզի միս, սոխ, համեմունքներ, գազար"
   },
 
   {
-    img: "./imges/Syunik/food/basturma.jpg",
+    img: "/assets/images/Syunik/food/basturma.jpg",
     name: "Բաստուրմա",
     ingredients: "Խորովածի միս, սխտոր, կարմիր պղպեղ, քացախ"
   },
   {
-    img: "./imges/Syunik/food/kataif.jpg",
+    img: "/assets/images/Syunik/food/kataif.jpg",
     name: "Քաթաիֆ",
     ingredients: "Փխրուն խմոր, ընկույզ, մեղր, կարագ"
   },
   {
-    img: "./imges/Syunik/food/kataif.jpg",
+    img: "/assets/images/Syunik/food/kataif.jpg",
     name: "Քաթաիֆ",
     ingredients: "Փխրուն խմոր, ընկույզ, մեղր, կարագ"
   }
@@ -1610,22 +1610,22 @@ syunik: {
     ],
     hotelsData: [
       {
-    img: "./imges/Syunik/hotels/syuniq.jpg",
+    img: "/assets/images/Syunik/hotels/syuniq.jpg",
     title: "Syuniq Hotel",
     link: "https://h.priceline.com/hotel/am/syuniq-goris.en-gb.html?aid=826590&label=ararat-b4hToczQ2wINZLai%2Ag5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&sid=c495d2ea5036e0d784c7860e4e8a85fe&dest_id=8596406&dest_type=hotel&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748077548&srpvid=eaf03fef42bd0b97&type=total&ucfs=1&#hotelTmpl"
   },
     {
-    img: "./imges/Syunik/hotels/syuniq.jpg",
+    img: "/assets/images/Syunik/hotels/syuniq.jpg",
     title: "Syuniq Hotel",
     link: "https://h.priceline.com/hotel/am/syuniq-goris.en-gb.html?aid=826590&label=ararat-b4hToczQ2wINZLai%2Ag5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&sid=c495d2ea5036e0d784c7860e4e8a85fe&dest_id=8596406&dest_type=hotel&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748077548&srpvid=eaf03fef42bd0b97&type=total&ucfs=1&#hotelTmpl"
   },
     {
-    img: "./imges/Syunik/hotels/syuniq.jpg",
+    img: "/assets/images/Syunik/hotels/syuniq.jpg",
     title: "Syuniq Hotel",
     link: "https://h.priceline.com/hotel/am/syuniq-goris.en-gb.html?aid=826590&label=ararat-b4hToczQ2wINZLai%2Ag5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&sid=c495d2ea5036e0d784c7860e4e8a85fe&dest_id=8596406&dest_type=hotel&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748077548&srpvid=eaf03fef42bd0b97&type=total&ucfs=1&#hotelTmpl"
   },
     {
-    img: "./imges/Syunik/hotels/syuniq.jpg",
+    img: "/assets/images/Syunik/hotels/syuniq.jpg",
     title: "Syuniq Hotel",
     link: "https://h.priceline.com/hotel/am/syuniq-goris.en-gb.html?aid=826590&label=ararat-b4hToczQ2wINZLai%2Ag5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&sid=c495d2ea5036e0d784c7860e4e8a85fe&dest_id=8596406&dest_type=hotel&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748077548&srpvid=eaf03fef42bd0b97&type=total&ucfs=1&#hotelTmpl"
   },
@@ -1644,7 +1644,7 @@ syunik: {
   description: "Սյունիքի մարզի Կապան քաղաքում անցկացվող ամենամյա երաժշտական փառատոն։",
   location: "Կապան",
   time: "Հուլիս",
-  imgSrc: "./imges/Syunik/culture/kapan_music_festival.jpg"
+  imgSrc: "/assets/images/Syunik/culture/kapan_music_festival.jpg"
 },
 
 {
@@ -1652,14 +1652,14 @@ syunik: {
   description: "Տաթևի վանքի մոտ անցկացվող մշակութային և պատմական փառատոն։",
   location: "Տաթև",
   time: "Սեպտեմբեր",
-  imgSrc: "./imges/Syunik/culture/tatev_festival.jpg"
+  imgSrc: "/assets/images/Syunik/culture/tatev_festival.jpg"
 },
    {
   title: "Կապանի երաժշտական փառատոն",
   description: "Սյունիքի մարզի Կապան քաղաքում անցկացվող ամենամյա երաժշտական փառատոն։",
   location: "Կապան",
   time: "Հուլիս",
-  imgSrc: "./imges/Syunik/culture/kapan_music_festival.jpg"
+  imgSrc: "/assets/images/Syunik/culture/kapan_music_festival.jpg"
 },
 
 {
@@ -1667,7 +1667,7 @@ syunik: {
   description: "Տաթևի վանքի մոտ անցկացվող մշակութային և պատմական փառատոն։",
   location: "Տաթև",
   time: "Սեպտեմբեր",
-  imgSrc: "./imges/Syunik/culture/tatev_festival.jpg"
+  imgSrc: "/assets/images/Syunik/culture/tatev_festival.jpg"
 },
   
     ],
@@ -1694,47 +1694,47 @@ armavir: {
     ],
     sightsCardData: [
      {
-    "imgUrl": "./imges/Armavir/attractions/ejmiatsin_cathedral.jpg",
+    "imgUrl": "/assets/images/Armavir/attractions/ejmiatsin_cathedral.jpg",
     "title": "Սուրբ Էջմիածնի Մայր Տաճար",
     "description": "Հայ առաքելական եկեղեցու հոգևոր կենտրոնը՝ կառուցված 301-303 թթ., համարվում է աշխարհի ամենահին քրիստոնեական տաճարներից։"
   },
   {
-    "imgUrl": "./imges/Armavir/attractions/zvartnots.jpg",
+    "imgUrl": "/assets/images/Armavir/attractions/zvartnots.jpg",
     "title": "Զվարթնոց տաճար",
     "description": "7-րդ դարի ճարտարապետական գլուխգործոց՝ ընդգրկված ՅՈՒՆԵՍԿՕ-ի համաշխարհային ժառանգության ցանկում։"
   },
   {
-    "imgUrl": "./imges/Armavir/attractions/surb_hripsime.jpg",
+    "imgUrl": "/assets/images/Armavir/attractions/surb_hripsime.jpg",
     "title": "Սուրբ Հռիփսիմե եկեղեցի",
     "description": "7-րդ դարի եկեղեցի՝ նվիրված նահատակ Հռիփսիմեին, համարվում է հայկական ճարտարապետության կարևոր նմուշ։"
   },
   {
-    "imgUrl": "./imges/Armavir/attractions/surb_gayane.jpg",
+    "imgUrl": "/assets/images/Armavir/attractions/surb_gayane.jpg",
     "title": "Սուրբ Գայանե եկեղեցի",
     "description": "7-րդ դարի եկեղեցի՝ կառուցված Սուրբ Գայանեի նահատակման վայրում։"
   },
   {
-    "imgUrl": "./imges/Armavir/attractions/sardarapat_memorial.jpg",
+    "imgUrl": "/assets/images/Armavir/attractions/sardarapat_memorial.jpg",
     "title": "Սարդարապատի հերոսամարտի հուշահամալիր",
     "description": "Հուշահամալիր՝ նվիրված 1918 թ. Սարդարապատի ճակատամարտին, խորհրդանշում է հայ ժողովրդի հաղթանակը։"
   },
   {
-    "imgUrl": "./imges/Armavir/attractions/metsamor.jpg",
+    "imgUrl": "/assets/images/Armavir/attractions/metsamor.jpg",
     "title": "Մեծամոր հնավայր",
     "description": "Հնագիտական համալիր՝ ընդգրկող բրոնզեդարյան բնակավայրի և դամբարանների մնացորդներ։"
   },
   {
-    "imgUrl": "./imges/Armavir/attractions/argishtikhinili.jpg",
+    "imgUrl": "/assets/images/Armavir/attractions/argishtikhinili.jpg",
     "title": "Արգիշտիխինիլի",
     "description": "Ուրարտուական քաղաք՝ հիմնադրված մ.թ.ա. 8-րդ դարում թագավոր Արգիշտի Ա-ի կողմից։"
   },
   {
-    "imgUrl": "./imges/Armavir/attractions/surb_shoghakat.jpg",
+    "imgUrl": "/assets/images/Armavir/attractions/surb_shoghakat.jpg",
     "title": "Սուրբ Շողակաթ եկեղեցի",
     "description": "17-րդ դարի եկեղեցի՝ կառուցված այն վայրում, որտեղ ըստ ավանդության, լույս է կաթել նահատակ կույսերի վրա։"
   },
   {
-    "imgUrl": "./imges/Armavir/attractions/surb_mariam.jpg",
+    "imgUrl": "/assets/images/Armavir/attractions/surb_mariam.jpg",
     "title": "Սուրբ Մարիամ Աստվածածին եկեղեցի",
     "description": "Հին եկեղեցի՝ տեղակայված Էջմիածին քաղաքում։"
   }
@@ -1742,62 +1742,62 @@ armavir: {
     ],
     foodData: [
     {
-    img: "./imges/Armavir/food/grapes.jpg",
+    img: "/assets/images/Armavir/food/grapes.jpg",
     name: "Խաղող",
     ingredients: "Տարածաշրջանի ամենահայտնի և բարձրորակ մրգերից մեկը, Արմավիրի խաղողը համարվում է տեղական գինեգործության հիմքը"
   },
   {
-    img: "./imges/Armavir/food/pomegranate.jpg",
+    img: "/assets/images/Armavir/food/pomegranate.jpg",
     name: "Նուռ",
     ingredients: "Տարածված է մարզի ողջ տարածքում, օգտագործվում է հյութերի, կծու ուտեստների և դեսերտների մեջ"
   },
   {
-    img: "./imges/Armavir/food/walnut.jpg",
+    img: "/assets/images/Armavir/food/walnut.jpg",
     name: "Ընկույզ",
     ingredients: "Տեղական այգիների գլխավոր մթերքներից է, օգտագործվում է ինչպես ուտեստներում, այնպես էլ գաթայի և խմորեղենի մեջ"
   },
   {
-    img: "./imges/Armavir/food/khorovats.jpg",
+    img: "/assets/images/Armavir/food/khorovats.jpg",
     name: "Խորոված",
     ingredients: "Տավարի կամ խոզի միս, տեղական համեմունքներ, որը պատրաստվում է բաց կրակի վրա՝ հատուկ Արմավիրի մրգերի գարշահոտի հետ"
   },
   {
-    img: "./imges/Armavir/food/pelamushi.jpg",
+    img: "/assets/images/Armavir/food/pelamushi.jpg",
     name: "Պելամուշի",
     ingredients: "Խաղողի հյութից պատրաստվող ավանդական տնական քաղցրաշունչ խմորեղեն"
   },
   {
-    img: "./imges/Armavir/food/apricot.jpg",
+    img: "/assets/images/Armavir/food/apricot.jpg",
     name: "Տանձամորի",
     ingredients: "Տարածված է տեղական այգիներում, հիմնականում օգտագործվում է հյութերի և կոնֆիտյուրների մեջ"
   }
     ],
     hotelsData: [
       {
-    img: "./imges/Armavir/hotels/richmind.jpg",
+    img: "/assets/images/Armavir/hotels/richmind.jpg",
     title: "Richmind Hotel",
     link: "https://h.priceline.com/hotel/am/richmind.en-gb.html?aid=826590&label=ararat-b4hToczQ2wINZLai%2Ag5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&sid=c495d2ea5036e0d784c7860e4e8a85fe&dest_id=-2324865&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748078266&srpvid=831e414a64210381&type=total&ucfs=1&#hotelTmpl"
   },
     {
-    img: "./imges/Armavir/hotels/richmind.jpg",
-    title: "Richmind Hotel",
-    link: "https://h.priceline.com/hotel/am/richmind.en-gb.html?aid=826590&label=ararat-b4hToczQ2wINZLai%2Ag5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&sid=c495d2ea5036e0d784c7860e4e8a85fe&dest_id=-2324865&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748078266&srpvid=831e414a64210381&type=total&ucfs=1&#hotelTmpl"
-  },
-  
-    {
-    img: "./imges/Armavir/hotels/richmind.jpg",
+    img: "/assets/images/Armavir/hotels/richmind.jpg",
     title: "Richmind Hotel",
     link: "https://h.priceline.com/hotel/am/richmind.en-gb.html?aid=826590&label=ararat-b4hToczQ2wINZLai%2Ag5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&sid=c495d2ea5036e0d784c7860e4e8a85fe&dest_id=-2324865&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748078266&srpvid=831e414a64210381&type=total&ucfs=1&#hotelTmpl"
   },
   
     {
-    img: "./imges/Armavir/hotels/richmind.jpg",
+    img: "/assets/images/Armavir/hotels/richmind.jpg",
     title: "Richmind Hotel",
     link: "https://h.priceline.com/hotel/am/richmind.en-gb.html?aid=826590&label=ararat-b4hToczQ2wINZLai%2Ag5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&sid=c495d2ea5036e0d784c7860e4e8a85fe&dest_id=-2324865&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748078266&srpvid=831e414a64210381&type=total&ucfs=1&#hotelTmpl"
   },
   
     {
-    img: "./imges/Armavir/hotels/richmind.jpg",
+    img: "/assets/images/Armavir/hotels/richmind.jpg",
+    title: "Richmind Hotel",
+    link: "https://h.priceline.com/hotel/am/richmind.en-gb.html?aid=826590&label=ararat-b4hToczQ2wINZLai%2Ag5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&sid=c495d2ea5036e0d784c7860e4e8a85fe&dest_id=-2324865&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748078266&srpvid=831e414a64210381&type=total&ucfs=1&#hotelTmpl"
+  },
+  
+    {
+    img: "/assets/images/Armavir/hotels/richmind.jpg",
     title: "Richmind Hotel",
     link: "https://h.priceline.com/hotel/am/richmind.en-gb.html?aid=826590&label=ararat-b4hToczQ2wINZLai%2Ag5vMgS468553378501%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1988441161%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH0_Jxt6fWoC48&sid=c495d2ea5036e0d784c7860e4e8a85fe&dest_id=-2324865&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748078266&srpvid=831e414a64210381&type=total&ucfs=1&#hotelTmpl"
   },
@@ -1819,42 +1819,42 @@ armavir: {
   description: "Մշակութային միջոցառումների շարք մարզի տարբեր բնակավայրերում։",
   location: "Արմավիր քաղաք",
   time: "Օգոստոս",
-  imgSrc: "./imges/Armavir/culture/armavir_culture_days.jpg"
+  imgSrc: "/assets/images/Armavir/culture/armavir_culture_days.jpg"
 },
 {
   title: "Վաղարշապատի երաժշտական համերգ",
   description: "Ամենամյա երաժշտական համերգ Վաղարշապատում։",
   location: "Վաղարշապատ",
   time: "Սեպտեմբեր",
-  imgSrc: "./imges/Armavir/culture/vagharshapat_concert.jpg"
+  imgSrc: "/assets/images/Armavir/culture/vagharshapat_concert.jpg"
 },
 {
   title: "Արմավիրի մշակութային օրեր",
   description: "Մշակութային միջոցառումների շարք մարզի տարբեր բնակավայրերում։",
   location: "Արմավիր քաղաք",
   time: "Օգոստոս",
-  imgSrc: "./imges/Armavir/culture/armavir_culture_days.jpg"
+  imgSrc: "/assets/images/Armavir/culture/armavir_culture_days.jpg"
 },
 {
   title: "Վաղարշապատի երաժշտական համերգ",
   description: "Ամենամյա երաժշտական համերգ Վաղարշապատում։",
   location: "Վաղարշապատ",
   time: "Սեպտեմբեր",
-  imgSrc: "./imges/Armavir/culture/vagharshapat_concert.jpg"
+  imgSrc: "/assets/images/Armavir/culture/vagharshapat_concert.jpg"
 },
 {
   title: "Արմավիրի մշակութային օրեր",
   description: "Մշակութային միջոցառումների շարք մարզի տարբեր բնակավայրերում։",
   location: "Արմավիր քաղաք",
   time: "Օգոստոս",
-  imgSrc: "./imges/Armavir/culture/armavir_culture_days.jpg"
+  imgSrc: "/assets/images/Armavir/culture/armavir_culture_days.jpg"
 },
 {
   title: "Վաղարշապատի երաժշտական համերգ",
   description: "Ամենամյա երաժշտական համերգ Վաղարշապատում։",
   location: "Վաղարշապատ",
   time: "Սեպտեմբեր",
-  imgSrc: "./imges/Armavir/culture/vagharshapat_concert.jpg"
+  imgSrc: "/assets/images/Armavir/culture/vagharshapat_concert.jpg"
 }
 
     

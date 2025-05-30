@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Handwriting";
-  src: url("./fonts/fonter.am_free-sans/Vrdznagir.otf") format("truetype");
+  src: url("/assets/fonts/fonter.am_free-sans/Vrdznagir.otf") format("truetype");
 }
 @font-face {
   font-family: "Usual";
-  src: url("./fonts/fonter.am_free-sans/Arti\ Regular.otf") format("truetype");
+  src: url("/assets/fonts/fonter.am_free-sans/Arti\ Regular.otf") format("truetype");
 }
 
 *,
@@ -320,7 +320,7 @@ header {
 
 .register_page {
   /* background: linear-gradient(180deg,#14463a,#18362fb6); */
-  background-image: url(./imges/login_bg.jpg);
+  background-image: url(/assets/images/login_bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -417,7 +417,7 @@ header {
 /* //////////////////////HOME////////////////////////////////////////////////////   */
 
 .home_bg {
-  background-image: url("./imges/home_img.webp");
+  background-image: url("/assets/images/home_img.webp");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -514,7 +514,7 @@ header {
 /* ............about................................................................. */
 
 .about > .about_us_bg {
-  background-image: url("./imges/about_arm_bg.png");
+  background-image: url("/assets/images/about_arm_bg.png");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -794,7 +794,7 @@ header {
 .grid_gallery > .grid_img1 {
   width: 160px;
   height: 115px;
-  background-image: url(./imges/home_map/armavir_img1.png);
+  background-image: url(/assets/images/home_map/armavir_img1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -802,7 +802,7 @@ header {
 .grid_gallery > .grid_img2 {
   width: 153px;
   height: 115px;
-  background-image: url(./imges/home_map/armavir_img2.png);
+  background-image: url(/assets/images/home_map/armavir_img2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -810,7 +810,7 @@ header {
 .grid_gallery > .grid_img3 {
   width: 102px;
   height: 247px;
-  background-image: url(./imges/home_map/armavir_img3.png);
+  background-image: url(/assets/images/home_map/armavir_img3.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -820,7 +820,7 @@ header {
 .grid_gallery > .grid_img4 {
   width: 216px;
   height: 126px;
-  background-image: url(./imges/home_map/armavir_img4.png);
+  background-image: url(/assets/images/home_map/armavir_img4.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -828,7 +828,7 @@ header {
 .grid_gallery > .grid_img5 {
   width: 97px;
   height: 126px;
-  background-image: url(./imges/home_map/armavir_img5.png);
+  background-image: url(/assets/images/home_map/armavir_img5.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -940,17 +940,17 @@ header {
 /* //////////////////ABOUT ARMENIA///////////////////////////////////////////////////////////// */
 
 .about_arm_bg {
-  background-image: url("./imges/about_arm_bg.png");
+  background-image: url("/assets/images/about_arm_bg.png");
 }
 .provinces_bg {
-  background-image: url("./imges/provinces_bg_img.jpg");
+  background-image: url("/assets/images/provinces_bg_img.jpg");
 }
 
 .gallery_bg {
-  background-image: url("./imges/gallery_bg_img.jpg");
+  background-image: url("/assets/images/gallery_bg_img.jpg");
 }
 .contact_bg {
-  background-image: url("./imges/contact_bg_img.jpg");
+  background-image: url("/assets/images/contact_bg_img.jpg");
 }
 
 .html_pages_main_bgs {
