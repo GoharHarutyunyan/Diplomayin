@@ -13,11 +13,15 @@ loginForm.addEventListener("submit", async (e) => {
 
   const result = await response.json();
 
+  alert(result.message);
 
- alert(result.message)
+  if (result.success) {
+    window.location.href = "/";
+  }
+});
 
- if(result.success) {
-    window.location.href = "/"
-}
+const goBack = document.getElementById("goBack");
 
+goBack.addEventListener("click", () => {
+  window.history.back();
 });
