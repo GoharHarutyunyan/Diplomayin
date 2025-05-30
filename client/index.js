@@ -3,9 +3,9 @@ window.addEventListener("DOMContentLoaded", () => {
     const respons = await fetch("/currentUser");
     const result = await respons.json();
 
-    if (result.name) {
+    if (result.firstname) {
       const acc = document.querySelector(".header_login");
-      acc.innerHTML = `<a  href="/profile" class="account_name">${result.name} ${result.lastname} </a>`;
+      acc.innerHTML = `<a  href="/profile" class="account_name">${result.firstname} ${result.lastname} </a>`;
     }
   }
 

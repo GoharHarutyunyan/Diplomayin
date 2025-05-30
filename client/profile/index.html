@@ -4,11 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    
-    <h1>Profile</h1>
 
+       <div class="info">
+        <div class="info_container">
+            <div class="info_mail">
+                <i class="fa-solid fa-phone"></i>
+                <p>+250 784 688 641</p>
+                <i class="fa-solid fa-envelope"></i>
+                <p>bbonteemma@gmail.com</p>
+            </div>
+            <div class="info_platforms">
+                <a href="#"><img src="/assets/icons/fcb_icon.png" alt="fcb_icon"></a>
+                <a href="#"><img src="/assets/icons/twiter_icon.png" alt="twiter_icon"></a>
+                <a href="#"><img src="/assets/icons/ln_icon.png" alt="ln_icon"></a>
+                <a href="#"><img src="/assets/icons/inst_icon.png" alt="inst_icon"></a>
+            </div>
+        </div>
+
+    </div>
+    
+    <header>
+        <div class="header_container">
+            <div class="header_logo"><a href="/"><img src="/assets/icons/ARMENnia.png" alt="logo"></a></div>
+            <div class="header_menu">
+                <nav class="navbar">
+                    <ul class="menu">
+                        <li class="menu_list active"><a href="/" class="menu_link">Գլխավոր</a></li>
+                        <li class="menu_list"><a href="/armenia" class="menu_link">Հայաստանի մասին</a></li>
+                        <li class="menu_list"><a href="/regions" class="menu_link">Մարզեր</a> </li>
+                        <li class="menu_list"><a href="/gallery" class="menu_link">Պատկերասրահ</a> </li>
+                        <li class="menu_list"><a href="/contact" class="menu_link">Կապ</a> </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header_login">
+                <a class="login_link" href="/login"><button class="login gray_btn">Մուտք</button></a>
+                <a class="signin_link" href="/register"><button class="signin white_btn">Գրանցում</button></a>
+            </div>
+
+
+        </div>
+    </header>
+
+    <div class="profile-page">
+        <h1 id="fullname"></h1>
+    </div>
+
+    <div id="logout">Դուրս գալ</div>
+
+
+     <div id="favorites">
+        <h1>Նախընտրածներ</h1>
+
+    </div>
     <script src="/profile/index.js"></script>
 </body>
 </html>

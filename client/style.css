@@ -1214,22 +1214,27 @@ header {
 .prov_menu {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 5px;
+  list-style: none;
   background-color: none;
   height: 50px;
   border-radius: 30px;
   border: 3px solid var(--green);
 }
 
-.prov_menu .prov_list {
-  list-style: none;
-  padding: 0 22px;
+
+.prov_menu .prov_list button {
+  padding: 0 12px;
   line-height: 38px;
   border-radius: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
-.prov_menu .prov_list:hover {
+.prov_list:hover.prov_list button  {
   background-color: var(--green);
+  color: #fff;
   transition: 0.5s;
 }
 
@@ -2023,4 +2028,10 @@ select {
 .goBack {
     color: #fff;
     padding: 10px;
+}
+
+/* profile-page */
+
+.profile-page {
+  margin-top: 100px;
 }

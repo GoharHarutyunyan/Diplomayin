@@ -1,4 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+   
+    async function getCurrentUser() {
+    const respons = await fetch("/currentUser");
+    const result = await respons.json();
+   
+    if (result.firstname) {
+      const acc = document.querySelector(".header_login");
+      acc.innerHTML = `<a  href="/profile" class="account_name">${result.firstname} ${result.lastname} </a>`;
+    }
+  }
+
+  getCurrentUser();
+
   const form = document.querySelector("form");
   const popup = document.getElementById("messagePopup");
 

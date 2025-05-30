@@ -1,19 +1,64 @@
 {
   "users": [
     {
-      "email": "aa@mail.ru",
-      "name": "aa",
-      "lastname": "bb",
-      "registrationDate": "22.05.2025",
-      "password": "11"
-    },
-    {
       "email": "gohar.harutyunyannn@gmail.com",
-      "name": "Gohar",
+      "fisrtname": "Gohar",
       "lastname": "Harutyunyan",
       "registrationDate": "5/22/2025",
-      "password": "dg5sg200a5"
+      "password": "dg5sg200a5",
+      "favorites": []
+    },
+    {
+      "email": "armbabujyan@gmail.com",
+      "firstname": "ARMAN",
+      "lastname": "BABUJYAN",
+      "registrationDate": "30.05.2025",
+      "password": "3",
+      "option": "male",
+      "favorites": [
+        {
+          "description": "Երևանի կենտրոնական հրապարակը՝ շրջապատված կառավարության, նախարարությունների շենքերով և Ազգային Պատկերասրահով։ Երեկոյան ժամերին այստեղ գործում են երգող շատրվաններ։",
+          "location": "Երևան",
+          "id": 1748646138077,
+          "imgUrl": "/assets/images/yerevan/atractions/republic_square.jpg",
+          "title": "Հանրապետության հրապարակ",
+          "email": "armbabujyan@gmail.com"
+        },
+        {
+          "description": "Ալեքսանդր Սպենդիարյանի անվան ազգային ակադեմիական թատրոն՝ հայկական մշակույթի կենտրոններից մեկը։",
+          "location": "Երևան",
+          "id": 1748646864414,
+          "imgUrl": "/assets/images/yerevan/atractions/opera.jpg",
+          "title": "Օպերայի և բալետի թատրոն",
+          "email": "armbabujyan@gmail.com"
+        }
+      ]
     }
   ],
-  "currentUser": {  }
+  "currentUser": {
+    "email": "armbabujyan@gmail.com",
+    "firstname": "ARMAN",
+    "lastname": "BABUJYAN",
+    "registrationDate": "30.05.2025",
+    "password": "3",
+    "option": "male",
+    "favorites": [
+      {
+        "description": "Երևանի կենտրոնական հրապարակը՝ շրջապատված կառավարության, նախարարությունների շենքերով և Ազգային Պատկերասրահով։ Երեկոյան ժամերին այստեղ գործում են երգող շատրվաններ։",
+        "location": "Երևան",
+        "id": 1748646138077,
+        "imgUrl": "/assets/images/yerevan/atractions/republic_square.jpg",
+        "title": "Հանրապետության հրապարակ",
+        "email": "armbabujyan@gmail.com"
+      },
+      {
+        "description": "Ալեքսանդր Սպենդիարյանի անվան ազգային ակադեմիական թատրոն՝ հայկական մշակույթի կենտրոններից մեկը։",
+        "location": "Երևան",
+        "id": 1748646864414,
+        "imgUrl": "/assets/images/yerevan/atractions/opera.jpg",
+        "title": "Օպերայի և բալետի թատրոն",
+        "email": "armbabujyan@gmail.com"
+      }
+    ]
+  }
 }
