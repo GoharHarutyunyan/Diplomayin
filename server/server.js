@@ -10,7 +10,9 @@ function renderTemplate(template, data) {
   });
 }
 
-app.use(express.static(path.resolve("client")));
+// app.use(express.static(path.resolve("client")));
+app.use(express.static("client"));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -27,12 +29,8 @@ app.get("/", async (req, res) => {
   }
 });
 
-
-
-
-
 app.post("/register", async (req, res) => {
-  const { email, name, lastname, password } = req.body;
+  const { email, firstname, lastname, password, option } = req.body;
   const dbPath = path.resolve("server/DB/data.json");
 
   try {
@@ -54,11 +52,12 @@ app.post("/register", async (req, res) => {
 
       db.users.push({
         email,
-        name,
+        firstname,
         lastname,
         registrationDate,
         password,
-        favorite: [],
+        option,
+        favorites: [],
       });
       await fs.writeFile(dbPath, JSON.stringify(db, null, 2));
       res.json({ success: true, message: "Գրանցումը հաջողությամբ կատարվեց" });
@@ -70,6 +69,7 @@ app.post("/register", async (req, res) => {
     res.status(500).send("Սերվերի սխալ գրանցման ժամանակ");
   }
 });
+
 app.post("/login", async (req, res) => {
   const { email, password } = req.body;
   const dbPath = path.resolve("server/DB/data.json");
@@ -124,24 +124,90 @@ app.get("/currentuser", async (req, res) => {
   }
 });
 
-const reservedRoutes = ["currentUser", "login", "register", "logout"];
+app.post("/addFavorite", async (req, res) => {
+  const { description, location, id, imgUrl, title , email} = req.body;
+
+
+  const dbPath = path.resolve("server/DB/data.json");
+
+  try {
+    const fileData = await fs.readFile(dbPath, "utf-8");
+    const db = JSON.parse(fileData);
+    const users = db.users || [];
+
+    const foundUser = users.find((user) => user.email === email);
+
+    if (!foundUser) {
+      return res.status(404).json({ message: "Օգտատերը չի գտնվել" });
+    }
+
+    const alreadyExists = (foundUser.favorites || []).some(
+      (fav) => fav.id === id
+    );
+
+    if (alreadyExists) {
+      return res.status(409).json({ message: " արդեն ֆավորիտներում է" });
+    }
+
+    foundUser.favorites = foundUser.favorites || [];
+    foundUser.favorites.push({ description, location, id, imgUrl, title , email});
+    db.currentUser.favorites.push({ description, location, id, imgUrl, title , email});
+
+    await fs.writeFile(dbPath, JSON.stringify(db, null, 2), "utf-8");
+
+    res.json({ message: "հաջողությամբ ավելացվել է նախընտրածների ցանկ" });
+  } catch (error) {
+    console.error("Սխալ ֆայլի աշխատանքի ժամանակ:", error);
+    res.status(500).send("Սերվերի սխալ");
+  }
+});
+
+app.post("/removeFavorite", async (req, res) => {
+  const { email, bookId } = req.body;
+  const dbPath = path.resolve("server/DB/data.json");
+
+  try {
+    const fileData = await fs.readFile(dbPath, "utf-8");
+    const db = JSON.parse(fileData);
+
+    const user = db.users.find((u) => u.email === email);
+    if (!user) return res.status(404).send("Օգտատերը չի գտնվել");
+
+    user.favorites = user.favorites.filter((b) => b.id != bookId);
+    db.currentUser.favorites = user.favorites;
+    await fs.writeFile(dbPath, JSON.stringify(db, null, 2), "utf-8");
+
+    res.send("Հեռացվել է հաջողությամբ");
+  } catch (error) {
+    console.error("Սխալ:", error);
+    res.status(500).send("Սերվերի սխալ");
+  }
+});
+
+app.post("/logout", async (req, res) => {
+  const dbPath = path.resolve("server/DB/data.json");
+
+  try {
+    const fileData = await fs.readFile(dbPath, "utf-8");
+    const db = JSON.parse(fileData);
+
+    db.currentUser = {};
+
+    await fs.writeFile(dbPath, JSON.stringify(db, null, 2), "utf-8");
+
+    res.send("Դուրս եկաք");
+  } catch (error) {
+    console.error("Սխալ:", error);
+    res.status(500).send("Սերվերի սխալ");
+  }
+});
 
 app.get("/:route", async (req, res, next) => {
   const { route } = req.params;
-  console.log('route:', route);
 
-  const dbPath = path.resolve("server/DB/data.json");
-  const dbText = await fs.readFile(dbPath, "utf-8");
-  const db = JSON.parse(dbText);
-
-  if (reservedRoutes.includes(route)) {
-    if (route === "profile") {
-      if (!db.currentUser || !db.currentUser.email) {
-        return res.status(401).send("Մուտք գործիր՝ էջը տեսնելու համար");
-      }
-    }
-    return next();
-  }
+  // const dbPath = path.resolve("server/DB/data.json");
+  // const dbText = await fs.readFile(dbPath, "utf-8");
+  // const db = JSON.parse(dbText);
 
   const filePath = path.resolve("client", route, "index.html");
 
@@ -151,6 +217,21 @@ app.get("/:route", async (req, res, next) => {
   } catch (err) {
     console.error("Սխալ:", err.message);
     res.status(404).send("Էջը չի գտնվել");
+  }
+});
+
+app.get("/region/:region", async (req, res) => {
+  const { region } = req.params;
+  const dbPath = path.resolve("server/DB/regions.json");
+
+  try {
+    const fileData = await fs.readFile(dbPath, "utf-8");
+    const db = JSON.parse(fileData);
+
+    res.json(db[region]);
+  } catch (err) {
+    console.error("Սխալ /region-ում:", err);
+    res.status(500).send("Սերվերի սխալ");
   }
 });
 

@@ -26,19 +26,23 @@
                     <div class="circle"><i class="fa-regular fa-user"></i></div>
                     <form action="/register" method="post" id="registerForm">
                         <p>
-                            <input type="text" name="name" placeholder="Անուն Ազգանուն" required>
+                            <input type="text" name="firstname" placeholder="Անուն" required>
+                        </p>
+                        <br>
+                        <p>
+                            <input type="text" name="lastname" placeholder="Ազգանուն" required>
                         </p>
                         <br>
 
                         <p class="radio_box">
                             <label class="custom-radio">
-                                <input type="radio" name="option" >
+                                <input type="radio" value="male" name="option" >
                                 <span class="radio-mark">Արական</span>
                             
                             </label>
                             <br>
                             <label class="custom-radio">
-                                <input type="radio" name="option">
+                                <input type="radio" value="female" name="option">
                                 <span class="radio-mark">Իգական</span>
                                 
                             </label>
