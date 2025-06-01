@@ -125,8 +125,9 @@ app.get("/currentuser", async (req, res) => {
 });
 
 app.post("/addFavorite", async (req, res) => {
-  const { description, location, id, imgUrl, title , email} = req.body;
-
+  const { description, location, imgUrl, title, email, type, img, link, time } =
+    req.body;
+  const id = `${type}-${title}`;
 
   const dbPath = path.resolve("server/DB/data.json");
 
@@ -138,7 +139,7 @@ app.post("/addFavorite", async (req, res) => {
     const foundUser = users.find((user) => user.email === email);
 
     if (!foundUser) {
-      return res.status(404).json({ message: "Օգտատերը չի գտնվել" });
+      return res.status(404).json({ message: "Խնդրում ենք Մուտք Գործեք կամ գրանցվեք" });
     }
 
     const alreadyExists = (foundUser.favorites || []).some(
@@ -150,8 +151,28 @@ app.post("/addFavorite", async (req, res) => {
     }
 
     foundUser.favorites = foundUser.favorites || [];
-    foundUser.favorites.push({ description, location, id, imgUrl, title , email});
-    db.currentUser.favorites.push({ description, location, id, imgUrl, title , email});
+    foundUser.favorites.push({
+      description,
+      location,
+      id,
+      imgUrl,
+      title,
+      type,
+      img,
+      link,
+      time,
+    });
+    db.currentUser.favorites.push({
+      description,
+      location,
+      id,
+      imgUrl,
+      title,
+      type,
+      img,
+      link,
+      time,
+    });
 
     await fs.writeFile(dbPath, JSON.stringify(db, null, 2), "utf-8");
 
@@ -163,7 +184,8 @@ app.post("/addFavorite", async (req, res) => {
 });
 
 app.post("/removeFavorite", async (req, res) => {
-  const { email, bookId } = req.body;
+  const { email, id } = req.body;
+  console.log('email:', email)
   const dbPath = path.resolve("server/DB/data.json");
 
   try {
@@ -173,8 +195,15 @@ app.post("/removeFavorite", async (req, res) => {
     const user = db.users.find((u) => u.email === email);
     if (!user) return res.status(404).send("Օգտատերը չի գտնվել");
 
-    user.favorites = user.favorites.filter((b) => b.id != bookId);
-    db.currentUser.favorites = user.favorites;
+    // Ջնջենք ընտրյալը ըստ id
+    user.favorites = user.favorites.filter((item) => item.id !== id);
+
+    // Եթե օգտագործվում է currentUser, թարմացնենք այն էլ
+    if (db.currentUser?.email === email) {
+      db.currentUser.favorites = user.favorites;
+    }
+
+    // Պահպանենք
     await fs.writeFile(dbPath, JSON.stringify(db, null, 2), "utf-8");
 
     res.send("Հեռացվել է հաջողությամբ");

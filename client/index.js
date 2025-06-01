@@ -1,3 +1,21 @@
+
+
+function normalizePath(path) {
+  return path.endsWith("/") && path.length > 1 ? path.slice(0, -1) : path;
+}
+
+const currentPath = normalizePath(window.location.pathname);
+
+document.querySelectorAll(".menu_list a").forEach((link) => {
+
+  if (normalizePath(link.getAttribute("href")) === currentPath) {
+    link.parentElement.classList.add("active");
+  } else {
+    link.parentElement.classList.remove("active");
+  }
+});
+
+
 window.addEventListener("DOMContentLoaded", () => {
   async function getCurrentUser() {
     const respons = await fetch("/currentUser");
@@ -27,7 +45,6 @@ const weatherElement = document.getElementById("weather");
 
 select.addEventListener("change", () => {
   const city = select.value;
-  console.log(city);
   fetchWeather(city);
 });
 
@@ -46,7 +63,6 @@ async function fetchWeather(city) {
     if (data.main && typeof data.main.temp !== "undefined") {
       const temperature = Math.round(data.main.temp);
       const description = data.weather[0].description;
-      console.log(description); // ստուգման համար
       weatherElement.textContent = `${temperature}°C, ${description}`;
     } else {
       weatherElement.textContent = "Եղանակ չկա";

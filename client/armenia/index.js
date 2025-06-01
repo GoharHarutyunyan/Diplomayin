@@ -11,12 +11,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   getCurrentUser();
 
-  const currentPath = window.location.pathname; // օրինակ՝ /armenia
-  const menuLinks = document.querySelectorAll(".menu_link");
+  function normalizePath(path) {
+    return path.endsWith("/") && path.length > 1 ? path.slice(0, -1) : path;
+  }
 
-  menuLinks.forEach((link) => {
-    // Համեմատում ենք href-ը `pathname`-ի հետ
-    if (link.getAttribute("href") === currentPath) {
+  const currentPath = normalizePath(window.location.pathname);
+
+  document.querySelectorAll(".menu_list a").forEach((link) => {
+
+    if (normalizePath(link.getAttribute("href")) === currentPath) {
       link.parentElement.classList.add("active");
     } else {
       link.parentElement.classList.remove("active");

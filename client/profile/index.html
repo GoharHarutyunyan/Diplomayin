@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-    
-     <div class="info">
+
+    <div class="info">
         <div class="info_container">
             <div class="info_mail">
                 <i class="fa-solid fa-phone"></i>
@@ -49,17 +51,18 @@
     </header>
 
     <main>
-         <section class="profile_bg html_pages_main_bgs">
+        <section class="profile_bg html_pages_main_bgs">
             <div class="bg_opasity"></div>
             <div class="profile_container html_pages_display">
                 <div class="profile_content">
-                    <h1 class="all_main_title">Իմ Տուրիստական Օրագիրը</h1> 
+                    <h1 class="all_main_title">Իմ Տուրիստական Օրագիրը</h1>
                     <h4 class="all_main_tit">Կազմեք Ձեր երազած ճանապարհորդական ուղեցույցը՝ հատուկ Ձեզ համար։</h4>
+                    <h4 class="all_main_tit" id="fullname"></h4>
                 </div>
             </div>
         </section>
 
-          <div class="conditions  ">
+        <div class="conditions  ">
             <div class="conditions_container">
                 <div class="cond_body">
                     <div class="search">
@@ -90,8 +93,8 @@
                         <div class="cond_tit">Եղանակ</div>
                         <div class="cond_txt" id="weather">Բեռնվում է...</div>
                     </div>
-                <button class="cond_item orange_btn">Փնտրել</button>
-            </div>
+                    <button class="cond_item orange_btn">Փնտրել</button>
+                </div>
             </div>
         </div>
 
@@ -100,51 +103,13 @@
         <section class="diary">
             <div class="diary_container">
                 <div class="diary_content">
-                    <h1>Մարզը՝ </h1>
                     <div class="diary_content_products">
-                        <div class="diary_sights dp_item">
-                            <h2>Տեսարժան վայրեր</h2>
-                            <div id="profileSights" class="favorites-container"></div>
-
-                        </div>
-                        <div class="diary_food dp_item">
-                            <h2>Ուտելիք և տեղական համտես</h2>
-                            <div id="profileFoods" class="favorites-container"></div>
-                        </div>
-                        <div class="diart_hotels dp_item">
-                            <h2>Հյուրանոցներ և կացարաններ</h2>
-                            <div id="profileHotels" class="favorites-container"></div>
-                        </div>
-                        <div class="diary_culture dp_item">
-                            <h2>Մշակույթ և միջոցառումներ</h2>
-                            <div id="profileEvents" class="favorites-container"></div>
-                        </div>
+                       
+                    
                     </div>
                 </div>
-                 <div class="diary_content">
-                    <h1>Մարզը՝ </h1>
-                    <div class="diary_content_products">
-                        <div class="diary_sights dp_item">
-                            <h2>Տեսարժան վայրեր</h2>
-                            <div id="profileSights" class="favorites-container"></div>
 
-                        </div>
-                        <div class="diary_food dp_item">
-                            <h2>Ուտելիք և տեղական համտես</h2>
-                            <div id="profileFoods" class="favorites-container"></div>
-                        </div>
-                        <div class="diart_hotels dp_item">
-                            <h2>Հյուրանոցներ և կացարաններ</h2>
-                            <div id="profileHotels" class="favorites-container"></div>
-                        </div>
-                        <div class="diary_culture dp_item">
-                            <h2>Մշակույթ և միջոցառումներ</h2>
-                            <div id="profileEvents" class="favorites-container"></div>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div id="savedFoodsContainer"></div>
         </section>
     </main>
 
@@ -158,7 +123,8 @@
                         Էլ․ հասցե՝ explore_armenia@gmail.com <br>
                         Հասցե՝ Արմավիր, Հայաստան
                     </p>
-                    <p class="connect">Միացի՛ր մեր արկածային ընտանիքին։ Բացահայտի՛ր նոր վայրեր, խորհուրդներ ու բացառիկ ուղղություններ՝ ուղղակի այս կայքում։</p>
+                    <p class="connect">Միացի՛ր մեր արկածային ընտանիքին։ Բացահայտի՛ր նոր վայրեր, խորհուրդներ ու բացառիկ
+                        ուղղություններ՝ ուղղակի այս կայքում։</p>
                     <!-- <form>
                         <input class="footer_enter_mail" type="search" placeholder="Մուտքագրեք Ձեր էլ․ հասցեն այստեղ" id="">
                         <button class="footer_send" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
@@ -172,80 +138,39 @@
                         <a href="#"><img src="/assets/icons/inst_icon.png" alt="inst_icon"></a>
                     </div>
                     <p class="txt">
-                       Այս կայքը նախատեսված է բոլոր նրանց համար, ովքեր ցանկանում են ճամփորդել Հայաստանում։ Այստեղ կարող եք գտնել տեղեկատվություն տեսարժան վայրերի, մարզերի, ազգային ուտեստների, մշակույթի և ճանապարհորդության համար անհրաժեշտ ամեն ինչի մասին։
+                        Այս կայքը նախատեսված է բոլոր նրանց համար, ովքեր ցանկանում են ճամփորդել Հայաստանում։ Այստեղ կարող
+                        եք գտնել տեղեկատվություն տեսարժան վայրերի, մարզերի, ազգային ուտեստների, մշակույթի և
+                        ճանապարհորդության համար անհրաժեշտ ամեն ինչի մասին։
                     </p>
                     <div class="navigation">
                         <div class="nav_bar">
                             <a href="/" class="menu_link">Գլխավոր</a>
                             <a href="/armenia" class="menu_link">Հայաստանի մասին</a>
-                            <a href="/regions" class="menu_link">Մարզեր</a> 
-                            <a href="/gallery" class="menu_link">Պատկերասրահ</a> 
-                            <a href="/contact" class="menu_link">Կապ</a> 
+                            <a href="/regions" class="menu_link">Մարզեր</a>
+                            <a href="/gallery" class="menu_link">Պատկերասրահ</a>
+                            <a href="/contact" class="menu_link">Կապ</a>
                         </div>
 
                         <div class="nav_arm_map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1486059.484357943!2d43.72154363089676!3d40.06321172226789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40155684e773bac7%3A0xd0b4757aeb822d23!2sArmenia!5e1!3m2!1sen!2sam!4v1747591415941!5m2!1sen!2sam" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1486059.484357943!2d43.72154363089676!3d40.06321172226789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40155684e773bac7%3A0xd0b4757aeb822d23!2sArmenia!5e1!3m2!1sen!2sam!4v1747591415941!5m2!1sen!2sam"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-       <div class="info">
-        <div class="info_container">
-            <div class="info_mail">
-                <i class="fa-solid fa-phone"></i>
-                <p>+250 784 688 641</p>
-                <i class="fa-solid fa-envelope"></i>
-                <p>bbonteemma@gmail.com</p>
-            </div>
-            <div class="info_platforms">
-                <a href="#"><img src="/assets/icons/fcb_icon.png" alt="fcb_icon"></a>
-                <a href="#"><img src="/assets/icons/twiter_icon.png" alt="twiter_icon"></a>
-                <a href="#"><img src="/assets/icons/ln_icon.png" alt="ln_icon"></a>
-                <a href="#"><img src="/assets/icons/inst_icon.png" alt="inst_icon"></a>
-            </div>
-        </div>
 
-    </div>
-    
-    <header>
-        <div class="header_container">
-            <div class="header_logo"><a href="/"><img src="/assets/icons/ARMENnia.png" alt="logo"></a></div>
-            <div class="header_menu">
-                <nav class="navbar">
-                    <ul class="menu">
-                        <li class="menu_list active"><a href="/" class="menu_link">Գլխավոր</a></li>
-                        <li class="menu_list"><a href="/armenia" class="menu_link">Հայաստանի մասին</a></li>
-                        <li class="menu_list"><a href="/regions" class="menu_link">Մարզեր</a> </li>
-                        <li class="menu_list"><a href="/gallery" class="menu_link">Պատկերասրահ</a> </li>
-                        <li class="menu_list"><a href="/contact" class="menu_link">Կապ</a> </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header_login">
-                <a class="login_link" href="/login"><button class="login gray_btn">Մուտք</button></a>
-                <a class="signin_link" href="/register"><button class="signin white_btn">Գրանցում</button></a>
-            </div>
+    <!-- <div id="logout">Դուրս գալ</div> -->
 
 
-        </div>
-    </header>
 
-    <div class="profile-page">
-        <h1 id="fullname"></h1>
-    </div>
-
-    <div id="logout">Դուրս գալ</div>
-
-
-     <div id="favorites">
-        <h1>Նախընտրածներ</h1>
-
-    </div>
     <script src="/profile/index.js"></script>
-    
+
 </body>
+
 </html>

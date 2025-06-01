@@ -1,7 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
+  function normalizePath(path) {
+    return path.endsWith("/") && path.length > 1 ? path.slice(0, -1) : path;
+  }
 
+  const currentPath = normalizePath(window.location.pathname);
 
-    async function getCurrentUser() {
+  document.querySelectorAll(".menu_list a").forEach((link) => {
+
+    if (normalizePath(link.getAttribute("href")) === currentPath) {
+      link.parentElement.classList.add("active");
+    } else {
+      link.parentElement.classList.remove("active");
+    }
+  });
+
+  async function getCurrentUser() {
     const respons = await fetch("/currentUser");
     const result = await respons.json();
 
@@ -19,18 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
       div.style.backgroundImage = `url(/assets/images/Gallery/img_${i}.jpg)`;
     }
   }
-
-  const currentPath = window.location.pathname; 
-  const menuLinks = document.querySelectorAll(".menu_link");
-
-  menuLinks.forEach((link) => {
-    // Համեմատում ենք href-ը `pathname`-ի հետ
-    if (link.getAttribute("href") === currentPath) {
-      link.parentElement.classList.add("active");
-    } else {
-      link.parentElement.classList.remove("active");
-    }
-  });
 });
 
 // login

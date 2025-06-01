@@ -8,15 +8,37 @@
       "password": "alo123",
       "option": "female",
       "favorites": []
+    },
+    {
+      "email": "armbabujyan@gmail.com",
+      "firstname": "ARMAN",
+      "lastname": "BABUJYAN",
+      "registrationDate": "01.06.2025",
+      "password": "3",
+      "option": "male",
+      "favorites": [
+        {
+          "description": "7-րդ դարի եկեղեցի՝ կառուցված Սուրբ Գայանեի նահատակման վայրում։",
+          "location": "Արմավիր",
+          "id": "sights-Սուրբ Գայանե եկեղեցի",
+          "title": "Սուրբ Գայանե եկեղեցի",
+          "type": "sights",
+          "img": "/assets/images/Armavir/attractions/surb_gayane.jpg",
+          "link": null,
+          "time": null
+        },
+        {
+          "description": "Երևանի կենտրոնական հրապարակը՝ շրջապատված կառավարության, նախարարությունների շենքերով և Ազգային Պատկերասրահով։ Երեկոյան ժամերին այստեղ գործում են երգող շատրվաններ։",
+          "location": "Երևան",
+          "id": "sights-Հանրապետության հրապարակ",
+          "title": "Հանրապետության հրապարակ",
+          "type": "sights",
+          "img": "/assets/images/yerevan/atractions/republic_square.jpg",
+          "link": null,
+          "time": null
+        }
+      ]
     }
   ],
-  "currentUser": {
-    "email": "alo@gmail.com",
-    "firstname": "dvsfd",
-    "lastname": "adsvfgdf",
-    "registrationDate": "6/1/2025",
-    "password": "alo123",
-    "option": "female",
-    "favorites": []
-  }
+  "currentUser": {}
 }
