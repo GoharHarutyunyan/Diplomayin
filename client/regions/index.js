@@ -1,173 +1,840 @@
-window.addEventListener("DOMContentLoaded", () => {
-  let  currentUser = {}
+// window.addEventListener("DOMContentLoaded", () => {
+//   let  currentUser = {}
 
-    async function getCurrentUser() {
-    const respons = await fetch("/currentUser");
-    const result = await respons.json();
-    currentUser = result
+//     async function getCurrentUser() {
+//     const respons = await fetch("/currentUser");
+//     const result = await respons.json();
+//     currentUser = result
 
-    if (result.firstname) {
-      const acc = document.querySelector(".header_login");
-      acc.innerHTML = `<a  href="/profile" class="account_name">${result.firstname} ${result.lastname} </a>`;
-    }
-  }
+//     if (result.firstname) {
+//       const acc = document.querySelector(".header_login");
+//       acc.innerHTML = `<a  href="/profile" class="account_name">${result.firstname} ${result.lastname} </a>`;
+//     }
+//   }
 
-  getCurrentUser();
+//   getCurrentUser();
 
 
 
-  async function addToBasket(item) {
+//   async function addToBasket(item) {
    
-    const email = currentUser.email;
+//     const email = currentUser.email;
 
-    try {
-      const response = await fetch("/addFavorite", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ ...item, email }),
-      });
+//     try {
+//       const response = await fetch("/addFavorite", {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify({ ...item, email }),
+//       });
 
 
-      const data = await response.json();
+//       const data = await response.json();
 
-      if (response.ok) {
-        alert(data.message);
-      } else {
-        alert(data.message || "Սխալ տեղի ունեցավ։");
-      }
-    } catch (error) {
-      console.error("Ցանցային սխալ:", error);
-      alert("Չհաջողվեց կապ հաստատել սերվերի հետ։");
+//       if (response.ok) {
+//         alert(data.message);
+//       } else {
+//         alert(data.message || "Սխալ տեղի ունեցավ։");
+//       }
+//     } catch (error) {
+//       console.error("Ցանցային սխալ:", error);
+//       alert("Չհաջողվեց կապ հաստատել սերվերի հետ։");
+//     }
+//   }
+
+//   const regions = [
+//     {
+//       title: "Երևան",
+//       href: "yerevan",
+//     },
+//     {
+//       title: "Արագածոտն",
+//       href: "aragatsotn",
+//     },
+//     {
+//       title: "Շիրակ",
+//       href: "shirak",
+//     },
+//     {
+//       title: "Լոռի",
+//       href: "lori",
+//     },
+//     {
+//       title: "Տավուշ",
+//       href: "tavush",
+//     },
+//     {
+//       title: "Գեղարքունիք",
+//       href: "gegharkunik",
+//     },
+//     {
+//       title: "Կոտայք",
+//       href: "kotayq",
+//     },
+//     {
+//       title: "Արարատ",
+//       href: "ararat",
+//     },
+//     {
+//       title: "Վայոց Ձոր",
+//       href: "vayotsDzor",
+//     },
+//     {
+//       title: "Սյունիք",
+//       href: "syunik",
+//     },
+//     {
+//       title: "Արմավիր",
+//       href: "armavir",
+//     },
+//   ];
+
+//   const regionsMenu = document.getElementById("prov_menu");
+
+//   regions.forEach((reg) => {
+//     const li = document.createElement("li");
+//     li.className = "prov_list";
+
+//     const button = document.createElement("button");
+//     button.textContent = reg.title;
+
+//     button.addEventListener("click", () => {
+//       getRegion(reg.href, reg.title);
+//     });
+
+//     li.appendChild(button);
+//     regionsMenu.appendChild(li);
+//   });
+
+//   async function getRegion(reg, loc) {
+//     const respons = await fetch(`/region/${reg}`);
+//     const result = await respons.json();
+
+//     if (result) {
+//       const aboutProvince = document.getElementById("aboutProvince");
+//       aboutProvince.innerHTML = "";
+
+//       // տեսարժան վայրեր
+//       const provSightsCards = document.getElementById("provSightsCards");
+//       provSightsCards.innerHTML = "";
+
+//       // սնունդ
+//       const container = document.getElementById("foodContainer");
+//       container.innerHTML = "";
+
+//       // հյուրանոցներ
+//       const hotelsContainer = document.getElementById("hotelsContainer");
+//       hotelsContainer.innerHTML = "";
+
+//       // տրանսպորտ
+//       const transport = document.getElementById("transportContainer");
+//       transport.innerHTML = "";
+
+//       // մշակութային իրադարձություններ
+//       const cultureContainer = document.getElementById("cultureContainer");
+//       cultureContainer.innerHTML = "";
+
+//       // փաստեր
+//       const factsContainer = document.getElementById("facts-container");
+//       factsContainer.innerHTML = "";
+
+//       //about
+//       // const aboutProvince = document.getElementById("aboutProvince");
+//     }}});
+    
+const params = new URLSearchParams(window.location.search);
+const marz = params.get("marz")|| "lori";
+
+const data = {
+// yerevan/////////////////
+ yerevan: {
+    aboutData: [
+        {
+        title: "Երևան",
+        description: " Երևանը Հայաստանի մայրաքաղաքն է և ամենամեծ քաղաքը։ Քաղաքը հանդիսանում է երկրի քաղաքական, տնտեսական և մշակութային կենտրոնը։ Երևանը հայտնի է իր պատմական հուշարձաններով, թանգարաններով և կրթական հաստատություններով։",
+        center:"Երևան",
+        area:"223 ",
+        population: "1,127,000",
+        climate: "Ցամաքային, շոգ ամառներով և ցուրտ ձմեռներով",
+        
+    },
+    ],
+    sightsCardData: [
+       {
+    "imgUrl": "/assets/images/yerevan/atractions/republic_square.jpg",
+    "title": "Հանրապետության հրապարակ",
+    "description": "Երևանի կենտրոնական հրապարակը՝ շրջապատված կառավարության, նախարարությունների շենքերով և Ազգային Պատկերասրահով։ Երեկոյան ժամերին այստեղ գործում են երգող շատրվաններ։"
+  },
+  {
+    "imgUrl": "/assets/images/yerevan/atractions/cascade.jpg",
+    "title": "Կասկադ համալիր",
+    "description": "Հսկայական սանդղավանդակ՝ զարդարված ժամանակակից քանդակներով և արվեստի գործերով, որը կապում է քաղաքի կենտրոնը վերին թաղամասերի հետ։"
+  },
+  {
+    "imgUrl": "/assets/images/yerevan/atractions/matenadaran.jpg",
+    "title": "Մատենադարան",
+    "description": "Մեսրոպ Մաշտոցի անվան հին ձեռագրերի ինստիտուտ և թանգարան, որտեղ պահվում են հազարավոր միջնադարյան ձեռագրեր։"
+  },
+  {
+    "imgUrl": "/assets/images/yerevan/atractions/opera.jpg",
+    "title": "Օպերայի և բալետի թատրոն",
+    "description": "Ալեքսանդր Սպենդիարյանի անվան ազգային ակադեմիական թատրոն՝ հայկական մշակույթի կենտրոններից մեկը։"
+  },
+  {
+    "imgUrl": "/assets/images/yerevan/atractions/genocide_memorial.jpg",
+    "title": "Ծիծեռնակաբերդ",
+    "description": "Հայոց ցեղասպանության զոհերի հիշատակին նվիրված հուշահամալիր և թանգարան։"
+  },
+  {
+    "imgUrl": "/assets/images/yerevan/atractions/northern_avenue.jpg",
+    "title": "Հյուսիսային պողոտա",
+    "description": "Ժամանակակից պողոտա՝ լի առևտրային կենտրոններով, սրճարաններով և ռեստորաններով։"
+  },
+  {
+    "imgUrl": "/assets/images/yerevan/atractions/vernissage.jpg",
+    "title": "Վերնիսաժ",
+    "description": "Բացօթյա շուկա, որտեղ կարելի է գտնել հայկական հուշանվերներ, արվեստի գործեր և ձեռագործ իրեր։"
+  },
+  {
+    "imgUrl": "/assets/images/yerevan/atractions/skyball.jpg",
+    "title": "SkyBall",
+    "description": "Աերոստատով թռիչքներ՝ առաջարկող յուրահատուկ փորձառություն քաղաքի վերևից։"
+  },
+    {
+    "imgUrl": "/assets/images/yerevan/atractions/cafe_central.jpg",
+    "title": "Café Central",
+    "description": "Երևանի կենտրոնում գտնվող սրճարան՝ առաջարկող եվրոպական և հայկական խոհանոց։"
+  },
+  {
+    "imgUrl": "/assets/images/yerevan/atractions/green_bean.jpg",
+    "title": "The Green Bean",
+    "description": "Էկոլոգիապես մաքուր սրճարան՝ առաջարկող օրգանական սուրճ և բուսական ուտեստներ։"
+  },
+    
+    ],
+    foodData: [
+      {
+    "img": "/assets/images/yerevan/food/khorovats.jpg",
+    "name": "Խորոված",
+    "ingredients": "Խոզի կամ գառան միս, սոխ, աղ, պղպեղ, փայտածուխով գրիլ"
+  },
+  {
+    "img": "/assets/images/yerevan/food/tolma.jpg",
+    "name": "Տոլմա",
+    "ingredients": "Խորհուրդ է տրվում խաղողի տերևով կամ կաղամբով, լցոնված աղացած մսով, բրնձով, սոխով և համեմունքներով"
+  },
+  {
+    "img": "/assets/images/yerevan/food/harissa.jpg",
+    "name": "Հարիսա",
+    "ingredients": "Ձավար, հավի կամ գառան միս, կարագ, աղ"
+  },
+  {
+    "img": "/assets/images/yerevan/food/khash.jpg",
+    "name": "Խաշ",
+    "ingredients": "տավարի ոսկորներ (հատկապես ոտքի մաս), ջուր, աղ, սխտոր, լավաշ"
+  },
+  {
+    "img": "/assets/images/yerevan/food/zhingyalov_hac.jpg",
+    "name": "Ժինգյալով հաց",
+    "ingredients": "Բարակ հաց՝ լցոնված ատամելի վայրի կանաչիներով (մոտ 10-20 տեսակ)"
+  },
+  {
+    "img": "/assets/images/yerevan/food/basturma.jpg",
+    "name": "Բաստուրմա",
+    "ingredients": "Չորացրած տավարի միս, չաման, պղպեղ, սխտոր, աղ"
+  }
+    ],
+    hotelsData: [
+      {
+    img: "/assets/images/yerevan/hotels/aram.jpg",
+    title: "Aram Street Apartment",
+    link: "https://www.booking.com/hotel/am/aram-street-apartment-yerevan.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747953439&srpvid=15859f04f5f90062&type=total&ucfs=1&"
+  },
+   {
+    img: "/assets/images/yerevan/hotels/sphera.jpg",
+    title: "Sphera by Stellar Hotels",
+    link: "https://www.booking.com/hotel/am/sphera-by-stellar-hotels-yerevan.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325645&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=12&hpos=12&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747953557&srpvid=ce399f4253de006d&type=total&ucfs=1&"
+  },
+   {
+    img: "/assets/images/yerevan/hotels/boulevard.jpg",
+    title: "Boulevard Hotel",
+    link: "https://www.booking.com/hotel/am/boulevard.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dist=0&group_adults=2&group_children=0&hapos=11&hpos=11&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747953632&srpvid=15859f04f5f90062&type=total&ucfs=1&"
+  },
+   {
+    img: "/assets/images/yerevan/hotels/avenu.jpg",
+    title: "Avenue ApartHotel",
+    link: "https://www.booking.com/hotel/am/avenue-10.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dist=0&group_adults=2&group_children=0&hapos=14&hpos=14&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747953701&srpvid=15859f04f5f90062&type=total&ucfs=1&"
+  },
+   {
+    img: "/assets/images/yerevan/hotels/comfort.jpg",
+    title: "Comfort Hotel",
+    link: "https://www.booking.com/hotel/am/comfort.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dist=0&group_adults=2&group_children=0&hapos=20&hpos=20&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747953755&srpvid=15859f04f5f90062&type=total&ucfs=1&"
+  },
+  
+    ],
+    transportInfo: [
+    {
+        map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d371025.21516373113!2d44.15891981220388!3d40.152923016637885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406aa2dab8fc8b5b%3A0x3d1479ae87da526a!2sYerevan!5e1!3m2!1sen!2sam!4v1747953332969!5m2!1sen!2sam",
+        text: 'Լոռու մարզից Երևան կարելի է հասնել ավտոբուսով, միկրոավտոբուսով կամ անձնական մեքենայով։ Երևան-Վանաձոր-Սպիտակ ավտոբուսների կանոնավոր երթևեկություն կա։ Ճանապարհը տևում է մոտ 2.5-3 ժամ։ Կարող եք նաև օգտվել տաքսի ծառայություններից։',
+        route: 'Վանաձոր → Սպիտակ → Աբովյան → Երևան'
     }
+],
+    events: [
+    {
+  title: "Երևանյան քաղաքային փառատոն",
+  description: "Ամենամյա փառատոն, որը ներկայացնում է ժամանակակից արվեստը, երաժշտությունը, թատրոնը և մշակութային միջոցառումները՝ անցկացվում է ամռան վերջին ամիսներին։",
+  location: "Երևան, քաղաքային հրապարակներ և թատրոններ",
+  time: "Հուլիս-Օգոստոս",
+  imgSrc: "/assets/images/yerevan/culture/yerevan_city_festival.jpg"
+},
+{
+  title: "Երևանյան գինու փառատոն",
+  description: "Տարածաշրջանի գինեգործության խոշորագույն փառատոն, որտեղ ներկայացվում են հայկական գինիներ, մասնավորապես ավանդական և նորարարական տեսականի։",
+  location: "Երևան, Հանրապետության հրապարակ",
+  time: "Հոկտեմբեր",
+  imgSrc: "/assets/images/yerevan/culture/yerevan_wine_festival.jpg"
+},
+{
+  title: "Երևանյան գրքի տոն",
+  description: "Ամենամյա գրական տոն, որի ընթացքում անցկացվում են գրողների հանդիպումներ, գրքերի շնորհանդեսներ և գրական քննարկումներ։ Հիմնական նպատակն է խրախուսել ընթերցանությունը և աջակցել հայ հեղինակներին։",
+  location: "Երևան, Հայաստանի ազգային գրադարան և գրախանութներ",
+  time: "Սեպտեմբեր",
+  imgSrc: "/assets/images/yerevan/culture/yerevan_book_fair.jpeg"
+},
+{
+  title: "Երևանյան կինոփառատոն",
+  description: "Հայաստանում անցկացվող ամենախոշոր կինոփառատոնը, որը ներկայացնում է հայկական և միջազգային կինոյի լավագույն նմուշները։ Միջոցառումները ներառում են ֆիլմերի ցուցադրում, հանդիպումներ ռեժիսորների հետ և վարպետության դասընթացներ։",
+  location: "Երևան, կինոթատրոններ",
+  time: "Դեկտեմբեր",
+  imgSrc: "/assets/images/yerevan/culture/yerevan_film_festival.jpg"
+},
+{
+  title: "Անկախության օր",
+  description: "Հայաստանի Հանրապետության անկախության օրը նշվում է շքերթներով, համերգներով և պաշտոնական միջոցառումներով՝ Հանրապետության հրապարակում։ Մեծածավալ տոնակատարություն է, որին մասնակցում են հազարավոր երևանցիներ։",
+  location: "Երևան, Հանրապետության հրապարակ",
+  time: "Սեպտեմբեր 21",
+  imgSrc: "/assets/images/yerevan/culture/independence_day.jpg"
+}
+  
+    ],
+    facts: [
+  "Երևանը հիմնադրվել է 782 թ-ին՝ Տիգրան Մեծի որդու կողմից։",
+  "Երևանում է գտնվում աշխարհի ամենահին արգելոցներից մեկը՝ Էրեբունի ամրոցը։",
+  "Երևանը համարվում է մշակութային ու ստեղծագործական կենտրոն՝ բազմաթիվ թատրոններով, թանգարաններով և պատկերասրահներով։",
+    ]
+  },
+  
+  
+ // aragatsotn/////////////////
+aragatsotn: {
+    aboutData: [
+        {
+        title: "Արագածոտնի Մարզ",
+        description: " Արագածոտնի մարզը գտնվում է Հայաստանի հյուսիսարևմտյան հատվածում։ Մարզը հայտնի է Արագած լեռով՝ Հայաստանի ամենաբարձր գագաթով (4090 մ)։ Տարածքը հարուստ է պատմամշակութային հուշարձաններով, ներառյալ միջնադարյան եկեղեցիներ և ամրոցներ։ Գյուղատնտեսությունը մարզի հիմնական զբաղմունքն է, հատկապես հացահատիկի և կարտոֆիլի մշակումը։",
+        center:"Աշտարակ",
+        area:"2,756 ",
+        population: " 131,500",
+        climate: "Ցամաքային, ցուրտ ձմեռներով և մեղմ ամառներով",
+        
+    },
+    ],
+    sightsCardData: [
+       {
+    "imgUrl": "/assets/images/Aragatsotn/atractions/amberd.jpg",
+    "title": "Ամբերդ ամրոց",
+    "description": "7-րդ դարի ամրոց՝ տեղակայված Արագած լեռան լանջերին՝ 2300 մ բարձրության վրա։ Ներառում է Վահրամաշեն եկեղեցին և միջնադարյան բաղնիք։"
+  },
+  {
+    "imgUrl": "/assets/images/Aragatsotn/atractions/saghmosavank.jpg",
+    "title": "Սաղմոսավանք վանք",
+    "description": "13-րդ դարի վանական համալիր՝ կառուցված Կասաղ գետի կիրճի եզրին։ Հայտնի է իր ճարտարապետությամբ և պատմական նշանակությամբ։"
+  },
+  {
+    "imgUrl": "/assets/images/Aragatsotn/atractions/hovhannavank.png",
+    "title": "Հովհաննավանք վանք",
+    "description": "4-րդ դարի վանական համալիր՝ վերակառուցված 13-րդ դարում։ Տեղակայված է Կասաղ գետի կիրճի եզրին՝ հայտնի իր խաչքարերով։"
+  },
+  {
+    "imgUrl": "/assets/images/Aragatsotn/atractions/byurakan_observatory.jpg",
+    "title": "Բյուրականի աստղադիտարան",
+    "description": "Հիմնադրվել է 1946 թվականին՝ ակադեմիկոս Վիկտոր Համբարձումյանի կողմից։ Առաջատար աստղագիտական կենտրոն՝ առաջարկում է հանրային դիտումներ։"
+  },
+  {
+    "imgUrl": "/assets/images/Aragatsotn/atractions/armenian_alphabet_monument.jpg",
+    "title": "Հայոց այբուբենի հուշարձան",
+    "description": "Հուշարձան՝ բաղկացած 39 մեծ տառերից, տեղադրված Արտաշավան գյուղի մոտ՝ ի պատիվ Մեսրոպ Մաշտոցի։"
+  },
+  {
+    "imgUrl": "/assets/images/Aragatsotn/atractions/mount_aragats.jpg",
+    "title": "Արագած լեռ",
+    "description": "Հայաստանի ամենաբարձր լեռը՝ 4090 մ բարձրությամբ։ Սիրված է լեռնագնացների և բնության սիրահարների կողմից։"
+  },
+  {
+    "imgUrl": "/assets/images/Aragatsotn/atractions/astvatsankal.jpg",
+    "title": "Աստվածանքալ վանք",
+    "description": "4-13-րդ դարերի վանական համալիր՝ հայտնի իր միջնադարյան ճարտարապետությամբ և մուքարնաս դիզայնով։"
+  },
+  {
+    "imgUrl": "/assets/images/Aragatsotn/atractions/tegher.jpg",
+    "title": "Տեղերի վանք",
+    "description": "13-րդ դարի վանական համալիր՝ կառուցված արքայադուստր Խաթունի համար։ Գտնվում է Արագած լեռան հարավ-արևելյան լանջերին։"
+  },
+  {
+    "imgUrl": "/assets/images/Aragatsotn/atractions/aruchavank.jpg",
+    "title": "Արուճավանք",
+    "description": "7-րդ դարի եկեղեցի՝ կառուցված Արուճ գյուղում։ Միջնադարյան հայկական ճարտարապետության կարևոր օրինակ։"
+  },
+  {
+    "imgUrl": "/assets/images/Aragatsotn/atractions/vahramashen.jpg",
+    "title": "Վահրամաշեն եկեղեցի",
+    "description": "1026 թվականին կառուցված եկեղեցի՝ տեղակայված Ամբերդ ամրոցի մոտ։ Հայտնի է իր խաչաձև կառուցվածքով։"
+  },
+  {
+    "imgUrl": "/assets/images/Aragatsotn/atractions/aregimuseum.jpg",
+    "title": "Արեգի թանգարան",
+    "description": "Թանգարան՝ նվիրված հայկական սննդի պահպանման ավանդույթներին՝ առաջարկող էքսկուրսիաներ։"
+  },
+  {
+    "imgUrl": "/assets/images/Aragatsotn/atractions/kari_lake.jpg",
+    "title": "Կարի լիճ",
+    "description": "Բարձրադիր լիճ՝ տեղակայված Արագած լեռան վրա՝ սիրված էքսկուրսիաների և պիկնիկների համար։"
+  },
+  {
+    "imgUrl": "/assets/images/Aragatsotn/atractions/dashtadem.jpg",
+    "title": "Դաշտադեմ ամրոց",
+    "description": "10-րդ դարի ամրոց՝ հայտնի իր պատմական նշանակությամբ և ճարտարապետությամբ։"
+  },
+  {
+    "imgUrl": "/assets/images/Aragatsotn/atractions/gegharot_waterfall.jpg",
+    "title": "Գեղարոտ ջրվեժ",
+    "description": "17 մ բարձրությամբ ջրվեժ՝ տեղակայված 3000 մ բարձրության վրա՝ սիրված էքսկուրսիաների համար։"
   }
 
-  const regions = [
+    ],
+    foodData: [
+      {
+    img: "/assets/images/Aragatsotn/food/harisa.jpg",
+    name: "Հարիսա",
+    ingredients: "Ցորենի կուտ, տավարի կամ հավի միս, կարագ, աղ"
+  },
+  {
+    img: "/assets/images/Aragatsotn/food/tarhana.jpg",
+    name: "Թարխանա",
+    ingredients: "Աղացած ցորեն, մածուն, սոխ, համեմունքներ"
+  },
+  {
+    img: "/assets/images/Aragatsotn/food/zhingyalov-hats.jpg",
+    name: "Ժինգյալով հաց",
+    ingredients: "Տեսակավոր վայրի կանաչիներ, ալյուր, ջուր, աղ"
+  }
+  
+    ],
+    hotelsData: [
+      {
+      img: "/assets/images/Aragatsotn/hotels/Family.jpg",
+      title: "Family House",
+      link: "https://www.booking.com/hotel/am/family-house-aghdzk.en-gb.html?aid=1610684&label=yerevan-6gF7mAQa04qmgSNJF8gpWAS541143137437%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-325528430770%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt10AsofPfvtt0&sid=39ea0ee228b891a8f3e7a8b3b7555028&dest_id=174963&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=4&hpos=4&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748019286&srpvid=450476dedd870360&type=total&ucfs=1&"
+    },
+      {
+      img: "/assets/images/Aragatsotn/hotels/old byurakan.jpg",
+      title: "Old Byurakan Gouest House",
+      link: "https://www.booking.com/hotel/am/old-byurakan-gouest-house.en-gb.html?aid=1610684&label=yerevan-6gF7mAQa04qmgSNJF8gpWAS541143137437%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-325528430770%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt10AsofPfvtt0&sid=39ea0ee228b891a8f3e7a8b3b7555028&dest_id=174963&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=11&hpos=11&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748019394&srpvid=450476dedd870360&type=total&ucfs=1&"
+    },
+      {
+      img: "/assets/images/Aragatsotn/hotels/amberd.jpg",
+      title: "Amberd Hotel",
+      link: "https://www.booking.com/hotel/am/amberd.en-gb.html?aid=1610684&label=yerevan-6gF7mAQa04qmgSNJF8gpWAS541143137437%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-325528430770%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt10AsofPfvtt0&sid=39ea0ee228b891a8f3e7a8b3b7555028&dest_id=174963&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=13&hpos=13&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748019579&srpvid=450476dedd870360&type=total&ucfs=1&"
+    },
+      {
+      img: "/assets/images/Aragatsotn/hotels/qotej.jpg",
+      title: "Byurakan Guesthouse & Cottage",
+      link: "https://www.booking.com/hotel/am/byurakan-guesthouse.en-gb.html?aid=1610684&label=yerevan-6gF7mAQa04qmgSNJF8gpWAS541143137437%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-325528430770%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt10AsofPfvtt0&sid=39ea0ee228b891a8f3e7a8b3b7555028&dest_id=174963&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=21&hpos=21&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748019745&srpvid=2c4577c3747a0079&type=total&ucfs=1&"
+    },
+      {
+      img: "/assets/images/Aragatsotn/hotels/byur.jpg",
+      title: "ByurHouse",
+      link: "https://www.booking.com/hotel/am/byurhouse.en-gb.html?aid=1610684&label=yerevan-6gF7mAQa04qmgSNJF8gpWAS541143137437%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-325528430770%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt10AsofPfvtt0&sid=39ea0ee228b891a8f3e7a8b3b7555028&dest_id=-2324645&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748020124&srpvid=5aba788996880803&type=total&ucfs=1&"
+    },
+      {
+      img: "/assets/images/Aragatsotn/hotels/pandok.jpg",
+      title: "Pandok Guesthouse",
+      link: "https://www.booking.com/hotel/am/pandok-guesthouse.en-gb.html?aid=1610684&label=yerevan-6gF7mAQa04qmgSNJF8gpWAS541143137437%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-325528430770%3Alp9070052%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt10AsofPfvtt0&sid=39ea0ee228b891a8f3e7a8b3b7555028&dest_id=174963&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=33&hpos=8&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748019742&srpvid=2c4577c3747a0079&type=total&ucfs=1&"
+    },
+  
+    ],
+    transportInfo: [
     {
-      title: "Երևան",
-      href: "yerevan",
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d388448.40375203744!2d43.76262902349465!3d40.480725684590574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406a6fa4e7ef22df%3A0x81d8379f517d47c0!2z1LHWgNWh1aPVodWu1bjVv9W2!5e0!3m2!1shy!2sam!4v1748020660776!5m2!1shy!2sam",
+    text: "Երևանից Արագածոտն մարզ կարելի է հասնել ավտոբուսներով կամ միկրոավտոբուսներով՝ Աբովյան, Աշտարակ քաղաքների միջով։ Ճանապարհը տևում է մոտ 40-50 րոպե։",
+    route: "Երևան → Աբովյան → Աշտարակ → Արագածոտն մարզ"
+}
+],
+    events: [
+
+      {
+        title: "Արագածի փառատոն",
+        description: "Մշակութային և էկոտուրիզմային փառատոն՝ անցկացվող Արագած լեռան ստորոտում, ներառում է հեծանվավազք, երաժշտական ելույթներ և ավանդական արհեստների ցուցադրություն։",
+        location: "Արագածի լանջեր",
+        time: "Հուլիս",
+        imgSrc: "/assets/images/Aragatsotn/culture/aragats_festival.png"
+      },
+      {
+        title: "Սաղմոսավանքի մշակութային օրեր",
+        description: "Սուրբ Սաղմոսավանքում անցկացվող մշակութային օրեր՝ համերգներով, արվեստի ցուցահանդեսներով և հոգևոր երաժշտությամբ։",
+        location: "Սաղմոսավանք",
+        time: "Օգոստոս",
+        imgSrc: "/assets/images/Aragatsotn/culture/saghmosavank_days.jpg"
+      },
+      {
+        title: "Տեղական խոհանոցի և արհեստների փառատոն",
+        description: "Տարբեր համայնքներում կազմակերպվող փառատոն՝ նպատակով խթանել տեղական խոհանոցը և գյուղական ձեռագործ աշխատանքները։",
+        location: "Արագածոտնի տարբեր համայնքներ",
+        time: "Մայիս - Սեպտեմբեր",
+        imgSrc: "/assets/images/Aragatsotn/culture/local_cuisine_crafts.jpg"
+      }    
+  
+    ],
+    facts: [
+    "Արագածոտնի մարզում է գտնվում Արագած լեռը, որը Հայաստանի ամենաբարձր կետն է՝ 4090 մետր։",
+  "Մարզը հարուստ է հնագիտական հուշարձաններով, այդ թվում՝ Կարինե վանքով և Ուջանի ժայռապատկերներով։",
+  "Արագածոտնի պատմությունը սերտորեն կապված է հին հայկական թագավորությունների հետ։",
+
+    ]
+  },
+   // shirak/////////////////
+shirak: {
+    aboutData: [
+        {
+        title: "Շիրակի Մարզ",
+        description: " Շիրակի մարզը գտնվում է Հայաստանի հյուսիսարևմտյան հատվածում։ Մարզը հայտնի է իր պատմական քաղաքներով, ներառյալ Գյումրին՝ Հայաստանի երկրորդ խոշոր քաղաքը։ Տարածքը ունի զարգացած մշակույթ և արվեստ։",
+        center:"Գյումրի",
+        area:"2,680",
+        population: "237,900",
+        climate: "Ցուրտ ձմեռներով և զով ամառներով",
+        
+    },
+    ],
+    sightsCardData: [
+      {
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
+    "title": "Մարմաշենի վանք",
+    "description": "10-րդ դարի վանական համալիր՝ բաղկացած հինգ եկեղեցիներից, կառուցված Վահրամ Պահլավունու կողմից։ Գտնվում է Մարմաշեն գյուղի մոտ։"
+  },
+  {
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
+    "title": "Հոգեվանք վանք",
+    "description": "Միջնադարյան վանական համալիր՝ տեղակայված Սառնաղբյուր գյուղի մոտ։ Գլխավոր եկեղեցին՝ Սուրբ Կարապետը, կառուցվել է 1205 թվականին։"
+  },
+  {
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
+    "title": "Տրչկան ջրվեժ",
+    "description": "Հայաստանի ամենաբարձր ջրվեժը՝ 22.5 մետր բարձրությամբ, տեղակայված Շիրակի և Լոռու մարզերի սահմանին։"
+  },
+  {
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
+    "title": "Գյումրի քաղաք",
+    "description": "Շիրակի մարզկենտրոնը՝ հայտնի իր պատմական կենտրոնով, մշակութային վայրերով և արվեստի կենտրոններով։"
+  },
+  {
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
+    "title": "Սև բերդ",
+    "description": "Ռուսական կայսրության ժամանակաշրջանի ամրոց՝ կառուցված 19-րդ դարում Գյումրիում։"
+  },
+  {
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
+    "title": "Գյումրիի պատմության թանգարան",
+    "description": "Թանգարան՝ ներկայացնող քաղաքի պատմությունը, մշակույթը և արվեստը։"
+  },
+  {
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
+    "title": "Ավետիք Իսահակյանի տուն-թանգարան",
+    "description": "Թանգարան՝ նվիրված հայ գրող Ավետիք Իսահակյանին, ներկայացնող նրա կյանքը և ստեղծագործությունները։"
+  },
+  {
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
+    "title": "Սուրբ Ամենափրկիչ եկեղեցի",
+    "description": "Գյումրիի կենտրոնում գտնվող եկեղեցի՝ կառուցված 19-րդ դարում, հայտնի իր ճարտարապետությամբ։"
+  },
+  {
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
+    "title": "Գյումրիի կերպարվեստի պատկերասրահ",
+    "description": "Պատկերասրահ՝ ներկայացնող հայ արվեստագետների գործեր և ժամանակակից արվեստ։"
+  },
+  {
+    "imgUrl": "/assets/images/Shirak/attractions/marmashen.jpg",
+    "title": "Գյումրիի դրամատիկական թատրոն",
+    "description": "Թատրոն՝ ներկայացնող հայ դասական և ժամանակակից դրամատուրգիա։"
+  }
+    
+    ],
+    foodData: [
+     {
+    img: "/assets/images/Shirak/food/kyalla.jpg",
+    name: "Քյաղլա",
+    ingredients: "Տավարի գլուխ, պոչ, ոսկորներով միս, սոխ, համեմունքներ"
+  },
+  {
+    img: "/assets/images/Shirak/food/khash.jpg",
+    name: "Խաշ",
+    ingredients: "Տավարի ոտք, աղ, սխտոր, լավաշ"
+  },
+  {
+    img: "/assets/images/Shirak/food/matsnaprtosh.jpg",
+    name: "Մածնափրթոշ",
+    ingredients: "Մածուն, հաց, սոխ, կարագ, համեմունքներ"
+  },
+  {
+    img: "/assets/images/Shirak/food/korkot.jpg",
+    name: "Կորկոտ",
+    ingredients: "Ցորենի կուտ, տավարի միս կամ կարագ, աղ"
+  }
+  
+    ],
+    hotelsData: [
+      {
+    img: "/assets/images/Shirak/hotels/igit.jpg",
+    title: "Igit Plaza Hotel",
+    link: "https://www.booking.com/hotel/am/igit-plaza.html?aid=318615&label=English_Armenia_EN_AM_29510061745-86u4JRJr6_13IDVO0wSKoAS640938665492%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55397054508%3Atidsa-386017564237%3Alp9070052%3Ali%3Adec%3Adm%3Aag29510061745%3Acmp638401877&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=1199&dest_type=airport&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748069623&srpvid=94d230712a42020a&type=total&ucfs=1&"
+  },
+       {
+    img: "/assets/images/Shirak/hotels/igit.jpg",
+    title: "Igit Plaza Hotel",
+    link: "https://www.booking.com/hotel/am/igit-plaza.html?aid=318615&label=English_Armenia_EN_AM_29510061745-86u4JRJr6_13IDVO0wSKoAS640938665492%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55397054508%3Atidsa-386017564237%3Alp9070052%3Ali%3Adec%3Adm%3Aag29510061745%3Acmp638401877&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=1199&dest_type=airport&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748069623&srpvid=94d230712a42020a&type=total&ucfs=1&"
+  },
+       {
+    img: "/assets/images/Shirak/hotels/igit.jpg",
+    title: "Igit Plaza Hotel",
+    link: "https://www.booking.com/hotel/am/igit-plaza.html?aid=318615&label=English_Armenia_EN_AM_29510061745-86u4JRJr6_13IDVO0wSKoAS640938665492%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55397054508%3Atidsa-386017564237%3Alp9070052%3Ali%3Adec%3Adm%3Aag29510061745%3Acmp638401877&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=1199&dest_type=airport&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748069623&srpvid=94d230712a42020a&type=total&ucfs=1&"
+  },
+       {
+    img: "/assets/images/Shirak/hotels/igit.jpg",
+    title: "Igit Plaza Hotel",
+    link: "https://www.booking.com/hotel/am/igit-plaza.html?aid=318615&label=English_Armenia_EN_AM_29510061745-86u4JRJr6_13IDVO0wSKoAS640938665492%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55397054508%3Atidsa-386017564237%3Alp9070052%3Ali%3Adec%3Adm%3Aag29510061745%3Acmp638401877&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=1199&dest_type=airport&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748069623&srpvid=94d230712a42020a&type=total&ucfs=1&"
+  },
+       {
+    img: "/assets/images/Shirak/hotels/igit.jpg",
+    title: "Igit Plaza Hotel",
+    link: "https://www.booking.com/hotel/am/igit-plaza.html?aid=318615&label=English_Armenia_EN_AM_29510061745-86u4JRJr6_13IDVO0wSKoAS640938665492%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55397054508%3Atidsa-386017564237%3Alp9070052%3Ali%3Adec%3Adm%3Aag29510061745%3Acmp638401877&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=1199&dest_type=airport&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748069623&srpvid=94d230712a42020a&type=total&ucfs=1&"
+  },
+       {
+    img: "/assets/images/Shirak/hotels/igit.jpg",
+    title: "Igit Plaza Hotel",
+    link: "https://www.booking.com/hotel/am/igit-plaza.html?aid=318615&label=English_Armenia_EN_AM_29510061745-86u4JRJr6_13IDVO0wSKoAS640938665492%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55397054508%3Atidsa-386017564237%3Alp9070052%3Ali%3Adec%3Adm%3Aag29510061745%3Acmp638401877&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=1199&dest_type=airport&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748069623&srpvid=94d230712a42020a&type=total&ucfs=1&"
+  },
+       {
+    img: "/assets/images/Shirak/hotels/igit.jpg",
+    title: "Igit Plaza Hotel",
+    link: "https://www.booking.com/hotel/am/igit-plaza.html?aid=318615&label=English_Armenia_EN_AM_29510061745-86u4JRJr6_13IDVO0wSKoAS640938665492%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55397054508%3Atidsa-386017564237%3Alp9070052%3Ali%3Adec%3Adm%3Aag29510061745%3Acmp638401877&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=1199&dest_type=airport&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748069623&srpvid=94d230712a42020a&type=total&ucfs=1&"
+  },
+  
+    ],
+    transportInfo: [
+   {
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1469714.5917182863!2d42.5062462428369!3d40.806840034192774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406a084022420c29%3A0x4ec00172cf1500cc!2sShirak%20Province!5e1!3m2!1sen!2sam!4v1748069754514!5m2!1sen!2sam",
+    text: "Երևանից Շիրակի մարզ կարելի է հասնել ավտոբուսով կամ միկրոավտոբուսով՝ Աբովյան և Գյումրի քաղաքների միջով։ Ճանապարհը տևում է մոտ 3.5-4 ժամ։",
+    route: "Երևան → Աբովյան → Գյումրի → Շիրակի մարզ"
+}
+],
+    events: [
+    {
+  title: "Գյումրու քաղաքային տոն",
+  description: "Գյումրիի ավանդական քաղաքային տոն, որը ներառում է տեղական երաժշտություն, պարեր, և ձեռագործի ցուցադրություն։",
+  location: "Գյումրի",
+  time: "Հունիս",
+  imgSrc: "/assets/images/Shirak/culture/gyumri_city_festival.jpg"
+},
+{
+  title: "Շիրակի բարբառային փառատոն",
+  description: "Տեղական բարբառների և բանաստեղծական արվեստի խթանումը, հայացք դեպի ավանդական բանահյուսություն։",
+  location: "Շիրակ գյուղեր",
+  time: "Սեպտեմբեր",
+  imgSrc: "/assets/images/Shirak/culture/barbarian_festival.jpg"
+},
+{
+  title: "Շիրակի բարբառային փառատոն",
+  description: "Տեղական բարբառների և բանաստեղծական արվեստի խթանումը, հայացք դեպի ավանդական բանահյուսություն։",
+  location: "Շիրակ գյուղեր",
+  time: "Սեպտեմբեր",
+  imgSrc: "/assets/images/Shirak/culture/barbarian_festival.jpg"
+},
+{
+  title: "Շիրակի բարբառային փառատոն",
+  description: "Տեղական բարբառների և բանաստեղծական արվեստի խթանումը, հայացք դեպի ավանդական բանահյուսություն։",
+  location: "Շիրակ գյուղեր",
+  time: "Սեպտեմբեր",
+  imgSrc: "/assets/images/Shirak/culture/barbarian_festival.jpg"
+},
+
+
+    
+  
+    ],
+    facts: [
+     "Շիրակի մարզի Գյումրին հայտնի է իր հին փողոցներով, 19-րդ դարի ճարտարապետությամբ և հյուրընկալությամբ։",
+  "Գյումրին երկրորդ խոշոր քաղաքն է Հայաստանում և ունի հարուստ մշակութային կյանք՝ թատրոններ, թանգարաններ ու փառատոներ։",
+  "Շիրակի մարզում գտնվում են բազմաթիվ պատմական և կրոնական կառույցներ, ինչպիսիք են Ախուրյանի վանքը և Ախուրյան գետի հովիտը։",
+    ]
+  },
+
+//լոռի///////////////
+
+  lori: {
+    aboutData: [
+        {
+        title: "Լոռվա Մարզ",
+        description: " Լոռու մարզը գտնվում է Հայաստանի հյուսիսում։ Տարածքը հայտնի է իր կանաչապատ լեռնաշխարհով, խոր ձորերով և գետերով։ Մարզում կան բազմաթիվ պատմամշակութային հուշարձաններ, ներառյալ Սանահին և Հաղպատ վանքերը։",
+        center:"Վանաձոր",
+        area:"3,800 ",
+        population: "210,000",
+        climate: "Մեղմ լեռնային",
+      
+    },
+    ],
+    sightsCardData: [
+      {
+        imgUrl: '/assets/images/Lori/atractions/sanahin.jpg',
+        title: 'Սանահին վանք',
+        description: 'ՅՈՒՆԵՍԿՕ-ի համաշխարհային ժառանգության ցանկում ընդգրկված վանական համալիր։',
     },
     {
-      title: "Արագածոտն",
-      href: "aragatsotn",
+        imgUrl: '/assets/images/Lori/atractions/haxpat.jpg', 
+        title: 'Հաղպատավանք',
+        description: 'Սանահինի հետ միասին ՅՈՒՆԵՍԿՕ-ի ցանկում ընդգրկված միջնադարյան վանական համալիր՝ հայտնի իր ճարտարապետությամբ։'
     },
     {
-      title: "Շիրակ",
-      href: "shirak",
+        imgUrl: '/assets/images/Lori/atractions/dsegh.jpg',
+        title: 'Դսեղ',
+        description: 'Գեղեցիկ բնությամբ գյուղ՝ համարվող Հովհաննես Թումանյանի ծննդավայրն ու թանգարանի տեղակայումը։'
     },
     {
-      title: "Լոռի",
-      href: "lori",
+        imgUrl: '/assets/images/Lori/atractions/odzun.jpg',
+        title: 'Օձունի եկեղեցի',
+        description: '6-7-րդ դարերի բազիլիկ եկեղեցի՝ հայտնի իր բացառիկ խաչքարերով և ճարտարապետական առանձնահատկություններով։'
     },
     {
-      title: "Տավուշ",
-      href: "tavush",
+        imgUrl: '/assets/images/Lori/atractions/qobayr.jpg',
+        title: 'Քոբայրի վանք',
+        description: '12-րդ դարի վանական համալիր՝ դիրքավորված ժայռապատ վայրում՝ գեղեցիկ մ freskներով և գրություններով։'
     },
     {
-      title: "Գեղարքունիք",
-      href: "gegharkunik",
+        imgUrl: '/assets/images/Lori/atractions/alaverdi.jpg',
+        title: 'Ալավերդի քաղաք',
+        description: 'Լոռվա արդյունաբերական կենտրոնը՝ շրջապատված վանական համալիրներով և լեռնաշղթաներով։'
     },
     {
-      title: "Կոտայք",
-      href: "kotayq",
+        imgUrl: '/assets/images/Lori/atractions/aqori.jpg',
+        title: 'Աքորի գյուղ',
+        description: 'Նրբագեղ բնությամբ և պատմական անցյալով գյուղ՝ տեսարանով դեպի Դեբեդի կիրճը։'
     },
     {
-      title: "Արարատ",
-      href: "ararat",
+        imgUrl: '/assets/images/Lori/atractions/lori berd.jpg',
+        title: 'Լոռի բերդ',
+        description: 'Միջնադարյան բերդ՝ կառուցված Ստեփան Տարոնեցու կողմից՝ ռազմավարական կարևոր դիրքով։'
     },
     {
-      title: "Վայոց Ձոր",
-      href: "vayotsDzor",
+        imgUrl: '/assets/images/Lori/atractions/dendropark.png',
+        title: 'Ստեփանավանի Դենդրոպարկ (Սոճուտ)',
+        description: 'Բնության գողտրիկ անկյուն՝ հարուստ սոճիներով և մաքուր օդով։ Հիանալի վայր է առողջարար զբոսանքների և լուսանկարչության համար։'
     },
     {
-      title: "Սյունիք",
-      href: "syunik",
+        imgUrl: '/assets/images/Lori/atractions/tumanyani tun tangaran.jpg',
+        title: 'Թումանյանի թանգարան',
+        description: 'Հայ մեծ գրողի՝ Հովհաննես Թումանյանի կյանքին ու ստեղծագործությանը նվիրված թանգարան։'
     },
     {
-      title: "Արմավիր",
-      href: "armavir",
+        imgUrl: '/assets/images/Lori/atractions/trchkan.jpg',
+        title: 'Թռչկանի ջրվեժ',
+        description: 'Թռչկանի ջրվեժը գտնվում է Շիրակի և Լոռու մարզերի սահմանին։ Այն հատկապես գեղեցիկ է ձմռանը, երբ ամբողջովին սառչում է։'
     },
-  ];
-
-  const regionsMenu = document.getElementById("prov_menu");
-
-  regions.forEach((reg) => {
-    const li = document.createElement("li");
-    li.className = "prov_list";
-
-    const button = document.createElement("button");
-    button.textContent = reg.title;
-
-    button.addEventListener("click", () => {
-      getRegion(reg.href, reg.title);
-    });
-
-    li.appendChild(button);
-    regionsMenu.appendChild(li);
-  });
-
-  async function getRegion(reg, loc) {
-    const respons = await fetch(`/region/${reg}`);
-    const result = await respons.json();
-
-    if (result) {
-      const aboutProvince = document.getElementById("aboutProvince");
-      aboutProvince.innerHTML = "";
-
-      // տեսարժան վայրեր
-      const provSightsCards = document.getElementById("provSightsCards");
-      provSightsCards.innerHTML = "";
-
-      // սնունդ
-      const container = document.getElementById("foodContainer");
-      container.innerHTML = "";
-
-      // հյուրանոցներ
-      const hotelsContainer = document.getElementById("hotelsContainer");
-      hotelsContainer.innerHTML = "";
-
-      // տրանսպորտ
-      const transport = document.getElementById("transportContainer");
-      transport.innerHTML = "";
-
-      // մշակութային իրադարձություններ
-      const cultureContainer = document.getElementById("cultureContainer");
-      cultureContainer.innerHTML = "";
-
-      // փաստեր
-      const factsContainer = document.getElementById("facts-container");
-      factsContainer.innerHTML = "";
-
-      //about
-      // const aboutProvince = document.getElementById("aboutProvince");
-
-      aboutProvince.innerHTML = `
-                         <h2>${result.aboutData[0].title}</h2>
-                    <p> ${result.aboutData[0].description}</p>
-                    <div class="about_provinces_content_info">
-                        <div class="box">
-                            <i class="fa-solid fa-map-location-dot"></i>
-                            <h4>Մարզկենտրոնը</h4>
-                            <p>${result.aboutData[0].center}</p>
-                        </div>
-                        <div class="box">
-                            <i class="fa-solid fa-chart-area"></i>
-                            <h4>Տարածքը</h4>
-                            <p>${result.aboutData[0].area}կմ²</p>
-                        </div>
-                        <div class="box">
-                            <i class="fa-solid fa-person"></i>
-                            <h4>Բնակչությունը</h4>
-                            <p> ${result.aboutData[0].population}մարդ</p>
-                        </div>
-                        <div class="box">
-                            <i class="fa-solid fa-cloud-sun-rain"></i>
-                            <h4>Կլիման</h4>
-                            <p>${result.aboutData[0].climate}</p>
-                        </div>
-                    </div>`;
-      SightsCards = document.getElementById("provSightsCards");
+    {
+        imgUrl: '/assets/images/Lori/atractions/gevorg ekexeci.jpg',
+        title: 'Սուրբ Գևորգ եկեղեցի (Բազում)',
+        description: 'Փոքր, լեռների մեջ թաքնված եկեղեցի՝ հին պատմությամբ ու հոգևոր հանգստությամբ։'
+    }
+    ],
+    foodData: [
+      {
+    img: "/assets/images/Lori/food/paxlava.webp",
+    name: "Փախլավա",
+    ingredients: "Փխրուն խմոր, ընկույզ, շաքար, կարագ, մեղր կամ օշարակ"
+  },
+  {
+    img: "/assets/images/Lori/food/ghapama.jpg",
+    name: "Ղափամա",
+    ingredients: "Դդում, բրինձ, չամիչ, ընկույզ, մեղր, դարչին"
+  },
+  {
+    img: "/assets/images/Lori/food/tanapur.jpg",
+    name: "Թանապուր (Սպաս)",
+    ingredients: "Թան, ձավար, սխտոր, աղ, կանաչի"
+  },
+  {
+    img: "/assets/images/Lori/food/khashil.jpg",
+    name: "Խաշիլ",
+    ingredients: "Ցորենի ձավար, ջուր, կարագ, աղ"
+  },
+  {
+    img: "/assets/images/Lori/food/muraba.jpg",
+    name: "Ձմերուկով մուրաբա",
+    ingredients: "Ձմերուկի կեղև, շաքար, կիտրոնի աղ կամ կիտրոն"
+  }
+    ],
+    hotelsData: [
+      {
+    img: "/assets/images/Lori/hotels/hyuratun.jpg",
+    title: "Լոռի Հյուրատուն",
+    link: "https://www.booking.com/hotel/am/lori-vanadzor.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=distance_from_search&srepoch=1747923317&srpvid=682f316e01990208df7f399bddd1b167&type=total&ucfs=1&"
+  },
+  {
+    img: "/assets/images/Lori/hotels/arevaham.png",
+    title: "Արևահամ Բուտիկ Հյուրանոց ",
+    link: "https://www.booking.com/hotel/am/arevaham.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747922741&srpvid=682f2f34012b011029d07d8a235ee59f&type=total&ucfs=1&"
+  },
+  {
+    img: "/assets/images/Lori/hotels/lux.jpg",
+    title: "Lux Home",
+    link: "https://www.booking.com/hotel/am/lux-home-vanadzor.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325015&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747923531&srpvid=682f323f002c0133ebc3d1da315160aa&type=total&ucfs=1&"
+  },
+  {
+    img: "/assets/images/Lori/hotels/laguna.jpg",
+    title: "Laguna Hotel",
+    link: "https://www.booking.com/hotel/am/laguna.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325015&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=9&hpos=9&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747923670&srpvid=682f323f002c0133ebc3d1da315160aa&type=total&ucfs=1&activeTab=main"
+  },
+  {
+    img: "/assets/images/Lori/hotels/palermo.jpg",
+    title: "Palermo Hotel",
+    link: "https://www.booking.com/hotel/am/palermo.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325015&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=10&hpos=10&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747923794&srpvid=682f323f002c0133ebc3d1da315160aa&type=total&ucfs=1&"
+  },
+  {
+    img: "/assets/images/Lori/hotels/auroom.jpg",
+    title: "AuRoom",
+    link: "https://www.booking.com/hotel/am/otel-auroom-vanadzor.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dest_id=-2325015&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=20&hpos=20&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747923918&srpvid=682f323f002c0133ebc3d1da315160aa&type=total&ucfs=1&"
+  }
+    ],
+    transportInfo: [
+      {
+        map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d366447.83474744525!2d44.1603744548749!3d40.983670250524355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4041d1c1f284ea5f%3A0x77b9a6f72074803f!2sLori%20Province!5e1!3m2!1sen!2sam!4v1747924670027!5m2!1sen!2sam",
+        text: 'Լոռու մարզ կարելի է հասնել Երևանից ավտոբուսով, միկրոավտոբուսով կամ անձնական մեքենայով՝ Վանաձորի և Ստեփանավանի ուղությամբ։ Ճանապարհը տևում է մոտ 2.5-3 ժամ։ Կարող եք օգտվել նաև տաքսի ծառայություններից կամ գարեջուրների զբոսաշրջային տուրերից։',
+        route: 'Երևան → Աբովյան → Սպիտակ → Վանաձոր → Լոռու տարբեր քաղաքներ ու գյուղեր։'
+    }
+],
+    events: [
+      {
+    title: "Թումանյանական օրեր",
+    description: "Ամենամյա գրական փառատոն։ Միջոցառումն ունի ավանդական բնույթ և անց է կացվում ամեն տարի աշնանը՝ Հովհաննես Թումանյանի ծննդավայրում:",
+    location: "Դսեղ գյուղ, Թումանյանի տուն-թանգարան",
+    time: "ամեն ամառ, հիմնականում հուլիս ամսին",
+    imgSrc: "/assets/images/Lori/culture/tumanyanakan orer.png"
+  },
+    {
+      title: "Խորովածի փառատոն",
+      description: "Թարմ մսից և բանջարեղենից պատրաստված խորովածը մատուցվում է տաք ածուխների վրա՝ խոզի, տավարի, ոչխարի, ձկան և բանջարեղենի տեսականիով։",
+      location: "Ախթալա",
+      time: "Օգոստոսի 21 ",
+      imgSrc: "/assets/images/Lori/culture/xorovac.jpg"
+    },
+    {
       title: "Հապալասի փառատոն",
       description: "Փառատոնի նպատակն է գյուղում խթանել հապալասի մշակումը և էկոտուրիզմի զարգացումը։ Բացի հապալասը համտեսելուց այցելուները կվայելեն արևոտ գյուղական օրը, կենդանի երաժշտությունը, կմասնակցեն խաղերի և վարպետաց դասերի։",
       location: "Մարգահովիտ",
@@ -189,6 +856,7 @@ window.addEventListener("DOMContentLoaded", () => {
   "Արմենիան և Մեքսիկան՝ երկու աշխարհագրական վայրեր, ունեն մի ֆենոմեն հիշողության և խորհրդավորության միջև։"
     ]
   },
+    
    // tavush/////////////////
 tavush: {
     aboutData: [
@@ -1040,7 +1708,7 @@ syunik: {
     "description": "Բնության պահպանվող տարածք՝ հարուստ կենսաբազմազանությամբ և եզակի բուսական ու կենդանական աշխարհով։"
   },
   {
-    "imgUrl": "./imges/Syunik/attractions/bgheno_noravank.jpg",
+    "imgUrl": "/assets/images/Syunik/attractions/bgheno_noravank.jpg",
     "title": "Բղենո Նորավանք",
     "description": "10-11-րդ դարերի վանական համալիր՝ տեղակայված անտառապատ կիրճում։"
   },
@@ -1344,10 +2012,7 @@ armavir: {
     ]
   },
   
-
-  
 };
-
 const marzData = data[marz];
 
 if (marzData) {
@@ -1377,152 +2042,217 @@ if (marzData) {
                 <h4>Կլիման</h4>
                 <p>${marzData.aboutData[0].climate}</p>
             </div>
-        </div>`;
+        </div>;`
 
     // Sights
     const provSightsCards = document.getElementById('provSightsCards');
 
-    marzData.sightsCardData.forEach(card=>{ 
+    marzData.sightsCardData.forEach(card => {
         const cardDiv = document.createElement('div');
         cardDiv.className = 'provinces_sights_card';
 
         cardDiv.innerHTML = `
             <img src="${card.imgUrl}" alt="${card.title}">
-                        <div class="provinces_sights_cards_opacity">
-                            <a class="add_to_basket" href="#">+</a>
-                            <div class="provinces_sights_card_content">
-                                <h4>${card.title}</h4>
-                                <p>${card.description}</p>
-                            </div>
-                        </div>
-        `
+            <div class="provinces_sights_cards_opacity">
+                <a class="add_to_basket" href="#" 
+                   data-type="sights" 
+                   data-title="${card.title}"
+                   data-description="${card.description}"
+                   data-img="${card.imgUrl}">+</a>
+                <div class="provinces_sights_card_content">
+                    <h4>${card.title}</h4>
+                    <p>${card.description}</p>
+                </div>
+            </div>; `
 
         provSightsCards.appendChild(cardDiv);
     });
 
-    //food
+    // Food
     const container = document.getElementById("foodContainer");
 
-  marzData.foodData.forEach(food => {
-    const card = document.createElement("div");
-    card.className = "food-card";
+    marzData.foodData.forEach(food => {
+        const card = document.createElement("div");
+        card.className = "food-card";
 
-    card.innerHTML = `
-      <div class="food_img">
-        <img src="${food.img}" alt="${food.name}">
-      </div>
-      <h1>${food.name}</h1>
-      <p class="ingredients"><b>Բաղադրիչները՝</b> ${food.ingredients}</p>
-      <button class="orange_btn">Ավելացնել փորձելու</button>
-    `;
+        card.innerHTML = `
+            <div class="food_img">
+                <img src="${food.img}" alt="${food.name}">
+            </div>
+            <h1>${food.name}</h1>
+            <p class="ingredients"><b>Բաղադրիչները՝</b> ${food.ingredients}</p>
+            <a class="add_to_basket" href="#"
+               data-type="foods"
+               data-title="${food.name}"
+               data-img="${food.img}"
+               data-ingredients="${food.ingredients}">+</a>
+        ;`
 
-    container.appendChild(card);
-  });
-
-  //hotels
-  const hotelsContainer = document.getElementById("hotelsContainer");
-
-marzData.hotelsData.forEach((hotel, index) => {
-  const card = document.createElement("div");
-  card.classList.add("hotels-slide");
-  if (index === 0) card.classList.add("active");
-
-  card.innerHTML = `
-    <img src="${hotel.img}" alt="">
-    <div class="hotels-slide_info">
-        <a class="add_to_basket" href="#">+</a>
-        <div class="hotels-slide_info_content">
-            <h2>${hotel.title}</h2>
-            <a target = '_blank' href="${hotel.link}">Տեսնել ավելին</a>
-        </div>
-    </div>
-  `;
-
-  hotelsContainer.appendChild(card);
-});
-
- const slides = document.querySelectorAll('.hotels-slide');
-
-  slides.forEach(slide => {
-    slide.addEventListener('click', () => {
-      slides.forEach(s => s.classList.remove('active'));
-      slide.classList.add('active');
+        container.appendChild(card);
     });
-  });
 
-  // transport
-  const transport = document.getElementById('transportContainer');
+    // Hotels
+    const hotelsContainer = document.getElementById("hotelsContainer");
 
+    marzData.hotelsData.forEach((hotel, index) => {
+        const card = document.createElement("div");
+        card.classList.add("hotels-slide");
+        if (index === 0) card.classList.add("active");
+
+        card.innerHTML = `
+            <img src="${hotel.img}" alt="">
+            <div class="hotels-slide_info">
+                <a class="add_to_basket" href="#" 
+                   data-type="hotels"
+                   data-title="${hotel.title}"
+                   data-img="${hotel.img}"
+                   data-link="${hotel.link}">+</a>
+                <div class="hotels-slide_info_content">
+                    <h2>${hotel.title}</h2>
+                    <a target="_blank" href="${hotel.link}">Տեսնել ավելին</a>
+                </div>
+            </div>;`
+
+        hotelsContainer.appendChild(card);
+    });
+
+    const slides = document.querySelectorAll('.hotels-slide');
+    slides.forEach(slide => {
+        slide.addEventListener('click', () => {
+            slides.forEach(s => s.classList.remove('active'));
+            slide.classList.add('active');
+        });
+    });
+
+    // Transport
+    const transport = document.getElementById('transportContainer');
     transport.innerHTML = `
-                    <div class="map">
-                        <iframe src="${marzData.transportInfo[0].map}"></iframe>
-                    </div>
-                    <div class="pt_text">
-                        <p>${marzData.transportInfo[0].text}</p>
-                        <h4>Առաջարկվող երթուղի՝</h4>
-                        <p class="route"> ${marzData.transportInfo[0].route}</p>
-                    </div>`
+        <div class="map">
+            <iframe src="${marzData.transportInfo[0].map}"></iframe>
+        </div>
+        <div class="pt_text">
+            <p>${marzData.transportInfo[0].text}</p>
+            <h4>Առաջարկվող երթուղի՝</h4>
+            <p class="route">${marzData.transportInfo[0].route}</p>
+        </div>;`
 
-    //events
+    // Events
     const cultureContainer = document.getElementById('cultureContainer');
-        marzData.events.forEach(event => {
+    marzData.events.forEach(event => {
         cultureContainer.innerHTML += `
             <div class="swiper-slide">
-            <div class="event-card">
-                <img src="${event.imgSrc}" alt="Event Image" />
-                <div class="event-details">
-                <div class="tag">
-                    <span>${event.title}</span> 
-                    <a class="add_to_basket" href="#">+</a>
+                <div class="event-card">
+                    <img src="${event.imgSrc}" alt="Event Image" />
+                    <div class="event-details">
+                        <div class="tag">
+                            <span>${event.title}</span>
+                            <a class="add_to_basket" href="#"
+                               data-type="events"
+                               data-title="${event.title}"
+                               data-img="${event.imgSrc}"
+                               data-description="${event.description}"
+                               data-location="${event.location}"
+                               data-time="${event.time}">+</a>
+                        </div>
+                        <p style="margin-bottom: 10px;">${event.description}</p>
+                        <p><b>Վայր:</b> ${event.location}</p>
+                        <p><b>Ժամանակը:</b> ${event.time}</p>
+                    </div>
                 </div>
-                <p style="margin-bottom: 10px;">${event.description}</p>
-                <p><b>Վայր:</b> ${event.location}</p>
-                <p><b>Ժամանակը:</b> ${event.time}</p>
-                </div>
-            </div>
-            </div>`;
-        });
-        const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      640: { slidesPerView: 1.5 },
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 },
-    },
-  });
+            </div>;`
+    });
 
-//facts
-const factsContainer = document.getElementById("facts-container");
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            640: { slidesPerView: 1.5 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+        },
+    });
 
-marzData.facts.forEach(fact => {
-  const factItem = document.createElement("div");
-  factItem.className = "fact-item";
+    // Facts
+    const factsContainer = document.getElementById("facts-container");
+    marzData.facts.forEach(fact => {
+        const factItem = document.createElement("div");
+        factItem.className = "fact-item";
+        const icon = document.createElement("div");
+        icon.className = "fact-icon";
+        const text = document.createElement("div");
+        text.className = "fact-text";
+        text.textContent = fact;
+        factItem.appendChild(icon);
+        factItem.appendChild(text);
+        factsContainer.appendChild(factItem);
+    });
 
-  const icon = document.createElement("div");
-  icon.className = "fact-icon";
+   // ▶️ Սիրելիի ավելացման ֆունկցիա (կրկնության ստուգումով և տեսքի փոփոխությամբ)
+function addToFavorites(type, data, button) {
+    const existing = JSON.parse(localStorage.getItem(type)) || [];
 
-  const text = document.createElement("div");
-  text.className = "fact-text";
-  text.textContent = fact;
+    const alreadyExists = existing.some(item => JSON.stringify(item) === JSON.stringify(data));
 
-  factItem.appendChild(icon);
-  factItem.appendChild(text);
+    if (!alreadyExists) {
+        existing.push(data);
+        localStorage.setItem(type, JSON.stringify(existing));
+    }
 
-  factsContainer.appendChild(factItem);
-});
-
-  
-} else {
-  document.body.innerHTML = "<p>Նշված մարզը չի գտնվել։</p>";
+    if (button) {
+        button.innerHTML =`<i class="fa-solid fa-check"></i>` ;
+        button.disabled = true;
+    }
 }
 
+// ▶️ Սահմանել add_to_basket կոճակների լսող և ստուգող (ռեֆրեշի պահման համար)
+document.querySelectorAll('.add_to_basket').forEach(button => {
+    const type = button.getAttribute('data-type');
+    const data = {
+        title: button.getAttribute('data-title'),
+        description: button.getAttribute('data-description'),
+        img: button.getAttribute('data-img'),
+        ingredients: button.getAttribute('data-ingredients'),
+        link: button.getAttribute('data-link'),
+        location: button.getAttribute('data-location'),
+        time: button.getAttribute('data-time')
+    };
+
+    // ⏳ Ռեֆրեշի ժամանակ ստուգում, արդյոք արդեն ավելացված է
+    const existing = JSON.parse(localStorage.getItem(type)) || [];
+    const alreadyExists = existing.some(item => JSON.stringify(item) === JSON.stringify(data));
+
+    if (alreadyExists) {
+        button.innerHTML = `<i class="fa-solid fa-check"></i>` ;
+        button.classList.add("added");
+        button.disabled = true;
+    }
+
+    // ▶️ Սեղմման լսող
+    button.addEventListener('click', function (e) {
+        e.preventDefault();
+        addToFavorites(type, data, this);
+    });
+});
 
 
+} else {
+    document.body.innerHTML = "<p>Նշված մարզը չի գտնվել։</p>";
+}
 
-
+// // Navigation - highlighting active region
+// const urlParams = new URLSearchParams(window.location.search);
+// const selectedMarz = urlParams.get('marz');
+// const provItems = document.querySelectorAll('.prov_list');
+// provItems.forEach(item => {
+//     const link = item.querySelector('a');
+//     if (link.href.includes(marz=${selectedMarz})) {
+//         item.classList.add('active');
+//     } else {
+//         item.classList.remove('active');
+//     }
+// });

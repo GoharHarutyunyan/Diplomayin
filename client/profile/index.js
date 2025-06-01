@@ -48,6 +48,7 @@ async function fetchWeather(city) {
 // Դեֆոլտ հանում՝ սկզբում ընտրած մարզի եղանակը ցույց տալ
 fetchWeather(select.value);
 
+//add to busket............................
 
 // ▶️ Capitalize First Letter (helper function)
 function capitalizeFirstLetter(str) {
@@ -106,6 +107,21 @@ function deleteFavorite(type, index) {
   renderFavorites(type, 'profile' + capitalizeFirstLetter(type));
 }
 
+// ▶️ Add Item to Favorites (avoid duplicates)
+function addToFavorites(type, newItem) {
+  let items = JSON.parse(localStorage.getItem(type)) || [];
+  
+  // You can change this condition to check by title or id
+  const exists = items.some(item => item.title === newItem.title);
+  
+  if (!exists) {
+    items.push(newItem);
+    localStorage.setItem(type, JSON.stringify(items));
+    alert("Տարրը ավելացվել է ֆավորիտների մեջ։");
+  } else {
+    alert("Այս տարրը արդեն ավելացված է ֆավորիտների մեջ։");
+  }
+}
 
 // ▶️ Render All on Page Load
 document.addEventListener("DOMContentLoaded", () => {
@@ -118,58 +134,3 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-const profileContainer = document.querySelector(".diary_container");
-
-// Մարզի անունը վերցվում է ֆավորիտից, սա օրինակ է
-function addFavoriteToProfile(region, category, itemData) {
-    // Ստեղծում ենք եզակի id մարզի համար
-    const regionId = `region-${region.toLowerCase().replace(/\s+/g, '-')}`;
-
-    // Ստուգում ենք՝ արդյոք region-ի diary_content div-ը արդեն կա
-    let regionSection = document.getElementById(regionId);
-
-    if (!regionSection) {
-        // Եթե չկա՝ ստեղծում ենք region-ի diary_content բլոկը
-        regionSection = document.createElement("div");
-        regionSection.classList.add("diary_content");
-        regionSection.id = regionId;
-
-        regionSection.innerHTML = `
-            <h1>Մարզը՝ ${region}</h1>
-            <div class="diary_content_products">
-                <div class="diary_sights dp_item">
-                    <h2>Տեսարժան վայրեր</h2>
-                    <div class="favorites-container" data-category="sights"></div>
-                </div>
-                <div class="diary_food dp_item">
-                    <h2>Ուտելիք և տեղական համտես</h2>
-                    <div class="favorites-container" data-category="foods"></div>
-                </div>
-                <div class="diart_hotels dp_item">
-                    <h2>Հյուրանոցներ և կացարաններ</h2>
-                    <div class="favorites-container" data-category="hotels"></div>
-                </div>
-                <div class="diary_culture dp_item">
-                    <h2>Մշակույթ և միջոցառումներ</h2>
-                    <div class="favorites-container" data-category="events"></div>
-                </div>
-            </div>
-        `;
-        profileContainer.appendChild(regionSection);
-    }
-
-    // Հիմա ավելացնում ենք ֆավորիտը ճիշտ բաժնում
-    const categoryContainer = regionSection.querySelector(`.favorites-container[data-category="${category}"]`);
-
-    if (categoryContainer) {
-        const card = document.createElement("div");
-        card.classList.add("favorite-card");
-        card.innerHTML = `
-            <img src="${itemData.image}" alt="${itemData.title}">
-            <h3>${itemData.title}</h3>
-            <p>${itemData.description}</p>
-            <button class="delete-btn">Ջնջել</button>
-        `;
-        categoryContainer.appendChild(card);
-    }
-}

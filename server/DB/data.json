@@ -1,83 +1,22 @@
 {
   "users": [
     {
-      "email": "gohar.harutyunyannn@gmail.com",
-      "fisrtname": "Gohar",
-      "lastname": "Harutyunyan",
-      "registrationDate": "5/22/2025",
-<<<<<<< HEAD
-      "password": "dg5sg200a5"
-    },
-    {
-      "email": "gohar6f54@gmail.com",
-      "name": "Gohar ",
-      "registrationDate": "5/30/2025",
-      "password": "hey123"
-    }
-  ],
-  "currentUser": {
-    "email": "gohar6f54@gmail.com",
-    "name": "Gohar ",
-    "registrationDate": "5/30/2025",
-    "password": "hey123"
-  }
-}
-=======
-      "password": "dg5sg200a5",
+      "email": "alo@gmail.com",
+      "firstname": "dvsfd",
+      "lastname": "adsvfgdf",
+      "registrationDate": "6/1/2025",
+      "password": "alo123",
+      "option": "female",
       "favorites": []
-    },
-    {
-      "email": "armbabujyan@gmail.com",
-      "firstname": "ARMAN",
-      "lastname": "BABUJYAN",
-      "registrationDate": "30.05.2025",
-      "password": "3",
-      "option": "male",
-      "favorites": [
-        {
-          "description": "Երևանի կենտրոնական հրապարակը՝ շրջապատված կառավարության, նախարարությունների շենքերով և Ազգային Պատկերասրահով։ Երեկոյան ժամերին այստեղ գործում են երգող շատրվաններ։",
-          "location": "Երևան",
-          "id": 1748646138077,
-          "imgUrl": "/assets/images/yerevan/atractions/republic_square.jpg",
-          "title": "Հանրապետության հրապարակ",
-          "email": "armbabujyan@gmail.com"
-        },
-        {
-          "description": "Ալեքսանդր Սպենդիարյանի անվան ազգային ակադեմիական թատրոն՝ հայկական մշակույթի կենտրոններից մեկը։",
-          "location": "Երևան",
-          "id": 1748646864414,
-          "imgUrl": "/assets/images/yerevan/atractions/opera.jpg",
-          "title": "Օպերայի և բալետի թատրոն",
-          "email": "armbabujyan@gmail.com"
-        }
-      ]
     }
   ],
   "currentUser": {
-    "email": "armbabujyan@gmail.com",
-    "firstname": "ARMAN",
-    "lastname": "BABUJYAN",
-    "registrationDate": "30.05.2025",
-    "password": "3",
-    "option": "male",
-    "favorites": [
-      {
-        "description": "Երևանի կենտրոնական հրապարակը՝ շրջապատված կառավարության, նախարարությունների շենքերով և Ազգային Պատկերասրահով։ Երեկոյան ժամերին այստեղ գործում են երգող շատրվաններ։",
-        "location": "Երևան",
-        "id": 1748646138077,
-        "imgUrl": "/assets/images/yerevan/atractions/republic_square.jpg",
-        "title": "Հանրապետության հրապարակ",
-        "email": "armbabujyan@gmail.com"
-      },
-      {
-        "description": "Ալեքսանդր Սպենդիարյանի անվան ազգային ակադեմիական թատրոն՝ հայկական մշակույթի կենտրոններից մեկը։",
-        "location": "Երևան",
-        "id": 1748646864414,
-        "imgUrl": "/assets/images/yerevan/atractions/opera.jpg",
-        "title": "Օպերայի և բալետի թատրոն",
-        "email": "armbabujyan@gmail.com"
-      }
-    ]
+    "email": "alo@gmail.com",
+    "firstname": "dvsfd",
+    "lastname": "adsvfgdf",
+    "registrationDate": "6/1/2025",
+    "password": "alo123",
+    "option": "female",
+    "favorites": []
   }
 }
->>>>>>> f88d80c4a3fc80fab04f2c1ba20ce0cdf3385472
