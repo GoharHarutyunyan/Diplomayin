@@ -445,3 +445,13 @@ fetchWeather(select.value);
     reviewsContainer.appendChild(personDiv);
   });
 });
+
+
+
+// մեդիայի բուրգերը
+const burger = document.getElementById("burger");
+  const headerMenu = document.getElementById("headerMenu");
+
+  burger.addEventListener("click", () => {
+    headerMenu.classList.toggle("active");
+  });
