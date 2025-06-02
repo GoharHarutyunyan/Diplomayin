@@ -72,41 +72,57 @@
 
         </section>
 
-        <div class="conditions  ">
-            <div class="conditions_container">
+            <div class="conditions">
+                <div class="conditions_container">
                 <div class="cond_body">
-                    <div class="search">
-                        <input type="search" placeholder="Փնտրել վայրեր և ժամանցի միջոցներ">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
+                    
+                    <!-- 🗓️ Օր և ամսաթիվ -->
                     <div class="cond_item">
-                        <div class="cond_tit">Օր</div>
-                        <div class="cond_txt" id="current-date">Բեռնվում է...</div>
+                    <div class="cond_tit">Օր</div>
+                    <div class="cond_txt">
+                        <span id="current-date">Բեռնվում է...</span>
+                        <span id="day-name"></span>
                     </div>
+                    </div>
+
+                    <!-- ⏰ Ժամ -->
                     <div class="cond_item">
-                        <div class="cond_tit">Մարզ</div>
-                        <select name="Marz" id="marzSelect">
-                              <option value="Yerevan">Երևան</option>
-                                <option value="Ashtarak">Արագածոտն</option>
-                                <option value="Gyumri">Շիրակ</option>
-                                <option value="Vanadzor">Լոռի</option>
-                                <option value="Ijevan">Տավուշ</option>
-                                <option value="Gavar">Գեղարքունիք</option>
-                                <option value="Hrazdan">Կոտայք</option>
-                                <option value="Artashat">Արարատ</option>
-                                <option value="Yeghegnadzor">Վայոց Ձոր</option>
-                                <option value="Kapan">Սյունիք</option>
-                                <option value="Armavir">Արմավիր</option>
-                        </select>
+                    <div class="cond_tit">Ժամ</div>
+                    <div class="cond_txt" id="current-time">--:--</div>
                     </div>
+
+                    <!-- 📍 Մարզ -->
                     <div class="cond_item">
-                        <div class="cond_tit">Եղանակ</div>
-                        <div class="cond_txt" id="weather">Բեռնվում է...</div>
+                    <div class="cond_tit">Մարզ</div>
+                    <select name="Marz" id="marzSelect">
+                        <option value="Yerevan">Երևան</option>
+                        <option value="Ashtarak">Արագածոտն</option>
+                        <option value="Gyumri">Շիրակ</option>
+                        <option value="Vanadzor">Լոռի</option>
+                        <option value="Ijevan">Տավուշ</option>
+                        <option value="Gavar">Գեղարքունիք</option>
+                        <option value="Hrazdan">Կոտայք</option>
+                        <option value="Artashat">Արարատ</option>
+                        <option value="Yeghegnadzor">Վայոց Ձոր</option>
+                        <option value="Kapan">Սյունիք</option>
+                        <option value="Armavir">Արմավիր</option>
+                    </select>
                     </div>
-                <button class="cond_item orange_btn">Փնտրել</button>
+
+                    <!-- 🌤️ Եղանակ + icon -->
+                    <div class="cond_item">
+                    <div class="cond_tit">Եղանակ</div>
+                    <div class="cond_txt" id="weather">
+                        <span id="weather-text">Բեռնվում է...</span>
+                    </div>
+                    </div>
+
+                    <img id="weather-icon" src="" alt="Եղանակ" >
+                </div>
+                </div>
             </div>
-            </div>
-        </div>
+
+
 
         <section class="about" id="about_us_start">
             <div class="about_us_bg">

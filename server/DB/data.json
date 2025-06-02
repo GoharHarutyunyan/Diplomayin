@@ -7,7 +7,68 @@
       "registrationDate": "6/1/2025",
       "password": "alo123",
       "option": "female",
-      "favorites": []
+      "favorites": [
+        {
+          "description": "Երևանի կենտրոնական հրապարակը՝ շրջապատված կառավարության, նախարարությունների շենքերով և Ազգային Պատկերասրահով։ Երեկոյան ժամերին այստեղ գործում են երգող շատրվաններ։",
+          "location": "Երևան",
+          "id": "sights-Հանրապետության հրապարակ",
+          "title": "Հանրապետության հրապարակ",
+          "type": "sights",
+          "img": "/assets/images/yerevan/atractions/republic_square.jpg",
+          "link": null,
+          "time": null
+        },
+        {
+          "description": "Հսկայական սանդղավանդակ՝ զարդարված ժամանակակից քանդակներով և արվեստի գործերով, որը կապում է քաղաքի կենտրոնը վերին թաղամասերի հետ։",
+          "location": "Երևան",
+          "id": "sights-Կասկադ համալիր",
+          "title": "Կասկադ համալիր",
+          "type": "sights",
+          "img": "/assets/images/yerevan/atractions/cascade.jpg",
+          "link": null,
+          "time": null
+        },
+        {
+          "description": null,
+          "location": "Երևան",
+          "id": "foods-Տոլմա",
+          "title": "Տոլմա",
+          "type": "foods",
+          "img": "/assets/images/yerevan/food/tolma.jpg",
+          "link": null,
+          "time": null
+        },
+        {
+          "description": null,
+          "location": "Երևան",
+          "id": "hotels-Avenue ApartHotel",
+          "title": "Avenue ApartHotel",
+          "type": "hotels",
+          "img": "/assets/images/yerevan/hotels/avenu.jpg",
+          "link": "https://www.booking.com/hotel/am/avenue-10.html?aid=356980&sid=7c278dcdebddcebc7e31f7c7e42f6a3f&dist=0&group_adults=2&group_children=0&hapos=14&hpos=14&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747953701&srpvid=15859f04f5f90062&type=total&ucfs=1&",
+          "time": null
+        },
+        {
+          "description": "Ամենամյա գրական տոն, որի ընթացքում անցկացվում են գրողների հանդիպումներ, գրքերի շնորհանդեսներ և գրական քննարկումներ։ Հիմնական նպատակն է խրախուսել ընթերցանությունը և աջակցել հայ հեղինակներին։",
+          "location": "Երևան",
+          "id": "events-Երևանյան գրքի տոն",
+          "title": "Երևանյան գրքի տոն",
+          "type": "events",
+          "img": "/assets/images/yerevan/culture/yerevan_book_fair.jpeg",
+          "link": null,
+          "time": "Սեպտեմբեր"
+        },
+        {
+          "description": "Բնության գեղատեսիլ վայր՝ հայտնի իր անտառներով, քարանձավներով և արկածային տուրիզմի հնարավորություններով։",
+          "location": "Տավուշ",
+          "id": "sights-Լաստիվեր",
+          "title": "Լաստիվեր",
+          "type": "sights",
+          "img": "/assets/images/Tavush/attractions/lastiver.jpg",
+          "link": null,
+          "time": null
+        }
+      ]
     },
     {
       "email": "armbabujyan@gmail.com",

@@ -29,19 +29,39 @@ window.addEventListener("DOMContentLoaded", () => {
 
   getCurrentUser();
 
-  //conditions.......................................
-// ամիս ամսաթիվ
- const dateElement = document.getElementById("current-date");
-    const now = new Date();
-    const options = { day: "numeric", month: "long", year: "numeric" };
-    let dateStr = now.toLocaleDateString("hy-AM", options);
-    dateStr = dateStr.charAt(0).toUpperCase() + dateStr.slice(1);
-    dateElement.textContent = dateStr;
+  
+  // 🗓️ Օր, ամսաթիվ, օրվա անուն
+const dateElement = document.getElementById("current-date");
+const dayNameElement = document.getElementById("day-name");
 
-// եղանակ
+const now = new Date();
+const options = { day: "numeric", month: "long", year: "numeric" };
+let dateStr = now.toLocaleDateString("hy-AM", options);
+dateStr = dateStr.charAt(0).toUpperCase() + dateStr.slice(1);
+dateElement.textContent = dateStr;
+
+const days = ["Կիրակի", "Երկուշաբթի", "Երեքշաբթի", "Չորեքշաբթի", "Հինգշաբթի", "Ուրբաթ", "Շաբաթ"];
+const dayName = days[now.getDay()];
+dayNameElement.textContent = `(${dayName})`;
+
+// ⏰ Ժամ
+const timeElement = document.getElementById("current-time");
+
+function updateTime() {
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2, "0");
+  const minutes = now.getMinutes().toString().padStart(2, "0");
+  timeElement.textContent = `${hours}:${minutes}`;
+}
+
+updateTime();
+setInterval(updateTime, 60000); // թարմացնում է ամեն 1 րոպեն մեկ
+
+// 🌤️ Եղանակ
 const apiKey = "cd70c1871e11e23de6e61e25edadeccc";
 const select = document.getElementById("marzSelect");
-const weatherElement = document.getElementById("weather");
+const weatherElement = document.getElementById("weather-text");
+const weatherIconElement = document.getElementById("weather-icon");
 
 select.addEventListener("change", () => {
   const city = select.value;
@@ -51,7 +71,7 @@ select.addEventListener("change", () => {
 async function fetchWeather(city) {
   try {
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=hy`
     );
 
     if (!response.ok) {
@@ -63,19 +83,101 @@ async function fetchWeather(city) {
     if (data.main && typeof data.main.temp !== "undefined") {
       const temperature = Math.round(data.main.temp);
       const description = data.weather[0].description;
+
       weatherElement.textContent = `${temperature}°C, ${description}`;
+
+      const iconCode = data.weather[0].icon;
+      const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+
+     const desc = description.toLowerCase();
+
+      if (desc.includes("clouds")) {
+        weatherIconElement.src = "/assets/icons/weather/clouds.png";
+      } else if (desc.includes("clear")) {
+        weatherIconElement.src = "/assets/icons/weather/clear.png";
+      } else if (desc.includes("drizzle")) {
+        weatherIconElement.src = "/assets/icons/weather/drizzle.png";
+      } else if (desc.includes("rain")) {
+        weatherIconElement.src = "/assets/icons/weather/rain.png";
+      } else if (desc.includes("snow")) {
+        weatherIconElement.src = "/assets/icons/weather/snow.png";
+      } else if (desc.includes("mist") || desc.includes("fog") || desc.includes("haze")) {
+        weatherIconElement.src = "/assets/icons/weather/mist.png";
+      } else if (desc.includes("wind") || desc.includes("breeze")) {
+        weatherIconElement.src = "/assets/icons/weather/wind.png";
+      } else {
+        // fallback icon
+        weatherIconElement.src = "/assets/icons/weather/default.png";
+      }
+
+      
+      
+      
+
+      weatherIconElement.alt = description;
     } else {
       weatherElement.textContent = "Եղանակ չկա";
+      weatherIconElement.src = "";
     }
   } catch (error) {
     console.error("Weather fetch error:", error);
     weatherElement.textContent = "Սխալ";
+    weatherIconElement.src = "";
   }
+ 
 }
 
-
-// Դեֆոլտ հանում՝ սկզբում ընտրած մարզի եղանակը ցույց տալ
+// Բացել էջը՝ դեֆոլտ եղանակով
 fetchWeather(select.value);
+
+
+//   //conditions.......................................
+// // ամիս ամսաթիվ
+//  const dateElement = document.getElementById("current-date");
+//     const now = new Date();
+//     const options = { day: "numeric", month: "long", year: "numeric" };
+//     let dateStr = now.toLocaleDateString("hy-AM", options);
+//     dateStr = dateStr.charAt(0).toUpperCase() + dateStr.slice(1);
+//     dateElement.textContent = dateStr;
+
+// // եղանակ
+// const apiKey = "cd70c1871e11e23de6e61e25edadeccc";
+// const select = document.getElementById("marzSelect");
+// const weatherElement = document.getElementById("weather");
+
+// select.addEventListener("change", () => {
+//   const city = select.value;
+//   fetchWeather(city);
+// });
+
+// async function fetchWeather(city) {
+//   try {
+//     const response = await fetch(
+//       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+//     );
+
+//     if (!response.ok) {
+//       throw new Error("Weather fetch failed: " + response.status);
+//     }
+
+//     const data = await response.json();
+
+//     if (data.main && typeof data.main.temp !== "undefined") {
+//       const temperature = Math.round(data.main.temp);
+//       const description = data.weather[0].description;
+//       weatherElement.textContent = `${temperature}°C, ${description}`;
+//     } else {
+//       weatherElement.textContent = "Եղանակ չկա";
+//     }
+//   } catch (error) {
+//     console.error("Weather fetch error:", error);
+//     weatherElement.textContent = "Սխալ";
+//   }
+// }
+
+
+// // Դեֆոլտ հանում՝ սկզբում ընտրած մարզի եղանակը ցույց տալ
+// fetchWeather(select.value);
 
   const cardData = [
     {
