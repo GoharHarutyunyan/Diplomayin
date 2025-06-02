@@ -1,5 +1,3 @@
-
-
 function normalizePath(path) {
   return path.endsWith("/") && path.length > 1 ? path.slice(0, -1) : path;
 }
@@ -7,14 +5,12 @@ function normalizePath(path) {
 const currentPath = normalizePath(window.location.pathname);
 
 document.querySelectorAll(".menu_list a").forEach((link) => {
-
   if (normalizePath(link.getAttribute("href")) === currentPath) {
     link.parentElement.classList.add("active");
   } else {
     link.parentElement.classList.remove("active");
   }
 });
-
 
 window.addEventListener("DOMContentLoaded", () => {
   async function getCurrentUser() {
@@ -29,155 +25,159 @@ window.addEventListener("DOMContentLoaded", () => {
 
   getCurrentUser();
 
-  
   // 🗓️ Օր, ամսաթիվ, օրվա անուն
-const dateElement = document.getElementById("current-date");
-const dayNameElement = document.getElementById("day-name");
+  const dateElement = document.getElementById("current-date");
+  const dayNameElement = document.getElementById("day-name");
 
-const now = new Date();
-const options = { day: "numeric", month: "long", year: "numeric" };
-let dateStr = now.toLocaleDateString("hy-AM", options);
-dateStr = dateStr.charAt(0).toUpperCase() + dateStr.slice(1);
-dateElement.textContent = dateStr;
-
-const days = ["Կիրակի", "Երկուշաբթի", "Երեքշաբթի", "Չորեքշաբթի", "Հինգշաբթի", "Ուրբաթ", "Շաբաթ"];
-const dayName = days[now.getDay()];
-dayNameElement.textContent = `(${dayName})`;
-
-// ⏰ Ժամ
-const timeElement = document.getElementById("current-time");
-
-function updateTime() {
   const now = new Date();
-  const hours = now.getHours().toString().padStart(2, "0");
-  const minutes = now.getMinutes().toString().padStart(2, "0");
-  timeElement.textContent = `${hours}:${minutes}`;
-}
+  const options = { day: "numeric", month: "long", year: "numeric" };
+  let dateStr = now.toLocaleDateString("hy-AM", options);
+  dateStr = dateStr.charAt(0).toUpperCase() + dateStr.slice(1);
+  dateElement.textContent = dateStr;
 
-updateTime();
-setInterval(updateTime, 60000); // թարմացնում է ամեն 1 րոպեն մեկ
+  const days = [
+    "Կիրակի",
+    "Երկուշաբթի",
+    "Երեքշաբթի",
+    "Չորեքշաբթի",
+    "Հինգշաբթի",
+    "Ուրբաթ",
+    "Շաբաթ",
+  ];
+  const dayName = days[now.getDay()];
+  dayNameElement.textContent = `(${dayName})`;
 
-// 🌤️ Եղանակ
-const apiKey = "cd70c1871e11e23de6e61e25edadeccc";
-const select = document.getElementById("marzSelect");
-const weatherElement = document.getElementById("weather-text");
-const weatherIconElement = document.getElementById("weather-icon");
+  // ⏰ Ժամ
+  const timeElement = document.getElementById("current-time");
 
-select.addEventListener("change", () => {
-  const city = select.value;
-  fetchWeather(city);
-});
+  function updateTime() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, "0");
+    const minutes = now.getMinutes().toString().padStart(2, "0");
+    timeElement.textContent = `${hours}:${minutes}`;
+  }
 
-async function fetchWeather(city) {
-  try {
-    const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=hy`
-    );
+  updateTime();
+  setInterval(updateTime, 60000); // թարմացնում է ամեն 1 րոպեն մեկ
 
-    if (!response.ok) {
-      throw new Error("Weather fetch failed: " + response.status);
-    }
+  // 🌤️ Եղանակ
+  const apiKey = "cd70c1871e11e23de6e61e25edadeccc";
+  const select = document.getElementById("marzSelect");
+  const weatherElement = document.getElementById("weather-text");
+  const weatherIconElement = document.getElementById("weather-icon");
 
-    const data = await response.json();
+  select.addEventListener("change", () => {
+    const city = select.value;
+    fetchWeather(city);
+  });
 
-    if (data.main && typeof data.main.temp !== "undefined") {
-      const temperature = Math.round(data.main.temp);
-      const description = data.weather[0].description;
+  async function fetchWeather(city) {
+    try {
+      const response = await fetch(
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=hy`
+      );
 
-      weatherElement.textContent = `${temperature}°C, ${description}`;
-
-      const iconCode = data.weather[0].icon;
-      const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-
-     const desc = description.toLowerCase();
-
-      if (desc.includes("clouds")) {
-        weatherIconElement.src = "/assets/icons/weather/clouds.png";
-      } else if (desc.includes("clear")) {
-        weatherIconElement.src = "/assets/icons/weather/clear.png";
-      } else if (desc.includes("drizzle")) {
-        weatherIconElement.src = "/assets/icons/weather/drizzle.png";
-      } else if (desc.includes("rain")) {
-        weatherIconElement.src = "/assets/icons/weather/rain.png";
-      } else if (desc.includes("snow")) {
-        weatherIconElement.src = "/assets/icons/weather/snow.png";
-      } else if (desc.includes("mist") || desc.includes("fog") || desc.includes("haze")) {
-        weatherIconElement.src = "/assets/icons/weather/mist.png";
-      } else if (desc.includes("wind") || desc.includes("breeze")) {
-        weatherIconElement.src = "/assets/icons/weather/wind.png";
-      } else {
-        // fallback icon
-        weatherIconElement.src = "/assets/icons/weather/default.png";
+      if (!response.ok) {
+        throw new Error("Weather fetch failed: " + response.status);
       }
 
-      
-      
-      
+      const data = await response.json();
 
-      weatherIconElement.alt = description;
-    } else {
-      weatherElement.textContent = "Եղանակ չկա";
+      if (data.main && typeof data.main.temp !== "undefined") {
+        const temperature = Math.round(data.main.temp);
+        const description = data.weather[0].description;
+
+        weatherElement.textContent = `${temperature}°C, ${description}`;
+
+        const iconCode = data.weather[0].icon;
+        const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+
+        const desc = description.toLowerCase();
+
+        if (desc.includes("clouds")) {
+          weatherIconElement.src = "/assets/icons/weather/clouds.png";
+        } else if (desc.includes("clear")) {
+          weatherIconElement.src = "/assets/icons/weather/clear.png";
+        } else if (desc.includes("drizzle")) {
+          weatherIconElement.src = "/assets/icons/weather/drizzle.png";
+        } else if (desc.includes("rain")) {
+          weatherIconElement.src = "/assets/icons/weather/rain.png";
+        } else if (desc.includes("snow")) {
+          weatherIconElement.src = "/assets/icons/weather/snow.png";
+        } else if (
+          desc.includes("mist") ||
+          desc.includes("fog") ||
+          desc.includes("haze")
+        ) {
+          weatherIconElement.src = "/assets/icons/weather/mist.png";
+        } else if (desc.includes("wind") || desc.includes("breeze")) {
+          weatherIconElement.src = "/assets/icons/weather/wind.png";
+        } else {
+          // fallback icon
+          weatherIconElement.src = "/assets/icons/weather/default.png";
+        }
+
+        weatherIconElement.alt = description;
+      } else {
+        weatherElement.textContent = "Եղանակ չկա";
+        weatherIconElement.src = "";
+      }
+    } catch (error) {
+      console.error("Weather fetch error:", error);
+      weatherElement.textContent = "Սխալ";
       weatherIconElement.src = "";
     }
-  } catch (error) {
-    console.error("Weather fetch error:", error);
-    weatherElement.textContent = "Սխալ";
-    weatherIconElement.src = "";
   }
- 
-}
 
-// Բացել էջը՝ դեֆոլտ եղանակով
-fetchWeather(select.value);
+  // Բացել էջը՝ դեֆոլտ եղանակով
+  fetchWeather(select.value);
 
+  //   //conditions.......................................
+  // // ամիս ամսաթիվ
+  //  const dateElement = document.getElementById("current-date");
+  //     const now = new Date();
+  //     const options = { day: "numeric", month: "long", year: "numeric" };
+  //     let dateStr = now.toLocaleDateString("hy-AM", options);
+  //     dateStr = dateStr.charAt(0).toUpperCase() + dateStr.slice(1);
+  //     dateElement.textContent = dateStr;
 
-//   //conditions.......................................
-// // ամիս ամսաթիվ
-//  const dateElement = document.getElementById("current-date");
-//     const now = new Date();
-//     const options = { day: "numeric", month: "long", year: "numeric" };
-//     let dateStr = now.toLocaleDateString("hy-AM", options);
-//     dateStr = dateStr.charAt(0).toUpperCase() + dateStr.slice(1);
-//     dateElement.textContent = dateStr;
+  // // եղանակ
+  // const apiKey = "cd70c1871e11e23de6e61e25edadeccc";
+  // const select = document.getElementById("marzSelect");
+  // const weatherElement = document.getElementById("weather");
 
-// // եղանակ
-// const apiKey = "cd70c1871e11e23de6e61e25edadeccc";
-// const select = document.getElementById("marzSelect");
-// const weatherElement = document.getElementById("weather");
+  // select.addEventListener("change", () => {
+  //   const city = select.value;
+  //   fetchWeather(city);
+  // });
 
-// select.addEventListener("change", () => {
-//   const city = select.value;
-//   fetchWeather(city);
-// });
+  // async function fetchWeather(city) {
+  //   try {
+  //     const response = await fetch(
+  //       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+  //     );
 
-// async function fetchWeather(city) {
-//   try {
-//     const response = await fetch(
-//       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
-//     );
+  //     if (!response.ok) {
+  //       throw new Error("Weather fetch failed: " + response.status);
+  //     }
 
-//     if (!response.ok) {
-//       throw new Error("Weather fetch failed: " + response.status);
-//     }
+  //     const data = await response.json();
 
-//     const data = await response.json();
+  //     if (data.main && typeof data.main.temp !== "undefined") {
+  //       const temperature = Math.round(data.main.temp);
+  //       const description = data.weather[0].description;
+  //       weatherElement.textContent = `${temperature}°C, ${description}`;
+  //     } else {
+  //       weatherElement.textContent = "Եղանակ չկա";
+  //     }
+  //   } catch (error) {
+  //     console.error("Weather fetch error:", error);
+  //     weatherElement.textContent = "Սխալ";
+  //   }
+  // }
 
-//     if (data.main && typeof data.main.temp !== "undefined") {
-//       const temperature = Math.round(data.main.temp);
-//       const description = data.weather[0].description;
-//       weatherElement.textContent = `${temperature}°C, ${description}`;
-//     } else {
-//       weatherElement.textContent = "Եղանակ չկա";
-//     }
-//   } catch (error) {
-//     console.error("Weather fetch error:", error);
-//     weatherElement.textContent = "Սխալ";
-//   }
-// }
-
-
-// // Դեֆոլտ հանում՝ սկզբում ընտրած մարզի եղանակը ցույց տալ
-// fetchWeather(select.value);
+  // // Դեֆոլտ հանում՝ սկզբում ընտրած մարզի եղանակը ցույց տալ
+  // fetchWeather(select.value);
 
   const cardData = [
     {
@@ -370,7 +370,7 @@ fetchWeather(select.value);
       ],
     },
 
-    vayots_dzor: {
+    vayotsDzor: {
       name: "Վայոց Ձորի Մարզ",
       center: "Եղեգնաձոր",
       population: "49,000",
@@ -414,7 +414,7 @@ fetchWeather(select.value);
   const galleryElems = document.querySelectorAll(".grid_gallery > div");
 
   // Ֆունկցիա թարմացնելու ինֆոն աջ կողմում
-  function updateInfo(regionKey) {
+  function updateInfo(regionKey, regionName) {
     const data = regionsData[regionKey];
     if (!data) return;
 
@@ -435,7 +435,7 @@ fetchWeather(select.value);
 
     const linkElem = document.querySelector(".province-link");
     if (linkElem) {
-      linkElem.href = `provinces.html?marz=${regionKey}`;
+      linkElem.href = `/regions?regionKey=${regionKey}&regionName=${regionName}`;
     }
   }
 
@@ -448,11 +448,12 @@ fetchWeather(select.value);
   mapAreas.forEach((area) => {
     area.addEventListener("click", () => {
       const regionKey = area.dataset.region;
+      const regionName = area.dataset.name;
       if (!regionKey) return;
 
       clearActive();
       area.classList.add("active");
-      updateInfo(regionKey);
+      updateInfo(regionKey, regionName);
     });
   });
 
@@ -564,12 +565,10 @@ fetchWeather(select.value);
   });
 });
 
-
-
 // մեդիայի բուրգերը
 const burger = document.getElementById("burger");
-  const headerMenu = document.getElementById("headerMenu");
+const headerMenu = document.getElementById("headerMenu");
 
-  burger.addEventListener("click", () => {
-    headerMenu.classList.toggle("active");
-  });
+burger.addEventListener("click", () => {
+  headerMenu.classList.toggle("active");
+});

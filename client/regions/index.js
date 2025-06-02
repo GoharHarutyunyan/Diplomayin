@@ -313,7 +313,7 @@ async function getCurrentUser() {
               headers: {
                 "Content-Type": "application/json",
               },
-              body: JSON.stringify({ ...data, email, type,location: loc}),
+              body: JSON.stringify({ ...data, email, type, location: loc }),
             });
 
             const res = await response.json();
@@ -370,8 +370,15 @@ async function getCurrentUser() {
       }
     }
   }
+  const params = new URLSearchParams(window.location.search);
+  const regionKey = params.get("regionKey");
+  const regionName = params.get("regionName");
 
-  getRegion("yerevan", "Երևան");
+  if ((regionKey, regionName)) {
+    getRegion(regionKey, regionName);
+  } else {
+    getRegion("yerevan", "Երևան");
+  }
 }
 
 getCurrentUser();
